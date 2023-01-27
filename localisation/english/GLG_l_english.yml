@@ -1,0 +1,11 @@
+﻿l_english:
+ GLG_neutrality:0 "United Kingdom of Romania and Bulgaria"
+ GLG_communism:0 "Soviet Republic of Balkania"
+ GLG_fascism:0 "Third Bulgarian Empire"
+ GLG_democratic:0 "Romanian-Bulgarian Republic"
+ GLG_neutrality_DEF:0 "the United Kingdom of Romania and Bulgaria"
+ GLG_communism_DEF:0 "the Soviet Republic of Balkania"
+ GLG_fascism_DEF:0 "the Third Bulgarian Empire"
+ GLG_democratic_DEF:0 "the Romanian-Bulgarian Republic"
+ GLG_ADJ:0 "Romanian-Bulgarian"
+ GLG_communism_ADJ:0 "Balkanian"
