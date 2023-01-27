@@ -10,7 +10,8 @@ state={
 	}
 
 	history={
-		#owner = ENG
+		owner = TOM
+		add_core_of = TOM
 		buildings = {
 			infrastructure = 4 #was: 8
 			arms_factory = 2

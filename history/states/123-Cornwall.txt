@@ -6,7 +6,8 @@ state= {
 	state_category = town
 
 	history= {
-		#owner = ENG
+		owner = TOM
+		add_core_of = TOM
 		victory_points = { 540 10 }
 		victory_points = { 6526 1 }
 		buildings = {
