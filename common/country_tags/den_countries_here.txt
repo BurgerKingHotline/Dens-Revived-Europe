@@ -1,2 +1,3 @@
 SXM	= "countries/Saint Martin.txt"
 TOM = "countries/United Kingdom.txt"
+ASF = "countries/ArnoldFleet.txt"

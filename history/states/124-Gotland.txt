@@ -2,16 +2,19 @@ state=
 {
 	id=124
 	name="STATE_124"
-	manpower = 56988
+	manpower = 96988
 	
-	state_category = small_island
+	state_category = large_town
 	
 	history=
 	{
-		#owner = SWE
-		#add_core_of = SWE
+		owner = ASF
+		add_core_of = ASF
 		buildings = {
 			infrastructure = 3 #was: 6
+			industrial_complex = 2
+			arms_factory = 2
+			dockyard = 1
 			408 = {
 				naval_base = 1
 			}
