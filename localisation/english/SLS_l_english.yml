@@ -1,0 +1,12 @@
+﻿l_english:
+ SLS_neutrality:0 "Republic of Silesia"
+ SLS_communism:0 "Democratic People's Republic of Silesia"
+ SLS_fascism:0 "Republik Schlesien"
+ SLS_democratic:0 "Republika Śląska"
+ SLS_neutrality_DEF:0 "the Republic of Silesia"
+ SLS_communism_DEF:0 "the Democratic People's Republic of Silesia"
+ SLS_fascism_DEF:0 "das Republik Schlesien"
+ SLS_democratic_DEF:0 "the Republic of Silesia"
+ SLS_ADJ:0 "Silesian"
+ SLS_communism_ADJ:0 "Silesian"
+ SLS_fascism_ADJ:0 "Schlesien"
