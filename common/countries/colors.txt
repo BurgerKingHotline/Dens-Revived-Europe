@@ -22,6 +22,10 @@ QRT = { # quarter
 	color = rgb { 102 173 234 }
 	color_ui = rgb { 255 73 121 }
 }
+SLS = { # misiekfid
+	color = rgb { 29 51 109 }
+	color_ui = rgb { 255 73 121 }
+}
 # ADD YOUR DAMN COUNTRY
 REL = { # neoreal
 	color = rgb { 54 57 146 }
