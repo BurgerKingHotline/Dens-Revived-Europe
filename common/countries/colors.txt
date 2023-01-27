@@ -6,10 +6,6 @@ BKH = { # burger
 	color = rgb { 140 165 95 }
 	color_ui = rgb { 165 200 121 }
 }
-REP = { # ivysaur
-	color = rgb { 250 108 0 }
-	color_ui = rgb { 255 130 0 }
-}
 GLG = { # glug
 	color = rgb { 65 160 95 }
 	color_ui = rgb { 255 73 121 }
@@ -18,19 +14,24 @@ SXM = { # hurts
 	color = rgb { 140 174 203 }
 	color_ui = rgb { 165 215 255 }
 }
-QRT = { # quarter
-	color = rgb { 102 173 234 }
-	color_ui = rgb { 255 73 121 }
-}
-REL = { # neoreal
-	color = rgb { 54 57 146 }
-	color_ui = rgb { 255 73 121 }
-}
 ASF = { # mustrjastik
 	color = rgb { 85 15 20 }
 	color_ui = rgb { 130 35 55 }
 }
+QRT = { # quarter
+	color = rgb { 102 173 234 }
+	color_ui = rgb { 255 73 121 }
+}
+# ADD YOUR DAMN COUNTRY
+REL = { # neoreal
+	color = rgb { 54 57 146 }
+	color_ui = rgb { 255 73 121 }
+}
 MYC = { # ywfb
 	color = rgb { 65 25 82 }
 	color_ui = rgb { 130 35 55 }
+}
+REP = { # ivysaur
+	color = rgb { 250 108 0 }
+	color_ui = rgb { 255 130 0 }
 }
