@@ -4,14 +4,14 @@ state={
 	name="STATE_187"
 	manpower = 322600
 	
-	state_category = small_island
+	state_category = rural
 	
 	resources={
 		chromium=7 # was: 10
 	}
 
 	history={
-		#owner = GRE
+		owner = REP
 		buildings = {
 			infrastructure = 1
 			dockyard = 1
@@ -28,7 +28,7 @@ state={
 		victory_points = {
 			8435 1
 		}
-		#add_core_of = GRE
+		add_core_of = REP
 	}
 
 	provinces={

@@ -13,7 +13,7 @@ state={
 	state_category = city
 
 	history={
-		#owner = GRE
+		owner = REP
 		victory_points = {
 			4109 20 
 		}
@@ -37,16 +37,16 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 3
+			industrial_complex = 4
 			dockyard = 1
 			air_base = 4
 			4109 = {
-				naval_base = 9
+				naval_base = 10
 
 			}
 
 		}
-		#add_core_of = GRE
+		add_core_of = REP
 
 	}
 
