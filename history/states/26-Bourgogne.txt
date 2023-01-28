@@ -7,7 +7,7 @@ state={
 	state_category = town
 
 	history={
-		#owner = FRA
+		owner = ZPT
 		victory_points = {
 			3594 3 
 		}
@@ -17,7 +17,7 @@ state={
 
 		}
 		#add_core_of = OCC
-		#add_core_of = FRA
+		add_core_of = ZPT
 	}
 
 	provinces={

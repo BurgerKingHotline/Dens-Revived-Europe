@@ -7,7 +7,7 @@ state={
 
 	state_category = large_town
 	history={
-		#owner = FRA
+		owner = ZPT
 		buildings = {
 			infrastructure = 3
 		}
@@ -15,7 +15,7 @@ state={
 			620 5
 		}
 		#add_core_of = OCC
-		#add_core_of = FRA
+		add_core_of = ZPT
 	}
 
 	provinces={
