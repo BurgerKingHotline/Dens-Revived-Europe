@@ -1,0 +1,25 @@
+scripted_gui = {
+
+	REP_tax = {
+		context_type = decision_category
+		window_name = "REP_tax"
+		effects = {
+			lower_click = {
+				if = {
+					limit = {has_political_power > 20}
+					add_political_power = -20
+					subtract_from_variable = { tax = 0.01 }	
+					subtract_from_variable = { revenue = 10 }	
+				}
+			}
+			increase_click = {
+				if = {
+					limit = {has_political_power > 20}
+					add_political_power = -20
+					subtract_from_variable = { tax = -0.01 }	
+					subtract_from_variable = { revenue = -10 }	
+				}
+			}
+
+	}
+}

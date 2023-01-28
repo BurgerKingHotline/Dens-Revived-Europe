@@ -1,0 +1,14 @@
+on_actions = {
+	on_monthly_REP = {
+		effect = {
+			set_temp_variable = { income = num_of_civilian_factories}
+			multiply_temp_variable = { income = revenue }
+			add_to_variable = { 
+				var = money  
+				value = income
+			}
+			#For testing
+			add_war_support = 0.01
+		}
+	}
+} 
