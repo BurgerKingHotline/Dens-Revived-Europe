@@ -1,4 +1,5 @@
 ﻿l_english:
+  #countries
  ZAL:0 "Alpine Tribe"
  ZAL_DEF:0 "the Alpine Tribe"
  ZAL_ADJ:0 "Alpine"
@@ -68,3 +69,15 @@
  ZZA:0 "Zaragozan Tribe"
  ZZA_DEF:0 "the Zaragozan Tribe"
  ZZA_ADJ:0 "Zaragozan"
+ ZAA:0 "Aland Tribe"
+ ZAA_DEF:0 "the Aland Tribe"
+ ZAA_ADJ:0 "Alandian"
+ ZEV:0 "Estvian Tribes"
+ ZEV_DEF:0 "the Estvian Tribes"
+ ZEV_ADJ:0 "Estvian"
+ ZCU:0 "Courish Tribe"
+ ZCU_DEF:0 "the Courish Tribe"
+ ZCU_ADJ:0 "Courish"
+ #other stuff
+ ZZZ_tribal_nation_at_peace:0 "Tribal Nation"
+ ZZZ_tribal_nation_at_peace_desc:0 "Tribal nations are not meant to be played, and will mostly be reactionary to player actions."

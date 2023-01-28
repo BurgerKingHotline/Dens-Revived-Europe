@@ -1,0 +1,18 @@
+ideas = {
+    country = {
+        ZZZ_tribal_nation_at_peace = {
+            picture = undisturbed_isolation 
+            modifier = {
+                political_power_cost = 0.25
+            }
+        }
+        ZZZ_tribal_nation_at_war = {
+		name = ZZZ_tribal_nation_at_peace 
+            picture = extensive_conscription 
+            modifier = {
+                conscription = 0.01
+		training_time_factor = -0.1
+            }
+        }
+    }
+}

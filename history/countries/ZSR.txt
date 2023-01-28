@@ -65,6 +65,11 @@ if = {
 	}
 }
 
+oob = "TRIBAL_1936"
+set_country_flag = NPC_tribal_country
+add_ideas = ZZZ_tribal_nation_at_peace
+country_lock_all_division_template = yes
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.12.20"

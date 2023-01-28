@@ -21,3 +21,6 @@ ZPN = "countries/ZPN.txt" #https://en.wikipedia.org/wiki/Greater_Poland_uprising
 ZUP = "countries/ZUP.txt" #Transylvanian-Moldovan union lmao
 ZHS = "countries/ZHS.txt" #hungary-serbs
 ZZA = "countries/ZZA.txt" #aragon-basque-bordeaux
+ZAA = "countries/ZAA.txt" #aland island 
+ZEV = "countries/ZEV.txt" #estonia-latvia
+ZCU = "countries/ZCU.txt" #greater courland+lithuania
