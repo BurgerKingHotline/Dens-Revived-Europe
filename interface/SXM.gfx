@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_portrait_SXM_1000_hurts
+        texturefile = "gfx/leaders/SXM/portrait_SXM_1000_hurts.dds"
+    }
+}

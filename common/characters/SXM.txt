@@ -1,0 +1,15 @@
+characters = {
+    SXM_1000_hurts = {
+        name = "1000 Hurts"
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_SXM_1000_hurts"
+            }
+        }
+        country_leader = {
+            ideology = fascism_ideology	
+            traits = { dictator }
+            desc = 
+        }
+    }
+}
