@@ -1,0 +1,14 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_portrait_TOM_king_edward"
+        texturefile = "gfx/leaders/TOM/Portrait_TOM_king_edward.dds"
+    }
+    spriteType = {
+        name = "GFX_texticon_warning"
+        texturefile = "gfx/texticons/warning.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_TOM_irredentism"
+        texturefile = "gfx/interface/ideas/TOM_irredentism.dds"
+    }
+}
