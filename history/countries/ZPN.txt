@@ -1,4 +1,4 @@
-capital = 74
+capital = 86
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
