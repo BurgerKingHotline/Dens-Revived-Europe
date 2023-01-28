@@ -1,0 +1,22 @@
+﻿l_english:
+ KEK_fascism:0 "Kekistani Empire"
+ KEK_fascism_DEF:0 "the Kekistan Empire"
+ KEK_democratic:0 "Kekistani Republic"
+ KEK_democratic_DEF:0 "the Kekistani Republic"
+ KEK_neutrality:1 "Kingdom of Kekistan"
+ KEK_neutrality_DEF:1 "the Kingdom of Kekistan"
+ KEK_communism:0 "Socialist Union of Kekelonia"
+ KEK_communism_DEF:0 "the Socialist Union of Kekelonia"
+ KEK_fascism_ADJ:0 "Kekistani"
+ KEK_democratic_ADJ:0 "Kekistani"
+ KEK_neutrality_ADJ:0 "Kekistani"
+ KEK_communism_ADJ:0 "Kekelonian"
+ KEK_autonomy_supervised_state:0 "$OVERLORDADJ$ Kekistan"
+ KEK_autonomy_supervised_state_DEF:0 "the $OVERLORDADJ$ Kekistan"
+ KEK_autonomy_puppet:0 "$OVERLORDADJ$ Kekistan"
+ KEK_autonomy_puppet_DEF:0 "the $OVERLORDADJ$ Kekistan"
+ KEK:0 "Kekistan"
+ KEK_DEF:0 "Kekistan"
+ KEK_ADJ:0 "Kekistani"
+ 
+ #this comment is an easter egg
