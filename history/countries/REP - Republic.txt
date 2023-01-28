@@ -33,6 +33,7 @@ recruit_character = REP_juan
 
 #Leaders end#
 add_ideas = REP_lazy
+set_variable = { money = 2000 }
 set_convoys = 45 #Trade centric nation
 add_political_power = -3
 

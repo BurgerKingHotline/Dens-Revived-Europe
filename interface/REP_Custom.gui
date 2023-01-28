@@ -1,0 +1,35 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "REP_money"
+		position = { x=1000 y=5 }	
+		size = { width=300 height=50 }
+		
+		background = {
+			name = "Acadimia_value_bg"
+			quadTextureSprite ="GFX_generic_box_smallest"
+		}
+		
+
+		
+		iconType = {
+			name ="moneis_icon"
+			spriteType = "GFX_REP_moneis"
+			position = { x= 1 y = 1 }
+			Orientation = "UPPER_LEFT"
+		}		
+		
+		instantTextBoxType = {
+			name ="moneis_value"
+			position = { x= 20 y = 2 }
+			font = "hoi_18mbs"
+			text = "[?root.money]"
+			format = center
+			maxWidth = 46
+			maxHeight = 24
+			fixedsize = yes
+		}
+		
+
+	}
+}
