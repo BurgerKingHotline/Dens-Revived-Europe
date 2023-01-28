@@ -1,0 +1,25 @@
+state={
+	id=912
+	name="STATE_912"
+	provinces={
+		9239 11221 
+	}
+	history = {
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 2
+			anti_air_building = 1
+			radar_station = 1
+			air_base = 5
+
+		}
+		owner = TOM
+		add_core_of = TOM
+		victory_points = { 11221 3 }
+	}
+	manpower=2333000
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
