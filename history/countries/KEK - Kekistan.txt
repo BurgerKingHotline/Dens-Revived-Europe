@@ -1,4 +1,4 @@
-﻿capital = 229 #Grozny
+﻿capital = 64 #Grozny
 
 #oob = "CIN_1936"
 
