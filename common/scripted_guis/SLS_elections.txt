@@ -1,0 +1,68 @@
+scripted_gui = {
+    SLS_elections = {
+        window_name = "SLS_elections"
+        context_type = decision_category
+         
+        
+        effects = {
+            help_po_click = {
+                add_to_variable = { 
+					var = po_power
+					value = 0.1
+				}
+            }
+			help_cs_click = {
+                add_to_variable = { 
+					var = cs_power
+					value = 0.1
+				}
+            }
+			help_dv_click = {
+				add_to_variable = { 
+					var = dv_power
+					value = 0.1
+				}
+            }
+			unhelp_po_click = {
+                add_to_variable = { 
+					var = po_power
+					value = -0.1
+				}
+            }
+			unhelp_cs_click = {
+                add_to_variable = { 
+					var = cs_power
+					value = -0.1
+				}
+            }
+			unhelp_dv_click = {
+				add_to_variable = { 
+					var = dv_power
+					value = -0.1
+				}
+            }
+        }
+        
+        triggers = {
+            help_po_click_enabled = {
+                political_power_daily > 0.1
+            }
+			help_cs_click_enabled = {
+                political_power_daily > 0.1
+            }
+			help_dv_click_enabled = {
+                political_power_daily > 0.1
+            }
+			unhelp_po_click_enabled = {
+                check_variable = { po_power > 0 }
+            }
+			unhelp_cs_click_enabled = {
+                check_variable = { cs_power > 0 }
+            }
+			unhelp_dv_click_enabled = {
+                check_variable = { dv_power > 0 }
+            }
+            
+        }
+    }
+}

@@ -23,4 +23,16 @@ spriteTypes = {
         name = "GFX_SilesiaMap"
         texturefile = "gfx/interface/SLS_scripted_gui/silesiamap.dds"
     }
+	spriteType = {
+        name = "GFX_SLS_PO"
+        texturefile = "gfx/interface/SLS_scripted_gui/platforma_obywatelska.dds"
+    }
+	spriteType = {
+        name = "GFX_SLS_CS"
+        texturefile = "gfx/interface/SLS_scripted_gui/czerwony_sztandar.dds"
+    }
+	spriteType = {
+        name = "GFX_SLS_DV"
+        texturefile = "gfx/interface/SLS_scripted_gui/deutsches_volkspartei.dds"
+    }
 }
