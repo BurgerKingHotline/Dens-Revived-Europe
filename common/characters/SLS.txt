@@ -1,0 +1,62 @@
+characters = {
+	SLS_kohut = {
+		name = SLS_kohut
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SLS_kohut
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			desc = SLS_kohut_desc
+			traits =  {}
+			expire = "2000.1.1.1"
+		}
+	}
+	SLS_anarchy = {
+		name = SLS_anarchy
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SLS_anarchy
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			desc = SLS_anarchy_desc
+			traits = {dictator}
+			expire = "1985.1.1.1"
+			id = 1
+		}
+	}
+	SLS_jaruzelski = {
+		name = SLS_jaruzelski
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SLS_jaruzelski
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			desc = SLS_jaruzelski_desc
+			traits = {dictator}
+			expire = "2014.1.1.1"
+			id = 1
+		}
+	}
+	SLS_budka = {
+		name = SLS_budka
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SLS_budka
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			desc = SLS_budka_desc
+			traits = {}
+			expire = "2014.1.1.1"
+			id = 1
+		}
+	}
+	
+}

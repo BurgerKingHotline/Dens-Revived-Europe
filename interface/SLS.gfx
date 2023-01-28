@@ -1,0 +1,22 @@
+spriteTypes = {
+    frameAnimatedSpriteType = {
+    	name = "GFX_portrait_SLS_anarchy"
+    	texturefile = "gfx/leaders/SLS/anarchy.dds"
+    	noOfFrames = 10
+		animation_rate_fps = 4
+		looping = yes
+		play_on_show = yes
+	}
+	spriteType = {
+        name = "GFX_portrait_SLS_kohut"
+        texturefile = "gfx/leaders/SLS/portrait_SLS_kohut.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_SLS_jaruzelski"
+        texturefile = "gfx/leaders/SLS/portrait_SLS_jaruzelski.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_SLS_budka"
+        texturefile = "gfx/leaders/SLS/portrait_SLS_budka.dds"
+    }
+}
