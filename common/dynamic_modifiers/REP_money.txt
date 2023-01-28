@@ -1,0 +1,4 @@
+Moneis = {
+	consumer_goods_factor = tax
+	civilian_factory_use = interest
+}

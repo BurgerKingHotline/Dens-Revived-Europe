@@ -1,0 +1,15 @@
+REP_tax_screen = {
+	#icon = hol_war_on_pacifism
+	
+	allowed = {
+		original_tag = REP
+	}
+
+	visible = {
+		always = yes
+	}
+	scripted_gui = REP_tax
+	visible_when_empty = yes
+	priority = 85
+}
+

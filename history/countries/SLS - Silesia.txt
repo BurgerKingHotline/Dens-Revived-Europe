@@ -1,6 +1,10 @@
 ﻿capital = 762
 
 oob = "SLS_1936"
+recruit_character = SLS_kohut
+recruit_character = SLS_anarchy
+recruit_character = SLS_budka
+recruit_character = SLS_jaruzelski
 
 # Starting tech
 set_technology = {

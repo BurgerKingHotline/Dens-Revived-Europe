@@ -1,0 +1,15 @@
+SLS_development_decisions = {
+	
+	allowed = {
+		original_tag = SLS
+	}
+
+	visible = {
+		is_ai = no
+		has_government = democratic
+	}
+	scripted_gui = SLS_development
+	visible_when_empty = yes
+	priority = 100
+}
+

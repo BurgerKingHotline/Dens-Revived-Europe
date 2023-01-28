@@ -1,0 +1,27 @@
+capital = 126
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.3
+set_convoys = 400
+
+set_politics = {
+    ruling_party = neutrality
+    last_election = "1933.5.5"
+    election_frequency = 60
+	elections_allowed = yes
+}
+set_popularities = {
+    neutrality = 27
+	democratic = 19
+	fascism = 33
+	communism = 21
+}
+
+set_cosmetic_tag = TOM_kingdom
+
+recruit_character = TOM_king_edward
+
+add_ideas = TOM_royal_government
+add_ideas = TOM_irredentism
+
+news_event = TOM_royal_government_crisis.1

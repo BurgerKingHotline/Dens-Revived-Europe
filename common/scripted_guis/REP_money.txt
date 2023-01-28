@@ -1,0 +1,17 @@
+scripted_gui = {
+  academia_mechanic = {
+    window_name = "REP_money"
+    context_type = player_context
+
+    visible = {
+	tag = REP
+    }
+
+    properties = {
+    }
+
+    ai_enabled = {
+		always = no
+    }
+  }
+}

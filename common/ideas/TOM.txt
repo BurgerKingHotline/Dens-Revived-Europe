@@ -1,0 +1,20 @@
+ideas = {
+    country = {
+        TOM_royal_government = {
+            picture = ast_abandon_the_westminster_system
+            modifier = {
+                political_power_cost = 0.25
+                stability_factor = -0.2
+                drift_defence_factor = -0.5
+            }
+        }
+        TOM_irredentism = {
+            picture = TOM_irredentism
+            modifier = {
+                fascism_drift = 0.0015
+                army_core_attack_factor = 0.15
+                justify_war_goal_time = -0.3
+            }
+        }
+    }
+}
