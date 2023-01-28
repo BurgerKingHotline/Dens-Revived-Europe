@@ -1,13 +1,14 @@
-
 state={
-	id=123
-	name="STATE_123"
-
-	history={
+	id=909
+	name="STATE_909"
+	provinces={
+		6526 
+	}
+	history = {
 		owner = TOM
 		add_core_of = TOM
 		victory_points = {
-			540 10 
+			6526 5
 		}
 		buildings = {
 			infrastructure = 4
@@ -15,20 +16,11 @@ state={
 			anti_air_building = 2
 			radar_station = 1
 			air_base = 6
-			540 = {
-				naval_base = 8
-
-			}
-
 		}
 
 	}
-
-	provinces={
-		540 3463 9562 11406 
-	}
-	manpower=1221013
+	manpower=650000
 	buildings_max_level_factor=1.000
-	state_category=town
 	local_supplies=0.000
+	state_category=town
 }

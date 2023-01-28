@@ -18,10 +18,3 @@ set_popularities = {
 }
 
 set_cosmetic_tag = TOM_kingdom
-
-recruit_character = TOM_king_edward
-
-add_ideas = TOM_royal_government
-add_ideas = TOM_irredentism
-
-news_event = TOM_royal_government_crisis.1
