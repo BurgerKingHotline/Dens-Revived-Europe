@@ -39,3 +39,7 @@ MYC = { # ywfb
 	color = rgb { 65 25 82 }
 	color_ui = rgb { 130 35 55 }
 }
+KEK = { #prepare your painis
+	color = rgb { 0 204 0 }
+	color_ui = rgb { 0 204 0 }
+}
