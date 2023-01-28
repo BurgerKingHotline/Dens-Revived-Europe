@@ -1,0 +1,8 @@
+TOE = {
+	original_tag = TOM
+	has_country_flag = TOM_essex
+}
+TOA = {
+	original_tag = TOM
+	has_country_flag = TOM_mercia
+}

@@ -1,1 +1,85 @@
-TOM_set_up = {}
+TOM_remove_cores = {
+    every_core_state = {
+        remove_core_of = PREV
+    }
+}
+TOM_default = {
+    TOM_remove_cores = yes
+    set_politics = {
+        ruling_party = neutrality
+        elections_allowed = no
+    }
+    set_popularities = {
+        neutrality = 55
+        democratic = 15
+        communism = 15
+        fascism = 15
+    }
+}
+TOM_set_up = {
+    # NO S OR G
+    create_dynamic_country = {
+        reserve_dynamic_country = yes
+        original_tag = TOM
+        TOM_default = yes
+        set_country_flag = TOM_essex
+        set_cosmetic_tag = TOM_essex_kingdom
+        transfer_state = 913
+        add_state_core = 913
+    }
+    create_dynamic_country = {
+        reserve_dynamic_country = yes
+        original_tag = TOM
+        TOM_default = yes
+        set_country_flag = TOM_mercia
+        set_cosmetic_tag = TOM_mercia_kingdom
+        transfer_state = 128
+        add_state_core = 128
+        add_state_core = 129
+        add_state_claim = 129
+    }
+    create_dynamic_country = {
+        reserve_dynamic_country = yes
+        original_tag = TOM
+        TOM_default = yes
+        set_country_flag = TOM_powys
+        set_cosmetic_tag = TOM_powys_earldom
+        transfer_state = 910
+        add_state_core = 910
+        if = {
+            limit = {
+                has_dlc = "Together for Victory"
+            }
+            TOA = {
+                set_autonomy = {
+                    target = PREV
+                    autonomy_state = autonomy_TOM_earldom
+                }
+            }
+        }
+        else = {
+            TOA = {
+                puppet = PREV
+            }
+        }
+    }
+    create_dynamic_country = {
+        reserve_dynamic_country = yes
+        original_tag = TOM
+        TOM_default = yes
+        set_politics = {
+            ruling_party = communism
+            elections_allowed = no
+        }
+        set_popularities = {
+            neutrality = 15
+            democratic = 15
+            communism = 55
+            fascism = 15
+        }
+        set_country_flag = TOM_confederacy
+        set_cosmetic_tag = TOM_confederacy
+        transfer_state = 129
+        add_state_core = 129
+    }
+}

@@ -3,8 +3,20 @@ ASF_hanseatic_league = { # mustrjastik, but chonky
 	color = rgb { 135 15 20 }
 	color_ui = rgb { 135 15 20 }
 }
-
 ASF_mustrastik_republic = { # mustrjastik, but wholesome
 	color = rgb { 20 15 85 }
 	color_ui = rgb { 20 15 85 }
+}
+
+TOM_mercia_kingdom = { 
+	color = rgb { 0 38 127 }
+	color_ui = rgb { 0 38 127 }
+}
+TOM_essex_kingdom = {
+    color = rgb { 207 20 43 }
+    color_ui = rgb { 207 20 43 }
+}
+TOM_confederacy = {
+    color = rgb { 125 13 24 }
+    color_ui = rgb { 125 13 24 }
 }
