@@ -1,0 +1,23 @@
+capital = 172
+oob = "BSQ_1936"
+
+recruit_character = BSQ_placeholder
+
+set_politics = {
+    ruling_party = neutrality
+    elections_allowed = no
+}
+set_popularities = {
+    neutrality = 70
+    communism = 10
+    fascism = 10
+    democratic = 10
+}
+
+add_to_array = { SCF_focuses = token:BSQ_test_focus }
+add_to_array = { SCF_focuses_x = 0 }
+add_to_array = { SCF_focuses_y = 0 }
+add_to_array = { SCF_focuses = token:BSQ_test_focus_2 }
+add_to_array = { SCF_focuses_x = 0 }
+add_to_array = { SCF_focuses_y = 1 }
+calculate_focus_positions = yes
