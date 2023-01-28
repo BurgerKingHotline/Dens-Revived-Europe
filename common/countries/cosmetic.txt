@@ -1,0 +1,10 @@
+
+ASF_hanseatic_league = { # mustrjastik, but chonky
+	color = rgb { 135 15 20 }
+	color_ui = rgb { 135 15 20 }
+}
+
+ASF_mustrastik_republic = { # mustrjastik, but wholesome
+	color = rgb { 20 15 85 }
+	color_ui = rgb { 20 15 85 }
+}

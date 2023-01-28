@@ -1,0 +1,14 @@
+spriteTypes = {
+
+	spriteType = {
+		name = GFX_ASF_Arnold_Meri_portrait
+		texturefile = gfx/leaders/ASF/Arnold_Meri.dds
+	}
+
+	spriteType = {
+		name = GFX_idea_cabo_daciolo
+		texturefile = gfx/interface/ASF_cabo_daciolo.dds
+	}
+		
+	
+}
