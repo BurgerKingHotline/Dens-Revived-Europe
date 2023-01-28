@@ -1,5 +1,5 @@
 capital = 186
-
+oob = "REP_land"
 set_politics = {
 	ruling_party = democratic
 	last_election = "1984.11.8"
@@ -32,7 +32,10 @@ set_technology = {
 recruit_character = REP_juan
 
 #Leaders end#
-add_ideas = REP_lazy
+add_ideas = {
+	REP_lazy
+	limited_conscription
+}
 set_variable = { money = 2000 }
 set_convoys = 45 #Trade centric nation
 add_political_power = -3
