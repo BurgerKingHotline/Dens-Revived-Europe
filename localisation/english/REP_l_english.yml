@@ -11,3 +11,7 @@
  REP_communism_ADJ:0 ":3"
  REP_fascism_ADJ:0 ":3"
  REP_neutrality_ADJ:0 ">w<" 
+ REP_extremly_popular:0 "Extremly popular."
+ REP_retarded:0 "Retarded <\3"
+ REP_lazy:0 "Lazy cats"
+ REP_lazy_desc:0 "Kitties are very lazy and silly"

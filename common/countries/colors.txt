@@ -18,6 +18,10 @@ ASF = { # mustrjastik
 	color = rgb { 85 15 20 }
 	color_ui = rgb { 130 35 55 }
 }
+REP = { # ivysaur >w<
+	color = rgb { 255 255 255 }
+	color_ui = rgb { 255 130 0 }
+}
 QRT = { # quarter
 	color = rgb { 102 173 234 }
 	color_ui = rgb { 255 73 121 }
@@ -34,8 +38,4 @@ REL = { # neoreal
 MYC = { # ywfb
 	color = rgb { 65 25 82 }
 	color_ui = rgb { 130 35 55 }
-}
-REP = { # ivysaur >w<
-	color = rgb { 255 255 255 }
-	color_ui = rgb { 255 130 0 }
 }
