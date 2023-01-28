@@ -1,0 +1,27 @@
+ideas = {
+	country = {
+		REP_lazy = {
+					
+			allowed = {
+				original_tag = REP
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ast_volunteer_defence_corps
+			
+			modifier = {
+				supply_consumption_factor = 0.25
+				army_attack_factor = -0.2
+				army_morale_factor = -0.15
+				max_dig_in = 5
+				dig_in_speed_factor = -0.35
+				army_org_factor = -0.3
+			}
+		}
+	}
+}

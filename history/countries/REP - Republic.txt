@@ -28,9 +28,11 @@ set_technology = {
 	interwar_antiair = 1
 	basic_train = 1
 }
-
+#Leaders start#
 recruit_character = REP_juan
 
+#Leaders end#
+add_ideas = REP_lazy
 set_convoys = 45 #Trade centric nation
 add_political_power = -3
 

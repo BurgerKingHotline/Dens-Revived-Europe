@@ -1,0 +1,18 @@
+leader_traits = {
+	REP_extremly_popular = {
+		random = no
+		stability_factor = 0.50
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	REP_retarded = {
+		random = no
+		stability_factor = -0.50
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
