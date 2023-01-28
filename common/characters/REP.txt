@@ -1,0 +1,15 @@
+characters={
+	REP_juan = {
+		name = "Juan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REP/Juan.dds"
+			}
+		}	
+		country_leader = {
+			desc = "Juan"
+			ideology = conservatism
+			traits = { }
+		}	
+	}
+}

@@ -29,5 +29,8 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = REP_juan
+
 set_convoys = 45 #Trade centric nation
 add_political_power = -3
+
