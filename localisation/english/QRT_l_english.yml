@@ -1,0 +1,10 @@
+﻿l_english:
+ QRT_neutrality:0 "Jeżowa Republika"
+ QRT_communism:0 "Jeżowa Gmina"
+ QRT_fascism:0 "Imperium Jeży"
+ QRT_democratic:0 "Królestwo Jeży"
+ QRT_neutrality_DEF:0 "the Jeżowa Republika"
+ QRT_communism_DEF:0 "the Jeżowa Gmina"
+ QRT_fascism_DEF:0 "the Imperium Jeży"
+ QRT_democratic_DEF:0 "the Królestwo Jeży"
+ QRT_ADJ:0 "Jeży"
