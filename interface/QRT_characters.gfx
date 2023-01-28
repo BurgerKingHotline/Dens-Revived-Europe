@@ -1,8 +1,0 @@
-spriteTypes = {
-
-	spriteType = {
-		name = "GFX_Portrait_QRT"
-		texturefile = "gfx/leaders/QRT/Portrait_QRT_.dds"
-	}
-	
-}

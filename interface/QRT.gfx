@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_QRT_mr_jez"
+		texturefile = "gfx/leaders/QRT/portrait_QRT_mr_jez.dds"
+	}
+	
+}
