@@ -3,7 +3,7 @@ characters = {
 		name = "Big Man Tyronne" 
 		portraits = {
 			civilian = {
-				large = "gfx/portraits/KEK/tyronne.jpg"
+				large = "gfx/leaders/KEK/tyronne.jpg"
 			}
 		}
 		country_leader = {
@@ -17,7 +17,7 @@ characters = {
 		name = "Christopher Poole" 
 		portraits = {
 			civilian = {
-				large = "gfx/portraits/KEK/moot.png"
+				large = "gfx/leaders/KEK/moot.png"
 			}
 		}
 		country_leader = {
@@ -31,7 +31,7 @@ characters = {
 		name = "Andrew Tate" 
 		portraits = {
 			civilian = {
-				large = "gfx/portraits/KEK/tate.png"
+				large = "gfx/leaders/KEK/tate.png"
 			}
 		}
 		country_leader = {
@@ -45,7 +45,7 @@ characters = {
 		name = "Bob-Ran Dom" 
 		portraits = {
 			civilian = {
-				large = "gfx/portraits/KEK/bob.png"
+				large = "gfx/leaders/KEK/bob.png"
 			}
 		}
 		country_leader = {
