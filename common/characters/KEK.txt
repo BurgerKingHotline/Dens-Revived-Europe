@@ -1,0 +1,871 @@
+characters = {
+	KEK_tyronne = {
+		name = "Big Man Tyronne" 
+		portraits = {
+			civilian = {
+				large = "gfx/portraits/KEK/tyronne.jpg"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+	
+	KEK_moot = {
+		name = "Christopher Poole" 
+		portraits = {
+			civilian = {
+				large = "gfx/portraits/KEK/moot.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+
+	KEK_tate = {
+		name = "Andrew Tate" 
+		portraits = {
+			civilian = {
+				large = "gfx/portraits/KEK/tate.png"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+
+	KEK_bob_random = {
+		name = "Bob-Ran Dom" 
+		portraits = {
+			civilian = {
+				large = "gfx/portraits/KEK/bob.png"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+
+    ##CONSEILLÉ POLITIQUE
+
+	KEK_luca_hill={
+		name="Luca Hill"
+		portraits={
+			army={
+				small="GFX_idea_todt"
+			}
+			
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = KEK
+			}
+			traits = {
+				fortification_engineer 
+			}
+			ai_will_do = {
+				factor = 0.500
+			}
+		}
+	}
+
+	KEK_stanley_robinson={ 
+		name="Stanley Robinson"
+		portraits={
+			army={
+				small="GFX_idea_speer"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = KEK
+			}
+			traits = {
+				armaments_organizer 
+			}
+		}		
+	}
+
+	KEK_jackson_watts={
+		name="Jackson Watts"
+		portraits={
+			army={
+				small="GFX_idea_hjalmar_schacht"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = KEK
+			}
+			traits = {
+				captain_of_industry 
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+
+	KEK_nicholas_rodgers={
+		name="Nicholas Rogers"
+		portraits={
+			army={
+				small="GFX_idea_walther_funk"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = KEK
+			}
+			traits = {
+				war_industrialist 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	KEK_freddie_taylor={
+		name="Freddie Taylor"
+		portraits={
+			army={
+				small="GFX_idea_joseph_goebbels"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = KEK
+			}
+			available = {
+
+			}
+			traits = {
+				propaganda_expert 
+			}
+			do_effect = {
+				NOT = {
+					has_government = fascism 
+				}
+			}
+			ai_will_do = {
+				factor = 24.000
+			}
+		}
+	}
+
+	KEK_graysen_mccarthy={
+		name="Graysen Mccarthy"
+		portraits={
+			army={
+				small="GFX_idea_rudolf_hess"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = KEK
+			}
+			available = {
+			}
+			traits = {
+				amateur_aviator_hess
+			}
+		}
+	}
+
+	KEK_edgar_merril={
+		name="Edgar Merrill"
+		portraits={
+			army={
+				small="GFX_idea_heinrich_himmler"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = KEK
+			}
+			available = {
+			}
+			traits = {
+				prince_of_terror 
+			}
+		}
+	}
+
+	KEK_yoused_preston={
+		name="Yousef Preston"
+		portraits={
+			army={
+				small="GFX_idea_martin_bormann"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+			}
+			ai_will_do = {
+				factor = 30.000
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}		
+	}
+
+	KEK_jackson_dawson={
+		name="Jackson Dawson"
+		portraits={
+			army={
+				small="GFX_idea_joachim_von_ribbentrop"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = KEK
+			}
+			available = {
+			}
+			traits = {
+				backroom_backstabber 
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+
+	KEK_liam_richarson={
+		name="Liam Richardson"
+		portraits={
+			army={
+				small="GFX_idea_konstantin_von_neurath"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = KEK
+			}
+			traits = {
+				smooth_talking_charmer 
+			}
+		}
+	}
+	
+	KEK_isaac_payne={
+		name="Issac Payne"
+		portraits={
+			army={
+				small="GFX_idea_GER_carl_friedrich_goerdeler"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = KEK
+			}
+			available = {
+			}
+			traits = {
+				economist 
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}		
+	}
+	
+
+	KEK_timothy_snider={
+		name=GER_wilhelm_canaris
+		portraits={
+			army={
+				small="GFX_idea_ger_wilhelm_canaris"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			available = {
+				has_intelligence_agency = yes 
+			}
+			allowed = {
+				original_tag = KEK
+				has_dlc = "La Resistance"
+			}
+			traits = {
+				head_of_intelligence 
+			}
+		}		
+	}
+
+
+	### THEORISTS ###
+
+	# Von Manstein up there
+
+	# Guderian up there
+
+	# Saalwachter up there
+
+	KEK_john_williams={
+		name="John Williams"
+		portraits={
+			army={
+				small="GFX_idea_von_braun"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			ledger = air
+			allowed = {
+				original_tag = KEK
+			}
+			research_bonus = {
+				rocketry = 0.150
+			}
+			traits = {
+				rocket_scientist
+			}
+		}
+	}
+
+	KEK_lewis_reid={
+		name="Lewis Reid"
+		portraits={
+			army={
+				small="GFX_idea_heisenberg"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			ledger = army
+			allowed = {
+				original_tag = KEK
+			}
+			research_bonus = {
+				nuclear = 0.150
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+
+	KEK_jordan_parry={
+		name="Jordan Parry"
+		portraits={
+			army={
+				small="GFX_idea_wolfram_von_richthofen"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			ledger = air
+			allowed = {
+				original_tag = KEK
+			}
+			traits = {
+				close_air_support_proponent
+			}
+		}
+	}
+
+	KEK_benjamin_hunter={
+		name="Benjamin Hunter"
+		portraits={
+			army={
+				small="GFX_idea_walther_wever"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			ledger = air
+			allowed = {
+				original_tag = KEK
+			}
+			traits = { air_warfare_theorist }
+		}
+	}
+
+	KEK_ryan_miller={
+		name="Ryan Miller"
+		portraits={
+			army={
+				small="GFX_idea_ernst_udet"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = ernst_udet
+			ledger = air
+			allowed = {
+				original_tag = KEK
+			}
+			traits = {
+				dive_bomber
+			}
+		}
+	}
+
+	KEK_bentle_tucker={
+		name="Bentlee Tucker"
+		portraits={
+			army={
+				small="GFX_idea_otto_ciliax"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			ledger = navy
+			allowed = {
+				original_tag = KEK
+			}
+			traits = { naval_theorist }
+		}
+	}
+
+	### ARMY CHIEFS ###
+
+	KEK_houston_farley={
+		name="Houston Farley"
+		portraits={
+			army={
+				small="GFX_idea_ludwig_beck"
+			}
+		}
+		advisor={
+			slot = army_chief
+			allowed = {
+				original_tag = KEK
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	KEK_jasiah_norman={
+		name="Jasiah Norman"
+		portraits={
+			army={
+				small="GFX_idea_wilhelm_keitel"
+			}
+		}
+		advisor={
+			slot = army_chief
+			allowed = {
+				original_tag = KEK
+			}
+			available = {
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	KEK_billy_ortiz={
+		name="Billy Ortiz"
+		portraits={
+			army={
+				small="GFX_idea_franz_halder"
+			}
+		}
+		advisor={
+			slot = army_chief
+			allowed = {
+				original_tag = KEK
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	KEK_adrian_mosley={
+		name="Adrian Mosley"
+		portraits={
+			army={
+				small="GFX_idea_walther_von_brauchitsch"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			allowed = {
+				original_tag = KEK
+			}
+			available = {
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	### NAVY CHIEFS ###
+
+	KEK_jacob_henderson={
+		name="Jacob Henderson"
+		portraits={
+			army={
+				large=GFX_portrait_GER_karl_donitz
+				small=GFX_portrait_GER_karl_donitz_small
+			}
+			army={
+				small="GFX_idea_donitz"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			allowed = {
+				original_tag = KEK
+			}
+			traits = {
+				navy_chief_commerce_raiding_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader={
+			traits={ navy_career_officer seawolf }
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=5
+			legacy_id=26
+		}
+	}
+
+	KEK_ethan_brooks={
+		name="Ethan Brooks"
+		portraits={
+			army={
+				large=GFX_portrait_GER_erich_raeder
+				small=GFX_portrait_GER_erich_raeder_small
+			}
+			army={
+				small="GFX_idea_raeder"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			allowed = {
+				original_tag = KEK
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader={
+			traits={ battleship_adherent naval_lineage }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=27
+		}
+	}
+
+
+	### AIR CHIEFS ###
+
+	# Kesselring up there
+
+	KEK_cody_duncan={
+		name="Cody Duncan"
+		portraits={
+			army={
+				small="GFX_idea_goering"
+			}
+			civilian={
+				large=GFX_portrait_GER_hermann_goring
+			}
+		}
+		advisor={
+			slot = air_chief
+			allowed = {
+				original_tag = KEK
+			}
+			available = {
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+
+	KEK_frankie_gill={
+		name="Frankie Gill"
+		portraits={
+			army={
+				small="GFX_idea_ritter_von_greim"
+			}
+		}
+		advisor={
+			slot = air_chief
+			allowed = {
+				original_tag = KEK
+			}
+			available = {
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.500
+			}
+		}
+	}
+
+
+	### MILITARY HIGH COMMAND ###
+
+	# Von Rundstedt up there
+
+	# Rommel up there
+
+	# Student up there
+
+	# Lütjens up there
+
+	KEK_ben_mcdonald={
+		name="Ben Mcdonald"
+		portraits={
+			army={
+				small="GFX_idea_ferdinand_schorner"
+			}
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			allowed = {
+				original_tag = KEK
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+
+	KEK_jackson_scott={
+		name="Jackson Scott"
+		portraits={
+			army={
+				small="GFX_idea_werner_von_fritsch"
+			}
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			allowed = {
+				original_tag = KEK
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+
+	KEK_max_west={
+		name="Max West"
+		portraits={
+			army={
+				small="GFX_idea_hugo_sperrle"
+			}
+		}
+		advisor={
+			slot = high_command
+			ledger = air
+			allowed = {
+				original_tag = KEK
+			}
+			available = {
+			}
+			traits = {
+				air_close_air_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	KEK_jaylin_sosa={
+		name="Jaylin Sosa"
+		portraits={
+			army={
+				small="GFX_idea_erhard_milch"
+			}
+		}
+		advisor={
+			slot = high_command
+			ledger = air
+			allowed = {
+				original_tag = KEK
+			}
+			traits = {
+				air_bomber_interception_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	KEK_randy_shelton={
+		name="Randy Shelton"
+		portraits={
+			army={
+				small="GFX_idea_erich_bey"
+			}
+		}
+		advisor={
+			slot = high_command
+			ledger = navy
+			allowed = {
+				original_tag = KEK
+			}
+			traits = {
+				navy_naval_air_defense_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	KEK_bruce_ramirez={
+		name="Bruce Ramirez"
+		portraits={
+			army={
+				small="GFX_idea_viktor_schutze"
+			}
+		}
+		advisor={
+			slot = high_command
+			ledger = navy
+			allowed = {
+				original_tag = KEK
+			}
+			traits = {
+				navy_anti_submarine_1
+			}
+			cost =  50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	KEK_reece_shaw={
+		name="Reece Shaw"
+		portraits={
+			army={
+				large=GFX_portrait_GER_erich_von_manstein
+				small="GFX_idea_manstein"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			ledger = army
+			allowed = {
+				original_tag = KEK
+			}
+			traits = {
+				mobile_warfare_expert
+			}
+		}
+	}
+
+	KEK_lawson_craft={
+		name="Lawson Craft"
+		portraits={
+			army={
+				large=GFX_portrait_GER_heinz_guderian
+				small="GFX_idea_heinz_guderian"
+			}
+		}
+		advisor={
+			cost = 200
+			slot = theorist
+			ledger = army
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				blitzkrieg_theorist
+			}
+		}
+	}	
+}
+	
