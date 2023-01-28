@@ -20,7 +20,7 @@ state=
 		victory_points = {
 			11401 3
 		}
-		#owner = CZE
+		owner = ZEG
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
@@ -55,7 +55,7 @@ state=
 			}
 
 		}
-		#add_core_of = CZE
+		add_core_of = ZEG
 
 		1938.9.30 = {
 			#owner = GER

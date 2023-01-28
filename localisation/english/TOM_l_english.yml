@@ -1,0 +1,26 @@
+﻿l_english:
+ TOM: "England"
+ TOM_DEF: "England"
+ TOM_ADJ: "English"
+ TOM_kingdom: "Kingdom of England"
+ TOM_kingdom_DEF: "the Kingdom of England"
+ TOM_kingdom_ADJ: "English"
+ 
+ TOM_communism_party: "Communist Party"
+ TOM_communism_party_long: "Communist Party of England and Wales"
+ TOM_democratic_party: "Conservative Party"
+ TOM_democratic_party_long: "Conservative Party"
+ TOM_fascism_party: "National Party"
+ TOM_fascism_party_long: "England National Party"
+ TOM_neutrality_party: "Royal Government"
+ TOM_neutrality_party_long: "Royal Government"
+
+ TOM_king_edward: "King Edward IX"
+ alleged_sex_offender: "£texticon_warning £texticon_warning Alleged Sex Offender £texticon_warning £texticon_warning "
+
+ TOM_royal_government: "Royal Government"
+ TOM_irredentism: "Anglo Irredentism"
+
+ TOM_royal_government_crisis.1.title: "Protests against Royal Government"
+ TOM_royal_government_crisis.1.desc: "Despite the pressure by the King, the largest protests against the royal government since its establishment have been held all across the country. These protests are diverse with supporters from the fascistic English National Party to the revolutionary Communist Party to the parliamentarians of the centrist parties and all those inbetween. Direct rule from the King was ushered in to try and quell the politcal instability in this time of crisis but has only ushered in greater instability than before."
+ TOM_royal_government_crisis.1.a: "Troubling."
