@@ -1,0 +1,80 @@
+scripted_gui = {
+    SLS_development = {
+        window_name = "SLS_development"
+        context_type = decision_category
+         
+        
+        effects = {
+            develop_wroclaw_click = {
+                66 = { 
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						} 
+					}
+				add_political_power = -200
+            }
+			develop_opole_click = {
+                67 = { 
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				add_political_power = -200
+            }
+			develop_katowice_click = {
+                762 = { 
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						} 
+					}
+				add_political_power = -200
+            }
+			develop_wroclaw_right_click = {
+                66 = { 
+						add_resource = {
+							type = steel
+							amount = 4
+						}
+					}
+				add_political_power = -200
+            }
+			develop_opole_right_click = {
+                67 = { 
+						add_resource = {
+							type = steel
+							amount = 4
+						}
+					}
+				add_political_power = -200
+            }
+			develop_katowice_right_click = {
+                762 = { 
+						add_resource = {
+							type = steel
+							amount = 4
+						}
+					}
+				add_political_power = -200
+            }
+        }
+        
+        triggers = {
+            develop_wroclaw_click_enabled = {
+                has_political_power > 200
+            }
+			develop_opole_click_enabled = {
+                has_political_power > 200
+            }
+			develop_katowice_click_enabled = {
+                has_political_power > 200
+            }
+            
+        }
+    }
+}

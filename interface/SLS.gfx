@@ -19,4 +19,8 @@ spriteTypes = {
         name = "GFX_portrait_SLS_budka"
         texturefile = "gfx/leaders/SLS/portrait_SLS_budka.dds"
     }
+	spriteType = {
+        name = "GFX_SilesiaMap"
+        texturefile = "gfx/interface/SLS_scripted_gui/silesiamap.dds"
+    }
 }
