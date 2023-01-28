@@ -47,8 +47,15 @@ if = {
 	}
 }
 
+recruit_character = ASF_Arnold_Meri
+recruit_character = ASF_cabo_daciolo
+recruit_character = ASF_democratic_placeholder
+recruit_character = ASF_Fernando_Mustrastik_Collor
 
-set_country_flag = monroe_doctrine
+add_ideas = {
+ASF_soviet_naval_design
+ASF_HUN_infection
+}
 
 set_convoys = 250
 

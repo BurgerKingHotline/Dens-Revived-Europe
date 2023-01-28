@@ -30,6 +30,10 @@ SLS = { # misiekfid
 	color = rgb { 29 51 109 }
 	color_ui = rgb { 255 73 121 }
 }
+BSQ = {
+    color = rgb { 319 213 283 }
+    color_ui = rgb { 255 153 221 }
+}
 # ADD YOUR DAMN COUNTRY
 REL = { # neoreal
 	color = rgb { 54 57 146 }

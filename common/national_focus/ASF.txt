@@ -1,0 +1,705 @@
+focus_tree = {
+	id = ASF
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ASF
+		}
+	}
+	continuous_focus_position = { x = 2222 y = 810}
+	default = no
+	focus = {
+		id = ASF_holding_down_the_fort
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 5
+		y = 0
+
+	}
+	focus = {
+		id = ASF_countering_the_hun_infection
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 14
+		y = 0
+		bypass = {
+		fascism > party_popularity@communism
+		}
+		
+	completion_reward = {
+	every_state = {
+	add_extra_state_shared_building_slots = 2
+	}
+	add_political_power = 100
+	}
+
+	}
+	focus = {
+		id = ASF_the_masters_of_the_baltic
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 22
+		y = 0
+
+	}
+	focus = {
+		id = ASF_swedish_loyalty
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_holding_down_the_fort
+		}
+		x = 4
+		y = 1
+	completion_reward = {
+	add_stability = 0.1
+	}
+
+	}
+	focus = {
+		id = ASF_western_ambitions
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_swedish_loyalty
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = ASF_estonian_forts
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_holding_down_the_fort
+		}
+		x = 6
+		y = 1
+	completion_reward = {
+	add_building_construction = {
+    type = bunker
+    level = 2
+    instant_build = yes
+    province = 6201
+}
+	add_building_construction = {
+    type = bunker
+    level = 2
+    instant_build = yes
+    province = 185
+}
+	}
+	}
+	focus = {
+		id = ASF_call_forth_the_lost_sailors
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_estonian_forts
+		}
+		prerequisite = {
+			focus = ASF_swedish_loyalty
+		}
+		x = 5
+		y = 2
+	completion_reward = {
+	add_manpower = 3500
+	}
+	}
+	focus = {
+		id = ASF_eastern_realities
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_estonian_forts
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = ASF_whatever_the_weather
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_western_ambitions
+		}
+		prerequisite = {
+			focus = ASF_call_forth_the_lost_sailors
+		}
+		prerequisite = {
+			focus = ASF_eastern_realities
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = ASF_industrial_backbone
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_whatever_the_weather
+		}
+		x = 2
+		y = 4
+
+	}
+	focus = {
+		id = ASF_soviet_designs
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_whatever_the_weather
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = ASF_the_rockets_take_off
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_soviet_designs
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = ASF_soviet_scientists
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_soviet_designs
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = ASF_closed_cities
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_the_rockets_take_off
+		}
+		prerequisite = {
+			focus = ASF_soviet_scientists
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = ASF_the_war_machine
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_whatever_the_weather
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = ASF_increases_in_production
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_the_war_machine
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = ASF_more_guns
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_increases_in_production
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = ASF_the_wish_granter_incident
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = ASF_countering_the_hun_infection
+		}
+		mutually_exclusive = {
+			focus = ASF_bounties_on_huns
+			focus = ASF_bounties_on_huns
+		}
+		bypass = {
+		fascism > party_popularity@communism
+		}
+		x = 13
+		y = 1
+	completion_reward = {
+	add_political_power = -75
+	add_stability = -0.05
+	add_popularity = {
+    ideology = fascism
+    popularity = 0.05
+}
+	}
+
+	}
+	focus = {
+		id = ASF_the_night_of_the_huns
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_the_wish_granter_incident
+		}
+		x = 13
+		y = 2
+completion_reward = {
+set_politics = {
+	ruling_party = fascism
+    elections_allowed = no
+    election_frequency = 48
+}
+	add_popularity = {
+    ideology = fascism
+    popularity = 0.1
+}
+remove_ideas = ASF_HUN_infection
+}
+	}
+	focus = {
+		id = ASF_bounties_on_huns
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_countering_the_hun_infection
+		}
+		available = {
+		NOT = {
+		fascism > party_popularity@communism
+		
+		}
+		}
+		mutually_exclusive = {
+			focus = ASF_the_wish_granter_incident
+			focus = ASF_the_wish_granter_incident
+		}
+		x = 15
+		y = 1
+	completion_reward = {
+	remove_ideas = ASF_HUN_infection
+	}
+	}
+	focus = {
+		id = ASF_banish_to_the_coast
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_bounties_on_huns
+		}
+		x = 15
+		y = 2
+	completion_reward = {
+		add_popularity = {
+	ideology = fascism
+	popularity = -1
+	}
+	random_neighbor_country = {
+	add_stability = -0.05
+	}
+	}
+	}
+	focus = {
+		id = ASF_a_clear_destiny
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_the_night_of_the_huns
+			focus = ASF_banish_to_the_coast
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = ASF_the_destiny_of_the_species
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_a_clear_destiny
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = ASF_spew_forth
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_the_destiny_of_the_species
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = ASF_the_oceanic_ambition
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_a_clear_destiny
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = ASF_the_preparations
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_the_oceanic_ambition
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = ASF_industrial_monolith
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_the_oceanic_ambition
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = ASF_mercantile_control
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_the_preparations
+			focus = ASF_industrial_monolith
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = ASF_in_the_azure
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_the_masters_of_the_baltic
+		}
+		x = 18
+		y = 1
+
+	}
+	focus = {
+		id = ASF_air_base
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_in_the_azure
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = ASF_aerial_devastation
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_air_base
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = ASF_scour_the_USSR
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_air_base
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = ASF_the_red_fleet
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_the_masters_of_the_baltic
+		}
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = ASF_captial_ships
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_the_red_fleet
+		}
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = ASF_call_the_admirals
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_the_red_fleet
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = ASF_lighter_ships
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_captial_ships
+		}
+		prerequisite = {
+			focus = ASF_call_the_admirals
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = ASF_the_submarines
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_the_red_fleet
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = ASF_naval_doctrine
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_call_the_admirals
+		}
+		prerequisite = {
+			focus = ASF_the_submarines
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = ASF_improve_naval_design
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_lighter_ships
+		}
+		prerequisite = {
+			focus = ASF_naval_doctrine
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = ASF_on_the_ground
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_the_masters_of_the_baltic
+		}
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = ASF_pioneers
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_on_the_ground
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = ASF_doctrinal_overhaul
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_on_the_ground
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = ASF_territorial_militias
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_on_the_ground
+		}
+		x = 28
+		y = 2
+
+	}
+	focus = {
+		id = ASF_the_tanks
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_doctrinal_overhaul
+		}
+		prerequisite = {
+			focus = ASF_territorial_militias
+		}
+		prerequisite = {
+			focus = ASF_pioneers
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = ASF_gather_around
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_the_destiny_of_the_species
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = ASF_a_homeland_of_our_own
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_gather_around
+			focus = ASF_spew_forth
+		}
+		mutually_exclusive = {
+			focus = ASF_a_landing_ground
+			focus = ASF_a_landing_ground
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = ASF_a_landing_ground
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_spew_forth
+			focus = ASF_gather_around
+		}
+		mutually_exclusive = {
+			focus = ASF_a_homeland_of_our_own
+			focus = ASF_a_homeland_of_our_own
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = ASF_the_world_in_our_grasp
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_a_landing_ground
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = ASF_armed_neutrality
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_a_homeland_of_our_own
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = ASF_advanced_sciences
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_mercantile_control
+		}
+		x = 16
+		y = 7
+
+	}
+	focus = {
+		id = ASF_the_meri_bomb
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_closed_cities
+		}
+		prerequisite = {
+			focus = ASF_growing_industry
+		}
+		prerequisite = {
+			focus = ASF_more_guns
+		}
+		x = 5
+		y = 7
+
+	}
+	focus = {
+		id = ASF_coastal_industry
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_industrial_backbone
+		}
+		x = 2
+		y = 5
+
+	}
+	focus = {
+		id = ASF_growing_industry
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ASF_coastal_industry
+		}
+		x = 3
+		y = 6
+
+	}
+}

@@ -1,0 +1,14 @@
+characters = {
+    BSQ_placeholder = {
+        name = BSQ_placeholder
+        gender = female
+        portraits = {
+            civilian = {
+                large = GFX_portrait_unknown
+            }
+        }
+        country_leader = {
+            ideology = centrism
+        }
+    }
+}
