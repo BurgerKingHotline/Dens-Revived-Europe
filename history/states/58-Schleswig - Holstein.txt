@@ -12,7 +12,7 @@ state= {
 		victory_points = {
 			9347 20
 		}
-		owner = ZHS
+		owner = KEK
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
@@ -22,7 +22,7 @@ state= {
 				naval_base = 8
 			}
 		}
-		add_core_of = ZSH
+		add_core_of = KEK
 		1939.1.1 = {
 			buildings = {
 				synthetic_refinery = 3
