@@ -1,0 +1,17 @@
+﻿air_wings = {
+
+	171 = {
+		small_plane_airframe_1 = {	
+			owner = "USE" 
+			amount = 12
+			creator = "USE"
+			version_name = "P-36A"
+		}
+		medium_plane_airframe_1 = {		
+			owner = "USE" 
+			amount = 12
+			creator = "USE"
+			version_name = "B-18"
+		}
+	}
+}
