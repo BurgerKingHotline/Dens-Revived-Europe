@@ -15,6 +15,7 @@ state={
 		add_core_of = ZAS
 		#add_core_of = KOS
 		#add_core_of = SER
+		add_claim_by = MSR
 
 	}
 

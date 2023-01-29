@@ -59,3 +59,7 @@ ONI = { #ShyGuy
 	color = rgb { 23 79 118 }
 	color_ui = rgb { 23 79 118 }
 }
+MSR = {
+	color = rgb { 149 45 102 }
+	color_ui = rgb { 149 45 102 }
+}

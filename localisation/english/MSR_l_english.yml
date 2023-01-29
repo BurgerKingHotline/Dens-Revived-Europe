@@ -1,0 +1,19 @@
+﻿l_english:
+ MSR:0 "Albania"
+ MSR_DEF:0 "the Albania"
+ MSR_ADJ:0 "Albania"
+ MSR_neutrality_party:0 "House of Zog"
+ MSR_fascism_party:0 "National Supremacy Party"
+ MSR_democratic_party:0 "People's United Opposition (Right)"
+ MSR_communism_party:0 "People's United Opposition (Left)"
+
+ MSR_neutrality:0 "Kingdom of Albania"
+ MSR_neutrality_def:0 "Greater Sublime Kingdom of Albania"
+ 
+ MSR_local_resistence:0 "Local Resistence"
+
+ albanian_royal_guard:0 "Albanian Royal Guard"
+
+ MSR_king_of_albania_1:0 "King of the Albanians"
+ MSR_saviour_of_albania:0 "Saviour of Albania"
+ MSR_minister_of_the_interior:0 "Minister of the Interior"
