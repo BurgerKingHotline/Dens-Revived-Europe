@@ -56,8 +56,8 @@ KEK = { #prepare your painis
 	color_ui = rgb { 0 204 0 }
 }
 ONI = { #ShyGuy
-	color = rgb { 23 79 118 }
-	color_ui = rgb { 23 79 118 }
+	color = rgb { 67  75  95 }
+	color_ui = rgb { 67  75  95 }
 }
 MSR = {
 	color = rgb { 149 45 102 }
