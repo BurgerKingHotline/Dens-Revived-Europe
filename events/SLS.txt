@@ -1,0 +1,83 @@
+add_namespace = SLS_elections
+
+country_event = { #Results
+    id = SLS_elections.1
+    title = SLS_elections.1.t
+    desc = SLS_elections.1.desc
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    option = { #Decisive Democratic Win
+		name = SLS_elections.1.a
+        trigger = {democratic > 0.5}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		}
+	}
+	option = { #Decisive Communist Win
+		name = SLS_elections.1.b
+        trigger = {communism > 0.5}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+	option = { #Decisive Fascist Win
+		name = SLS_elections.1.c
+        trigger = {fascism > 0.5}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+	}
+	option = { #No One Won Decisively, Democrats
+		name = SLS_elections.1.d
+        trigger = {
+				fascism < 0.5
+				democratic < 0.5
+				communism < 0.5
+			}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		}
+	}
+	option = { #No One Won Decisively, Commies
+		name = SLS_elections.1.e
+        trigger = {
+					fascism < 0.5
+					democratic < 0.5
+					communism < 0.5
+				}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+	option = { #No One Won Decisively, Nazis
+		name = SLS_elections.1.f
+       trigger = {
+					fascism < 0.5
+					democratic < 0.5
+					communism < 0.5
+				}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+	}
+}

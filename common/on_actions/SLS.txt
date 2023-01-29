@@ -1,11 +1,10 @@
 on_actions = {
-	on_daily_SLS = {
+	on_monthly_SLS = {
 		effect = {
-			check_variable = { SLS_days_left = 0 }
-			set_variable = { var:po_power value = 0}
-			set_variable = { var:cs_power value = 0}
-			set_variable = { var:dv_power value = 0}
-			hold_election = SLS
+			country_event = {
+				id = SLS_elections.1
+				
+			}
 		}
 	}
 	on_daily_SLS = {
