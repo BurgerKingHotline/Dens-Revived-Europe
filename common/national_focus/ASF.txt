@@ -178,7 +178,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 5
-
+	completion_reward = {
+	add_research_slot = 1
+	}
 	}
 	focus = {
 		id = ASF_closed_cities
@@ -392,8 +394,22 @@ remove_ideas = ASF_HUN_infection
 			focus = ASF_the_preparations
 			focus = ASF_industrial_monolith
 		}
+		available = {
+		controls_state = 141
+		controls_state = 149
+		controls_state = 808
+		controls_state = 145
+		controls_state = 195
+		controls_state = 85
+		controls_state = 37
+		
+		}
 		x = 16
 		y = 6
+	
+	completion_reward = {
+	add_ideas = ASF_meie_meri
+	}
 
 	}
 	focus = {
@@ -557,7 +573,13 @@ remove_ideas = ASF_HUN_infection
 		}
 		x = 27
 		y = 3
-
+	completion_reward = {
+	add_doctrine_cost_reduction = {
+	cost_reduction = 0.5
+	uses = 2
+	category = land_doctrine
+}
+	}
 	}
 	focus = {
 		id = ASF_territorial_militias
@@ -573,7 +595,7 @@ remove_ideas = ASF_HUN_infection
 	focus = {
 		id = ASF_the_tanks
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 8
 		prerequisite = {
 			focus = ASF_doctrinal_overhaul
 		}
@@ -585,7 +607,19 @@ remove_ideas = ASF_HUN_infection
 		}
 		x = 27
 		y = 4
-
+	completion_reward = {
+add_tech_bonus = {
+    bonus = 0.5
+    uses = 1
+    category = armor
+}
+set_technology = {
+gwtank = 1
+}
+set_technology = {
+basic_light_tank = 1
+}
+	}
 	}
 	focus = {
 		id = ASF_gather_around
@@ -661,7 +695,9 @@ remove_ideas = ASF_HUN_infection
 		}
 		x = 16
 		y = 7
-
+	completion_reward = {
+	add_research_slot = 1
+	}
 	}
 	focus = {
 		id = ASF_the_meri_bomb
@@ -676,9 +712,20 @@ remove_ideas = ASF_HUN_infection
 		prerequisite = {
 			focus = ASF_more_guns
 		}
+		available = {
+		NOT = {
+		has_government = fascism
+		}
+		}
 		x = 5
 		y = 7
-
+	completion_reward = {
+	add_tech_bonus = {
+    bonus = 0.5
+    uses = 1
+    category = nuclear
+}
+	}
 	}
 	focus = {
 		id = ASF_coastal_industry

@@ -32,5 +32,28 @@ ideas = {
 			stability_weekly = -0.01
             }
         }
+		
+        ASF_meie_meri = {
+#            picture = TOM_irredentism
+            modifier = {
+            political_power_gain = 0.1
+			production_speed_buildings_factor = 0.1
+			consumer_goods_factor = -0.1
+			research_speed_factor = 0.05
+            }
+        }
+
+        ASF_homeland_revolution_idea = {
+#            picture = TOM_irredentism
+            modifier = {
+            send_volunteer_divisions_required = -0.5
+			send_volunteer_size = 1
+			justify_war_goal_time = -0.3
+			enemy_justify_war_goal_time = -0.5
+			ai_get_ally_desire_factor = 1.75
+			ai_focus_aggressive_factor = 0.5
+			ai_desired_divisions_factor = 1.5
+            }
+        }
     }
 }

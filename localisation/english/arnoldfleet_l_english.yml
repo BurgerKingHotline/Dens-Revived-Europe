@@ -38,6 +38,14 @@
  ASF_cabo_daciolo_NAME:0 "Cabo Daciolo"
  ASF_democratic_placeholder_NAME:0 "Jaan Hallik"
  ASF_Mustrastik_NAME:0 "Fernando "Musträstik" Collor de Mello"
+ ASF_USSR_communism:0 "Revolutionary Commisariat Of Baltosovietica"
+ ASF_USSR_communism_DEF:0 "Revolutionary Commisariat Of Baltosovietica"
+ ASF_USSR_communism_ADJ:0 "Baltosoviet"
+ ASF_meie_meri:0 ""Mere meri""
+ ASF_meie_meri_desc:0 "Meri's campaigns in and around the Baltic have irrevocably altered the course of history in North Europe. As the former holdouts of the Baltic Sea have seized control over the Baltic Sea, their hold is solidifying and wealth growing."
+ ASF_homeland_revolution:0 "Homeland Of The Revolution"
+ ASF_homeland_revolution_idea:0 "Homeland Of The Revolution"
+ 
  ###FOCUS
  ASF_holding_down_the_fort:0 "Holding Down The Fort"
  ASF_countering_the_hun_infection:0 "The H.U.N Infection"
@@ -101,3 +109,7 @@
  arnoldfleet.1.t:0 "Republican Coup!"
  arnoldfleet.1.d:0 "It appears that through the involvement of Cabo Daciolo, the Revolutionary Fleet has been defeated. Republican militants have occupied the Estonian mainland and our islands, executed Arnold Meri and a new government has been declared.\n\nFernando Collor de Mello, utilizing the pseudonym "Musträstik", has emerged as the president of the new "Federative Republic of Greater Estonia", and we can wave the revolution goodbye."
  arnoldfleet.1.a:0 "What ends well is all well."
+ arnoldfleet.2.t:0 "The Revolution Under Attack"
+ arnoldfleet.2.d:0 "We are faced with a world where the counter-revolution is taking violent steps to repress the worker. With recent agressions and our status as an heir of the USSR in mind, shall we work to ensure that we will stand against these transgressions?"
+ arnoldfleet.2.a:0 "Absolutely, we must defend the revolution!"
+ arnoldfleet.2.b:0 "We must maintain socialism in this country, if we cannot in the others."
