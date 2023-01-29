@@ -1,0 +1,84 @@
+ideas = {
+	country = {
+		MSR_growing_republican_support = {
+					
+			allowed = {
+				original_tag = REP
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ast_volunteer_defence_corps
+			
+			modifier = {
+				political_power_cost = 0.05
+				communism_drift = 0.01
+				democratic_drift = 0.01
+			}
+		}
+		MSR_widespread_opposition = {
+					
+			allowed = {
+				original_tag = REP
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ast_volunteer_defence_corps
+			
+			modifier = {
+				stability_factor = -0.15
+				political_power_cost = 0.15
+				communism_drift = 0.04
+				democratic_drift = 0.04
+			}
+		}
+		MSR_national_congress = {
+					
+			allowed = {
+				original_tag = REP
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ast_volunteer_defence_corps
+			
+			modifier = {
+				political_power_cost = 0.15
+				stability_factor = 0.1
+				democratic_drift = 0.01
+			}
+		}
+		MSR_national_emergency = {
+					
+			allowed = {
+				original_tag = REP
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ast_volunteer_defence_corps
+			
+			modifier = {
+				political_power_gain = 1
+				stability_weekly = -0.01
+			}
+		}
+	}
+}

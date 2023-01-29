@@ -1,0 +1,27 @@
+focus_tree = {
+	id = USE_puppet_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			is_subject_of = USE
+		}
+	}
+	continuous_focus_position = { x = 0 y = 1000}
+	default = no
+
+    focus = {
+        id = USE_Stars_and_Stripes
+        x = 10
+        y = 0
+        icon = GFX_focus_unknown
+        available = {
+        }
+        
+        cost = 10
+        completion_reward = {
+        }
+    }
+	
+ 
+}

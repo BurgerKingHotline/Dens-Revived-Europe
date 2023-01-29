@@ -1,0 +1,67 @@
+﻿recruit_character = MSR_king_zog
+recruit_character = MSR_enver_hoxha
+recruit_character = MSR_xhemal_aranitasi
+recruit_character = MSR_eqrem_belishi
+recruit_character = MSR_tefik_mborja
+recruit_character = MSR_halil_nergutti
+recruit_character = MSR_ismael_ghaxa
+recruit_character = MSR_hajre_fetahu
+recruit_character = MSR_xhelal_mitrovica
+recruit_character = MSR_selim_moishiou
+recruit_character = MSR_kol_bibe_mirakaj
+recruit_character = MSR_qemal_komani
+recruit_character = MSR_prenk_pervizi
+recruit_character = MSR_alexander_mori
+recruit_character = MSR_aziz_sulejmani
+recruit_character = MSR_kristo_cajupi
+recruit_character = MSR_eqrem_libohova
+recruit_character = MSR_zuhdi_shabani
+recruit_character = MSR_rexhep_mitrovica
+recruit_character = MSR_hasan_begolli
+recruit_character = MSR_fiqri_dine
+recruit_character = MSR_midhat_frasheri
+recruit_character = MSR_jocelyn_percy
+
+capital = 44
+
+OOB = "MSR_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+#VARIABLES
+set_variable = { MSR_royal_guard_division_cap = 2 } 
+
+#EFFECTS
+activate_advisor = MSR_hasha_pas
+set_division_template_cap = { 
+	division_template = "Royal Guard" 
+	division_cap = MSR_royal_guard_division_cap
+}
+
+add_ideas = {
+	MSR_growing_republican_support
+	MSR_national_congress
+}
+
+country_event = {
+	id = albania_events.6
+	days = 32
+}
+
+set_convoys = 5
+
