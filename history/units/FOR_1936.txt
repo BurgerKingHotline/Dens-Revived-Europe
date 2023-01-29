@@ -16,210 +16,210 @@
 
 units = {
 
-	division= { "1st Fortress Division"
+	division = { "1st Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "2nd Fortress Division"
+	division = { "2nd Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "3rd Fortress Division"
+	division = { "3rd Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "4th Fortress Division"
+	division = { "4th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "5th Fortress Division"
+	division = { "5th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "6th Fortress Division"
+	division = { "6th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "7th Fortress Division"
+	division = { "7th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "8th Fortress Division"
+	division = { "8th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "9th Fortress Division"
+	division = { "9th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "10th Fortress Division"
+	division = { "10th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "11th Fortress Division"
+	division = { "11th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "12th Fortress Division"
+	division = { "12th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "13th Fortress Division"
+	division = { "13th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "14th Fortress Division"
+	division = { "14th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "15th Fortress Division"
+	division = { "15th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "16th Fortress Division"
+	division = { "16th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "17th Fortress Division"
+	division = { "17th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "18th Fortress Division"
+	division = { "18th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "19th Fortress Division"
+	division = { "19th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "20th Fortress Division"
+	division = { "20th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "21st Fortress Division"
+	division = { "21st Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "22nd Fortress Division"
+	division = { "22nd Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "23rd Fortress Division"
+	division = { "23rd Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "24th Fortress Division"
+	division = { "24th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "25th Fortress Division"
+	division = { "25th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "26th Fortress Division"
+	division = { "26th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "27th Fortress Division"
+	division = { "27th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "28th Fortress Division"
+	division = { "28th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "29th Fortress Division"
+	division = { "29th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
-	division= { "30th Fortress Division"
+	division = { "30th Fortress Division"
 		location = 9620  # 
 		division_template = "Fortress Division"
 		start_experience_factor = 0.2
