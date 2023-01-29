@@ -12,14 +12,14 @@ state={
 	}
 
 	history={
-		owner = ZCB
+		owner = PNA
 		victory_points = {
 			9894 3
 		}
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = ZCB
+		add_core_of = PNA
 		#add_core_of = HRZ
 	}
 

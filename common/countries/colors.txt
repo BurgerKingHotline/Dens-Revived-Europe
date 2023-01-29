@@ -42,6 +42,10 @@ VKN = { #Cocktor T
     color = rgb { 87 10 89 }
     color_ui = rgb { 87 10 89 } #Jesse what the fuck does color_ui mean
 }
+PNA = { # Bosnians
+	color = rgb { 40 71 75 }
+	color_ui = rgb { 40 71 75 }
+}
 # ADD YOUR DAMN COUNTRY
 REL = { # neoreal
 	color = rgb { 54 57 146 }
