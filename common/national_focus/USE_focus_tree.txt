@@ -1,0 +1,57 @@
+focus_tree = {
+	id = USE_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USE
+		}
+	}
+	continuous_focus_position = { x = 0 y = 1000}
+	default = no
+
+    focus = {
+        id = USE_State_of_Disunion
+        x = 10
+        y = 0
+        icon = GFX_focus_unknown
+        available = {
+        }
+        
+        cost = 10
+        completion_reward = {
+        }
+    }
+	
+    focus = {
+        id = USE_Army_With_A_State
+        x = 0
+        y = 1
+		relative_position_id = USE_State_of_Disunion		
+        icon = GFX_focus_unknown
+
+        available = {
+		}
+
+		prerequisite = { focus = USE_State_of_Disunion }
+        
+        cost = 10
+        completion_reward = {
+        }
+    }
+	
+    focus = {
+        id = USE_Retirement
+        x = 0
+        y = 1
+		relative_position_id = USE_Army_With_A_State			
+        icon = GFX_focus_unknown
+        available = {
+        }
+ 		prerequisite = { focus = USE_Army_With_A_State }       
+        cost = 10
+        completion_reward = {
+        }
+    }
+	
+}
