@@ -22,8 +22,8 @@ TOM_set_up = {
         reserve_dynamic_country = yes
         original_tag = TOM
         TOM_default = yes
-        set_country_flag = TOM_essex
-        set_cosmetic_tag = TOM_essex_kingdom
+        set_country_flag = TOM_havering
+        set_cosmetic_tag = TOM_havering
         transfer_state = 913
         add_state_core = 913
     }
@@ -81,5 +81,58 @@ TOM_set_up = {
         set_cosmetic_tag = TOM_confederacy
         transfer_state = 129
         add_state_core = 129
+    }
+    create_dynamic_country = {
+        reserve_dynamic_country = yes
+        original_tag = TOM
+        TOM_default = yes
+        set_politics = {
+            ruling_party = fascism
+            elections_allowed = no
+        }
+        set_popularities = {
+            neutrality = 15
+            democratic = 15
+            communism = 15
+            fascism = 55
+        }
+        set_country_flag = TOM_cornwall
+        set_cosmetic_tag = TOM_cornwall
+        transfer_state = 909
+        add_state_core = 909
+    }
+    create_dynamic_country = {
+        reserve_dynamic_country = yes
+        original_tag = TOM
+        TOM_default = yes
+        set_popularities = {
+            neutrality = 35
+            democratic = 15
+            communism = 15
+            fascism = 35
+        }
+        set_country_flag = TOM_britannia
+        set_cosmetic_tag = TOM_britannia
+        transfer_state = 338
+        add_state_core = 338
+    }
+    create_dynamic_country = {
+        reserve_dynamic_country = yes
+        original_tag = TOM
+        TOM_default = yes
+        set_politics = {
+            ruling_party = democratic
+            elections_allowed = yes
+        }
+        set_popularities = {
+            neutrality = 15
+            democratic = 15
+            communism = 15
+            fascism = 55
+        }
+        set_country_flag = TOM_devon
+        set_cosmetic_tag = TOM_devon
+        transfer_state = 123
+        add_state_core = 123
     }
 }
