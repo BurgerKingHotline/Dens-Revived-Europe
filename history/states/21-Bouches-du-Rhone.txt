@@ -10,7 +10,7 @@ state={
 	state_category = city
 
 	history={
-		owner = ZBL
+		owner = ZAL
 		victory_points = {
 			11834 10
 		}
@@ -27,7 +27,7 @@ state={
 			}
 		}
 		#add_core_of = OCC
-		add_core_of = ZBL
+		add_core_of = ZAL
 		1939.1.1 = {
 			buildings = {
 				dockyard = 2
