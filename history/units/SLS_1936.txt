@@ -1,0 +1,122 @@
+division_template = {
+    name = "Schlesien Brigade"
+    division_names_group = SLS_INF_02
+
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+    }
+
+    support = {
+        engineer = { x = 0 y = 0 }
+    }
+}
+division_template = {
+    name = "Silesian Guard"
+    division_names_group = SLS_INF_01
+
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+    }
+
+    support = {
+        engineer = { x = 0 y = 0 }
+    }
+}
+units = {
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+
+        location = 9570
+        division_template = "Schlesien Brigade"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 2
+        }
+
+        location = 9570
+        division_template = "Schlesien Brigade"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+
+        location = 9511
+        division_template = "Silesian Guard"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 2
+        }
+
+        location = 11467
+        division_template = "Silesian Guard"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 3
+        }
+
+        location = 6464
+        division_template = "Silesian Guard"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 4
+        }
+
+        location = 6464
+        division_template = "Silesian Guard"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+    }
+}
+air_wings = {
+    762 = {
+        fighter_equipment_0 = {
+            owner = "SLS"
+            amount = 10
+        }
+    }
+}
+instant_effect = {
+    add_equipment_production = {
+        equipment = {
+	    type = infantry_equipment_0
+	    creator = "SLS"
+	}
+	requested_factories = 1
+	progress = 0.19
+	efficiency = 100
+    }
+}

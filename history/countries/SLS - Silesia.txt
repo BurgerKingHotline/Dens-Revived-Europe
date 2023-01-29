@@ -56,3 +56,7 @@ set_popularities = {
 	communism = 6
 	neutrality = 54
 }
+add_timed_idea = {
+    idea = SLS_dying_party
+    days = 30
+}
