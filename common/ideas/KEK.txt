@@ -1,0 +1,101 @@
+ideas = {
+
+	country = {
+		KEK_economic_crisis = {
+		
+		    picture = FRA_matignon_agreements
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_industrial_complex_factor = -0.05
+                industrial_capacity_factory = -0.2				
+			}
+		}
+		
+		KEK_foreign_controlled_industry = {
+		
+		    picture = SOV_second_five_year_plan
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1			
+			}
+		}		
+		
+		KEK_the_army = {
+			
+			allowed = {
+				original_tag = KEK
+			}
+			
+			picture = SPR_political_violence
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                surrender_limit = 0.2
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				army_speed_factor = -0.05
+				army_org_factor = -0.1
+			}
+			rule = {
+			    can_create_factions = yes
+			}
+		}
+	}
+
+	# TECHNOLOGY
+	tank_manufacturer = { 
+		
+		designer = yes
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes	
+	}
+	
+	aircraft_manufacturer = { 		
+		designer = yes	
+	}
+	
+	industrial_concern = {	
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+	}
+	
+	hidden_ideas = {
+
+	}
+
+
+
+
+}

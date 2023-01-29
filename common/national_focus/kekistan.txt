@@ -1,0 +1,1959 @@
+focus_tree = {
+	id = kekistan
+	continuous_focus_position = { x = -40 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KEK
+		}
+	}
+	#The Army Serve the State
+	focus = {
+		id = KEK_the_army_serve_the_state
+		icon = GFX_KEK_the_army_serve_the_state-262080
+		x = 43
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_seize_military_factories  } prerequisite = { focus = KEK_the_takeover_begins  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Acquire the Means to Fight
+	focus = {
+		id = KEK_acquire_the_means_to_fight
+		icon = GFX_KEK_acquire_the_means_to_fight-262009
+		x = 45
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_the_chadism_of_andrew_tate  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Rebuild the Destryed Ones
+	focus = {
+		id = KEK_rebuild_the_destryed_ones
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 8
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KEK_repair_damaged_factories  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Attract Kekistani Workers
+	focus = {
+		id = KEK_attract_kekistani_workers
+		icon = GFX_KEK_attract_kekistani_workers-262103
+		x = 0
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KEK_oust_privare_businesses  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Industrial Modernization
+	focus = {
+		id = KEK_industrial_modernization
+		icon = GFX_focus_generic_support_the_left_right
+		x = 0
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KEK_attract_kekistani_workers  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Streghten the Party
+	focus = {
+		id = KEK_streghten_the_party
+		icon = GFX_goal_generic_political_pressure
+		x = 36
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_secure_power  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Seize the Factories
+	focus = {
+		id = KEK_seize_the_factories
+		icon = GFX_KEK_seize_the_factories-139714
+		x = 6
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Oust Privare Businesses
+	focus = {
+		id = KEK_oust_privare_businesses
+		icon = GFX_focus_spa_the_spanish_miracle
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KEK_seize_the_factories  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Refurbish Old Military Factories
+	focus = {
+		id = KEK_refurbish_old_military_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 2
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KEK_oust_privare_businesses  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Ramp Up the Production
+	focus = {
+		id = KEK_ramp_up_the_production
+		icon = GFX_goal_generic_production
+		x = 2
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KEK_refurbish_old_military_factories  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#The Berlin Institute of Science
+	focus = {
+		id = KEK_the_berlin_institute_of_science
+		icon = GFX_focus_research
+		x = 1
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = KEK_industrial_modernization  } prerequisite = { focus = KEK_ramp_up_the_production  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Tank studies
+	focus = {
+		id = KEK_tank_studies
+		icon = GFX_goal_generic_army_tanks
+		x = 6
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = KEK_artillery_studies  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Attract foreign investment
+	focus = {
+		id = KEK_attract_foreign_investment
+		icon = GFX_focus_mex_privatisation
+		x = 6
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KEK_seize_the_factories  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Infantry weapons Studies
+	focus = {
+		id = KEK_infantry_weapons_studies
+		icon = GFX_focus_focus_fra_maquis
+		x = 4
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = KEK_attract_foreign_investment  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Mobile Infantry Studies
+	focus = {
+		id = KEK_mobile_infantry_studies
+		icon = GFX_focus_BUL_support_macedonian_organizations
+		x = 4
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = KEK_infantry_weapons_studies  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Foreign Designer
+	focus = {
+		id = KEK_foreign_designer
+		icon = GFX_goal_generic_dangerous_deal
+		x = 4
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = KEK_mobile_infantry_studies  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Artillery Studies
+	focus = {
+		id = KEK_artillery_studies
+		icon = GFX_goal_generic_army_artillery2
+		x = 6
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = KEK_attract_foreign_investment  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Anti-tank Equipment Studies
+	focus = {
+		id = KEK_antitank_equipment_studies
+		icon = GFX_goal_generic_army_artillery
+		x = 6
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = KEK_tank_studies  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Repair damaged Factories
+	focus = {
+		id = KEK_repair_damaged_factories
+		icon = GFX_goal_continuous_non_factory_construct
+		x = 8
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KEK_seize_abandoned_factories  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Seize Abandoned Factories
+	focus = {
+		id = KEK_seize_abandoned_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 8
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KEK_attract_foreign_investment  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Defend the Fatherland
+	focus = {
+		id = KEK_defend_the_fatherland
+		icon = GFX_goal_generic_defence
+		x = 17
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_reorganize_the_army  }
+		mutually_exclusive = { focus = KEK_an_offensive_army  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Artillery Progress
+	focus = {
+		id = KEK_artillery_progress
+		icon = GFX_goal_generic_army_artillery2
+		x = 14
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_smoke_and_fire  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Exploit Our Land
+	focus = {
+		id = KEK_exploit_our_land
+		icon = GFX_focus_generic_tungsten
+		x = 10
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KEK_seize_the_factories  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Exploit the Hamburg Oil Fields
+	focus = {
+		id = KEK_exploit_the_hamburg_oil_fields
+		icon = GFX_goal_generic_oil_refinery
+		x = 10
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KEK_exploit_our_land  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Reorganize the Army
+	focus = {
+		id = KEK_reorganize_the_army
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		x = 15
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		ai_will_do = { factor = 1000 }
+	}
+
+	#An Offensive Army
+	focus = {
+		id = KEK_an_offensive_army
+		icon = GFX_goal_generic_attack_allies
+		x = 13
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_reorganize_the_army  }
+		mutually_exclusive = { focus = KEK_defend_the_fatherland  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Quick War Policy
+	focus = {
+		id = KEK_quick_war_policy
+		icon = GFX_focus_generic_army_tanks2
+		x = 12
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_an_offensive_army  }
+		mutually_exclusive = { focus = KEK_smoke_and_fire  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Progress in the Mechanized Field
+	focus = {
+		id = KEK_progress_in_the_mechanized_field
+		icon = GFX_goal_generic_air_production
+		x = 12
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_quick_war_policy  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#A Fast Army
+	focus = {
+		id = KEK_a_fast_army
+		icon = GFX_goal_generic_special_forces
+		x = 12
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_progress_in_the_mechanized_field  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Smoke and Fire
+	focus = {
+		id = KEK_smoke_and_fire
+		icon = GFX_KEK_smoke_and_fire-410
+		x = 14
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_an_offensive_army  }
+		mutually_exclusive = { focus = KEK_quick_war_policy  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#As Aggressive As Possible
+	focus = {
+		id = KEK_as_aggressive_as_possible
+		icon = GFX_goal_generic_army_artillery
+		x = 14
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_artillery_progress  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Fortify the Capital
+	focus = {
+		id = KEK_fortify_the_capital
+		icon = GFX_goal_generic_fortify_city
+		x = 17
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_defend_the_fatherland  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Optimize Fort Building
+	focus = {
+		id = KEK_optimize_fort_building
+		icon = GFX_goal_generic_fortify_city
+		x = 17
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_fortify_the_capital  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Modify the Conscription Laws
+	focus = {
+		id = KEK_modify_the_conscription_laws
+		icon = GFX_focus_generic_manpower
+		x = 17
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = KEK_optimize_fort_building  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#War Games
+	focus = {
+		id = KEK_war_games
+		icon = GFX_focus_generic_combined_arms
+		x = 15
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = KEK_reorganize_the_army  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Field Maneuvers
+	focus = {
+		id = KEK_field_maneuvers
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = 15
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = KEK_war_games  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#A Call for Democracy
+	focus = {
+		id = KEK_a_call_for_democracy
+		icon = GFX_KEK_a_call_for_democracy-427
+		x = 23
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = KEK_convene_the_berlin_council  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Strikes in Hamburg
+	focus = {
+		id = KEK_strikes_in_hamburg
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 22
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_a_call_for_democracy  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#The Berlin March
+	focus = {
+		id = KEK_the_berlin_march
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 24
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_a_call_for_democracy  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Acquire Weapons
+	focus = {
+		id = KEK_acquire_weapons
+		icon = GFX_focus_focus_fra_maquis
+		x = 24
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_strikes_in_hamburg  } prerequisite = { focus = KEK_the_berlin_march  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Socialist support
+	focus = {
+		id = KEK_socialist_support
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 22
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_strikes_in_hamburg  } prerequisite = { focus = KEK_the_berlin_march  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Extended Socialist Support
+	focus = {
+		id = KEK_extended_socialist_support
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 21
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = KEK_socialist_support  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Deposit Tyronne
+	focus = {
+		id = KEK_deposit_tyronne
+		icon = GFX_focus_focus_fra_fascist_threat
+		x = 23
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_acquire_weapons  focus = KEK_socialist_support  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#The Fate of the Dictator
+	focus = {
+		id = KEK_the_fate_of_the_dictator
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = 23
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_deposit_tyronne  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Democratic Socialism
+	focus = {
+		id = KEK_democratic_socialism
+		icon = GFX_KEK_democratic_socialism-426
+		x = 21
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_extended_socialist_support  } prerequisite = { focus = KEK_the_fate_of_the_dictator  }
+		mutually_exclusive = { focus = KEK_the_kekistani_republic  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Regain the Trust of the Democrats
+	focus = {
+		id = KEK_regain_the_trust_of_the_democrats
+		icon = GFX_focus_BUL_form_a_regency_council
+		x = 16
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_democratic_socialism  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Fight the Fascists
+	focus = {
+		id = KEK_fight_the_fascists
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 38
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_secure_power  }
+		mutually_exclusive = { focus = KEK_use_fascist_militias  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Anti-Fascist Legions
+	focus = {
+		id = KEK_antifascist_legions
+		icon = GFX_focus_por_portuguese_legion
+		x = 38
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = KEK_fight_the_fascists  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Strenghten our Position
+	focus = {
+		id = KEK_strenghten_our_position
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = 15
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_regain_the_trust_of_the_democrats  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Calm the strikes
+	focus = {
+		id = KEK_calm_the_strikes
+		icon = GFX_goal_generic_war_with_comintern
+		x = 17
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = KEK_regain_the_trust_of_the_democrats  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Unite the People
+	focus = {
+		id = KEK_unite_the_people
+		icon = GFX_KEK_unite_the_people-88
+		x = 16
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = KEK_strenghten_our_position  } prerequisite = { focus = KEK_calm_the_strikes  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#The New Constitution
+	focus = {
+		id = KEK_the_new_constitution
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+		x = 19
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_democratic_socialism  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Election of a leader
+	focus = {
+		id = KEK_election_of_a_leader
+		icon = GFX_KEK_election_of_a_leader-262056
+		x = 19
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_the_new_constitution  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Reorganize the party
+	focus = {
+		id = KEK_reorganize_the_party
+		icon = GFX_goal_generic_dangerous_deal
+		x = 19
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_election_of_a_leader  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#The Fight Agaisn't Capitalism
+	focus = {
+		id = KEK_thefightagaisntcapitalism
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = 17
+		y = 11
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_reorganize_the_party  }
+		mutually_exclusive = { focus = KEK_the_greater_threat  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Arm the People
+	focus = {
+		id = KEK_arm_the_people
+		icon = GFX_goal_generic_small_arms
+		x = 17
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_thefightagaisntcapitalism  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Train the People
+	focus = {
+		id = KEK_train_the_people
+		icon = GFX_goal_continuous_reduce_training_time
+		x = 17
+		y = 13
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_arm_the_people  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#The Anti-Capitalist Army
+	focus = {
+		id = KEK_the_anticapitalist_army
+		icon = GFX_focus_prc_infiltration
+		x = 17
+		y = 14
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = KEK_train_the_people  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Fight Capitalism
+	focus = {
+		id = KEK_fight_capitalism
+		icon = GFX_KEK_fight_capitalism-412
+		x = 16
+		y = 15
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_the_anticapitalist_army  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#International Volunteers
+	focus = {
+		id = KEK_international_volunteers
+		icon = GFX_KEK_international_volunteers-262102
+		x = 19
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = KEK_reorganize_the_party  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#The greater Threat
+	focus = {
+		id = KEK_the_greater_threat
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 21
+		y = 11
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_reorganize_the_party  }
+		mutually_exclusive = { focus = KEK_thefightagaisntcapitalism  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Imprison the Fascists
+	focus = {
+		id = KEK_imprison_the_fascists
+		icon = GFX_focus_usa_voter_registration_act
+		x = 21
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_the_greater_threat  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Convert the fascist to socialist
+	focus = {
+		id = KEK_convert_the_fascist_to_socialist
+		icon = GFX_KEK_convert_the_fascist_to_socialist-262107
+		x = 22
+		y = 13
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = KEK_imprison_the_fascists  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Imprison the Authoritarian
+	focus = {
+		id = KEK_imprison_the_authoritarian
+		icon = GFX_focus_rom_handle_king
+		x = 21
+		y = 14
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_imprison_the_fascists  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Convert the authoritarian to socialist
+	focus = {
+		id = KEK_convert_the_authoritarian_to_socialist
+		icon = GFX_KEK_convert_the_authoritarian_to_socialist-262107
+		x = 22
+		y = 15
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = KEK_imprison_the_authoritarian  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#The Fight for Socialism
+	focus = {
+		id = KEK_the_fight_for_socialism
+		icon = GFX_focus_generic_socialist_science
+		x = 19
+		y = 15
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = KEK_the_anticapitalist_army  } prerequisite = { focus = KEK_imprison_the_authoritarian  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Regain the Trust of the Army
+	focus = {
+		id = KEK_regain_the_trust_of_the_army
+		icon = GFX_goal_generic_army_doctrines
+		x = 21
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_democratic_socialism  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#The Red Kekistani Army
+	focus = {
+		id = KEK_the_red_kekistani_army
+		icon = GFX_KEK_the_red_kekistani_army-262089
+		x = 21
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_regain_the_trust_of_the_army  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Erase opposition
+	focus = {
+		id = KEK_erase_opposition
+		icon = GFX_KEK_erase_opposition-262098
+		x = 21
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_the_red_kekistani_army  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Supress the resistance
+	focus = {
+		id = KEK_supress_the_resistance
+		icon = GFX_goal_generic_construct_military
+		x = 23
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = KEK_democratic_socialism  focus = KEK_the_kekistani_republic  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Raid the Resistance's Outpost
+	focus = {
+		id = KEK_raidtheresistancesoutpost
+		icon = GFX_focus_jap_strike_south
+		x = 23
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = KEK_supress_the_resistance  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#New Guerrila Tactics
+	focus = {
+		id = KEK_new_guerrila_tactics
+		icon = GFX_focus_por_portuguese_legion
+		x = 23
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_raidtheresistancesoutpost  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#The Kekistani Republic
+	focus = {
+		id = KEK_the_kekistani_republic
+		icon = GFX_KEK_the_kekistani_republic-427
+		x = 25
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_the_fate_of_the_dictator  }
+		mutually_exclusive = { focus = KEK_democratic_socialism  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#The Blue Legion
+	focus = {
+		id = KEK_the_blue_legion
+		icon = GFX_focus_por_portuguese_legion
+		x = 25
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_the_kekistani_republic  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#At the Service of Democracy
+	focus = {
+		id = KEK_at_the_service_of_democracy
+		icon = GFX_goal_generic_demand_territory
+		x = 25
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_the_blue_legion  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Army Inspection
+	focus = {
+		id = KEK_army_inspection
+		icon = GFX_focus_TUR_purge_the_kemalists
+		x = 25
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_at_the_service_of_democracy  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Revise the Constitution
+	focus = {
+		id = KEK_revise_the_constitution
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+		x = 27
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_the_kekistani_republic  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Election of the Prime Minister
+	focus = {
+		id = KEK_election_of_the_prime_minister
+		icon = GFX_KEK_election_of_the_prime_minister-262077
+		x = 27
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_revise_the_constitution  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Maintain Stability
+	focus = {
+		id = KEK_maintain_stability
+		icon = GFX_KEK_maintain_stability-262118
+		x = 27
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_election_of_the_prime_minister  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#The fight Agaisn't communism
+	focus = {
+		id = KEK_thefightagaisntcommunism
+		icon = GFX_focus_attack_soviet
+		x = 26
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_maintain_stability  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Anti-communist Legions
+	focus = {
+		id = KEK_anticommunist_legions
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 25
+		y = 13
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_thefightagaisntcommunism  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Deploy the Legions
+	focus = {
+		id = KEK_deploy_the_legions
+		icon = GFX_focus_focus_fra_maquis
+		x = 24
+		y = 14
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = KEK_anticommunist_legions  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Anti-Communsim-Fascism Unity
+	focus = {
+		id = KEK_anticommunsimfascism_unity
+		icon = GFX_focus_research2
+		x = 27
+		y = 13
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = KEK_thefightagaisntcommunism  focus = KEK_fund_antifascist_legions  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Prepare for War
+	focus = {
+		id = KEK_prepare_for_war
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		x = 26
+		y = 14
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_anticommunsimfascism_unity  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Crush Fascist Resistance
+	focus = {
+		id = KEK_crush_fascist_resistance
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 28
+		y = 14
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = KEK_anticommunsimfascism_unity  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Fund Anti-fascist Legions
+	focus = {
+		id = KEK_fund_antifascist_legions
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 28
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_maintain_stability  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Integrate the Legions
+	focus = {
+		id = KEK_integrate_the_legions
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 29
+		y = 13
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_fund_antifascist_legions  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Take Down the facsists
+	focus = {
+		id = KEK_take_down_the_facsists
+		icon = GFX_KEK_take_down_the_facsists-262135
+		x = 30
+		y = 14
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_integrate_the_legions  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Send Aids Abroad
+	focus = {
+		id = KEK_send_aids_abroad
+		icon = GFX_focus_BUL_found_the_brannik
+		x = 29
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = KEK_the_kekistani_republic  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Convene The Berlin Council
+	focus = {
+		id = KEK_convene_the_berlin_council
+		icon = GFX_focus_BUL_form_a_regency_council
+		x = 37
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = KEK_a_call_for_democracy  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Secure Power
+	focus = {
+		id = KEK_secure_power
+		icon = GFX_focus_BUL_power_to_the_tsar
+		x = 35
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_convene_the_berlin_council  }
+		mutually_exclusive = { focus = KEK_prepare_the_fascist_takeover  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Form the Freedom Legion
+	focus = {
+		id = KEK_form_the_freedom_legion
+		icon = GFX_focus_generic_manpower
+		x = 33
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = KEK_secure_power  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Purge in the Kekstag Palace
+	focus = {
+		id = KEK_purge_in_the_kekstag_palace
+		icon = GFX_focus_TUR_purge_the_kemalists
+		x = 33
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_form_the_freedom_legion  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#State-Owned Industry
+	focus = {
+		id = KEK_stateowned_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 32
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KEK_purge_in_the_kekstag_palace  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#The Comming of Jesus Christ Himself
+	focus = {
+		id = KEK_the_comming_of_jesus_christ_himself
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		x = 32
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_stateowned_industry  }
+		mutually_exclusive = { focus = KEK_praise_kek1  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Proclaim the Holy Kekistan Empire
+	focus = {
+		id = KEK_proclaim_the_holy_kekistan_empire
+		icon = GFX_focus_BUL_the_third_bulgarian_empire
+		x = 32
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_the_comming_of_jesus_christ_himself  focus = KEK_secure_the_danish_channel  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Claim Germany
+	focus = {
+		id = KEK_claim_germany
+		icon = GFX_focus_attack_germany
+		x = 31
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_proclaim_the_holy_kekistan_empire  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Reclaim the Benelux
+	focus = {
+		id = KEK_reclaim_the_benelux
+		icon = GFX_goal_generic_major_war
+		x = 33
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_proclaim_the_holy_kekistan_empire  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Reclaim the Lost Empire
+	focus = {
+		id = KEK_reclaim_the_lost_empire
+		icon = GFX_KEK_reclaim_the_lost_empire-259
+		x = 32
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_claim_germany  } prerequisite = { focus = KEK_reclaim_the_benelux  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#National Pride
+	focus = {
+		id = KEK_national_pride
+		icon = GFX_focus_mex_caudillo_private_armies
+		x = 32
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_reclaim_the_lost_empire  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Seize funds
+	focus = {
+		id = KEK_seize_funds
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 34
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KEK_purge_in_the_kekstag_palace  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Praise Kek
+	focus = {
+		id = KEK_praise_kek1
+		icon = GFX_focus_chi_legislative_yuan
+		x = 34
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = KEK_seize_funds  }
+		mutually_exclusive = { focus = KEK_the_comming_of_jesus_christ_himself  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Secure the Danish Channel
+	focus = {
+		id = KEK_secure_the_danish_channel
+		icon = GFX_KEK_secure_the_danish_channel-262011
+		x = 34
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = KEK_the_comming_of_jesus_christ_himself  focus = KEK_praise_kek  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Northern Expansion
+	focus = {
+		id = KEK_northern_expansion
+		icon = GFX_KEK_northern_expansion-262017
+		x = 34
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = KEK_secure_the_danish_channel  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Crush Democratic Resistance
+	focus = {
+		id = KEK_crush_democratic_resistance
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = 36
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_streghten_the_party  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Crush Communist Resistance
+	focus = {
+		id = KEK_crush_communist_resistance
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 36
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_crush_democratic_resistance  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Use Fascist Militias
+	focus = {
+		id = KEK_use_fascist_militias
+		icon = GFX_KEK_use_fascist_militias-262135
+		x = 36
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = KEK_crush_communist_resistance  }
+		mutually_exclusive = { focus = KEK_fight_the_fascists  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#affirm superiority
+	focus = {
+		id = KEK_affirm_superiority
+		icon = GFX_goal_continuous_def_against_influence
+		x = 36
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_use_fascist_militias  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Defense of the Nation
+	focus = {
+		id = KEK_defense_of_the_nation
+		icon = GFX_KEK_defense_of_the_nation-262105
+		x = 36
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_affirm_superiority  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Fanatic Resistance
+	focus = {
+		id = KEK_fanatic_resistance
+		icon = GFX_goal_continuous_suppression
+		x = 39
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_defense_of_the_nation  focus = KEK_international_fascist_aid  focus = KEK_a_greater_purpose  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Fanatic Defense
+	focus = {
+		id = KEK_fanatic_defense
+		icon = GFX_focus_generic_home_defense
+		x = 37
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_fanatic_resistance  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Recruit Fanatics
+	focus = {
+		id = KEK_recruit_fanatics
+		icon = GFX_focus_usa_recruit_the_free_corps
+		x = 39
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = KEK_fanatic_resistance  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Expand the conscription
+	focus = {
+		id = KEK_expand_the_conscription
+		icon = GFX_focus_usa_honor_the_confederacy
+		x = 41
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = KEK_fanatic_resistance  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Prepare the Fascist Takeover
+	focus = {
+		id = KEK_prepare_the_fascist_takeover
+		icon = GFX_KEK_prepare_the_fascist_takeover-428
+		x = 43
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_convene_the_berlin_council  }
+		mutually_exclusive = { focus = KEK_secure_power }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#The Savagery of Sundowner
+	focus = {
+		id = KEK_the_savagery_of_sundowner
+		icon = GFX_focus_BUL_plot_against_boris
+		x = 41
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_prepare_the_fascist_takeover  }
+		mutually_exclusive = { focus = KEK_the_chadism_of_andrew_tate  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Purge in the Party
+	focus = {
+		id = KEK_purge_in_the_party
+		icon = GFX_KEK_purge_in_the_party-262098
+		x = 41
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_the_savagery_of_sundowner  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Fund for the Party
+	focus = {
+		id = KEK_fund_for_the_party
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 41
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = KEK_purge_in_the_party  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Supremacy of Desperado
+	focus = {
+		id = KEK_supremacy_of_desperado
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		x = 41
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_fund_for_the_party  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Unrestricted Warfare
+	focus = {
+		id = KEK_unrestricted_warfare
+		icon = GFX_focus_GRE_reviving_the_spartan_warrior_spirit
+		x = 40
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_supremacy_of_desperado  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Start the cloning Program
+	focus = {
+		id = KEK_start_the_cloning_program
+		icon = GFX_KEK_start_the_cloning_program-262135
+		x = 42
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = KEK_supremacy_of_desperado  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#A Warmongering Nation
+	focus = {
+		id = KEK_a_warmongering_nation
+		icon = GFX_goal_generic_major_war
+		x = 41
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_unrestricted_warfare  } prerequisite = { focus = KEK_start_the_cloning_program  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Recruit Fascist Militias
+	focus = {
+		id = KEK_recruit_fascist_militias
+		icon = GFX_KEK_recruit_fascist_militias-262028
+		x = 43
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_the_savagery_of_sundowner  focus = KEK_the_chadism_of_andrew_tate  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Seize military factories
+	focus = {
+		id = KEK_seize_military_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 43
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KEK_recruit_fascist_militias  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#The Chadism of Andrew Tate
+	focus = {
+		id = KEK_the_chadism_of_andrew_tate
+		icon = GFX_focus_eng_god_save_the_king
+		x = 45
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_prepare_the_fascist_takeover  }
+		mutually_exclusive = { focus = KEK_the_savagery_of_sundowner  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#The takeover begins
+	focus = {
+		id = KEK_the_takeover_begins
+		icon = GFX_focus_chi_army_reform
+		x = 45
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_acquire_the_means_to_fight  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Secure our Position
+	focus = {
+		id = KEK_secure_our_position
+		icon = GFX_focus_secret_rearmament
+		x = 45
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_the_takeover_begins  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Crush the Democratic opposition
+	focus = {
+		id = KEK_crush_the_democratic_opposition
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = 44
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_secure_our_position  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#International Fascist aid
+	focus = {
+		id = KEK_international_fascist_aid
+		icon = GFX_KEK_international_fascist_aid-428
+		x = 43
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_crush_the_democratic_opposition  }
+		mutually_exclusive = { focus = KEK_a_greater_purpose  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Welcome the Refugees
+	focus = {
+		id = KEK_welcome_the_refugees
+		icon = GFX_focus_TUR_reform_the_balkan_pact
+		x = 41
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = KEK_international_fascist_aid  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#German Kekistan
+	focus = {
+		id = KEK_german_kekistan
+		icon = GFX_focus_attack_germany
+		x = 43
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_international_fascist_aid  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#A Greater Purpose
+	focus = {
+		id = KEK_a_greater_purpose
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 45
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_crush_the_democratic_opposition  }
+		mutually_exclusive = { focus = KEK_international_fascist_aid  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Toward Greatness
+	focus = {
+		id = KEK_toward_greatness
+		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
+		x = 45
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_a_greater_purpose  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Crush the Communist Opposition
+	focus = {
+		id = KEK_crush_the_communist_opposition
+		icon = GFX_goal_anti_comintern_pact
+		x = 46
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_secure_our_position  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Praise Kek
+	focus = {
+		id = KEK_praise_kek
+		icon = GFX_focus_jap_manchurian_project
+		x = 47
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_rise_of_the_old_gods  } prerequisite = { focus = KEK_rebuildthelostkekschurches  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Rise of the Old Gods
+	focus = {
+		id = KEK_rise_of_the_old_gods
+		icon = GFX_goal_generic_attack_allies
+		x = 47
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = KEK_the_takeover_begins  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#Rebuild the Lost Kek's Churches
+	focus = {
+		id = KEK_rebuildthelostkekschurches
+		icon = GFX_focus_generic_home_defense
+		x = 48
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KEK_rise_of_the_old_gods  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#The Wrath of Kek
+	focus = {
+		id = KEK_the_wrath_of_kek
+		icon = GFX_KEK_the_wrath_of_kek-280
+		x = 47
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_praise_kek  }
+		ai_will_do = { factor = 1000 }
+	}
+
+	#The Holy Kekistan Empire
+	focus = {
+		id = KEK_the_holy_kekistan_empire
+		icon = GFX_focus_BUL_destroy_the_zveno
+		x = 46
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = KEK_toward_greatness  } prerequisite = { focus = KEK_praise_kek  }
+		ai_will_do = { factor = 1000 }
+	}
+
+}
