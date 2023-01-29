@@ -1,0 +1,17 @@
+characters = {
+	QRT_mr_jez = {
+		name = QRT_mr_jez
+		portraits = {
+			civilian = {
+				large = GFX_portrait_QRT_mr_jez
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			desc = QRT_mr_jez_desc
+			traits = { QRT_hegemony_trait }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

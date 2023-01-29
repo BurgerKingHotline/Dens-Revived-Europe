@@ -1,0 +1,63 @@
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Arnold Meri Revolutionary Fleet"			
+		naval_base = 185
+		task_force = { 
+			name = "Kuressaare Fleet"
+			location = 185
+			ship = { name = "AMRFS Kuressaare" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ASF } } }				
+			ship = { name = "AMRFS Salme" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ASF } } }		
+			ship = { name = "AMRFS Abuka" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ASF } } }		
+		}
+		task_force = { 
+			name = "Vilsandi Fleet"
+			location = 185
+			ship = { name = "AMRFS Vilsandi" pride_of_the_fleet = yes definition definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ASF } } }				
+			ship = { name = "AMRFS Tuletorn" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ASF } } }				
+			ship = { name = "AMRFS Lembit" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ASF } } }				
+			ship = { name = "AMRFS Revolutsioon" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ASF } } }				
+			ship = { name = "AMRFS Riis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ASF } } }		
+			ship = { name = "AMRFS Laine" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ASF } } }		
+			ship = { name = "AMRFS Lääne" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ASF } } }		
+			ship = { name = "AMRFS Lenin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ASF } } }		
+		}
+		task_force = { 
+			name = "Muhu Fleet"
+			location = 185
+			ship = { name = "AMRFS Lembitu" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ASF } } }				
+			ship = { name = "AMRFS Tapa" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ASF } } }				
+		}
+		task_force = { 
+			name = "Visby Fleet"
+			location = 408
+			ship = { name = "AMRFS Sigtuna" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ASF } } }				
+			ship = { name = "AMRFS Meri" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ASF } } }
+			ship = { name = "AMRFS Vanapagan" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ASF } } }		
+			ship = { name = "AMRFS Nastik" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ASF } } }		
+			ship = { name = "AMRFS Must Surm" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ASF } } }		
+			ship = { name = "AMRFS Marks" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ASF version_name = "Kingisepp Class" } } }
+			ship = { name = "AMRFS Engels" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ASF version_name = "Kingisepp Class" } } }
+			ship = { name = "AMRFS Stalin" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ASF version_name = "Kingisepp Class" } } }
+			ship = { name = "AMRFS Au" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ASF version_name = "Kingisepp Class" } } }
+			ship = { name = "AMRFS Tulevik" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ASF version_name = "Kingisepp Class" } } }
+			ship = { name = "AMRFS Põhjanael" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ASF version_name = "Kingisepp Class" } } }
+		}
+		task_force = { 
+			name = "Gotland Fleet"
+			location = 408
+			ship = { name = "AMRFS Linnutee" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ASF } } }				
+			ship = { name = "AMRFS Säre" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ASF } } }				
+			ship = { name = "AMRFS ENSV" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ASF } } }
+			ship = { name = "AMRFS NSVL" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ASF } } }
+			ship = { name = "AMRFS Karotamm" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ASF } } }
+			ship = { name = "AMRFS Dovator" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ASF } } }
+			ship = { name = "AMRFS Võit" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ASF } } }
+			ship = { name = "AMRFS Lev" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ASF } } }
+			ship = { name = "AMRFS Anvelt" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ASF } } }
+			ship = { name = "AMRFS Ots" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ASF } } }
+			ship = { name = "AMRFS Keres" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ASF } } }
+		}
+	}
+}

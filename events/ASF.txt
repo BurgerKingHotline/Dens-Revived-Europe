@@ -52,3 +52,36 @@ news_event = {
 	}
 	
 }
+
+country_event = {
+    id = arnoldfleet.2
+    title = arnoldfleet.2.t
+    desc = arnoldfleet.2.d
+
+	fire_only_once = yes
+
+    trigger = {
+	has_government = communism
+	has_completed_focus = ASF_on_the_ground
+	any_country = {
+	has_government = communism
+	has_defensive_war = yes
+	
+	}
+	}
+
+    option = { 
+	name = arnoldfleet.2.a 
+
+	add_ideas = ASF_homeland_revolution_idea
+add_named_threat = {
+    threat = 5
+    name = ASF_homeland_revolution
+}
+	}
+	
+    option = { 
+	name = arnoldfleet.2.b
+	add_political_power = 125
+	}
+}

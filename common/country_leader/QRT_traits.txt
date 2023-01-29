@@ -1,0 +1,5 @@
+leader_traits = {
+    QRT_hegemony_trait = {
+        political_power_factor = 0.15
+    }
+}

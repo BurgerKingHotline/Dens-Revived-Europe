@@ -8,3 +8,8 @@
  QRT_fascism_DEF:0 "Imperium Jeży"
  QRT_democratic_DEF:0 "Królestwo Jeży"
  QRT_ADJ:0 "Jeży"
+ 
+ QRT_mr_jez:0 "Mr. Jez"
+ QRT_mr_jez_desc:0 ""
+ 
+ QRT_hegemony_trait:0 "Hedge-mony of the Republic"
