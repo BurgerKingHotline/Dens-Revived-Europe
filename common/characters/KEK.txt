@@ -579,7 +579,6 @@ characters = {
 			defense_skill=3
 			maneuvering_skill=3
 			coordination_skill=5
-			legacy_id=26
 		}
 	}
 
@@ -615,7 +614,6 @@ characters = {
 			defense_skill=4
 			maneuvering_skill=3
 			coordination_skill=3
-			legacy_id=27
 		}
 	}
 
@@ -865,6 +863,117 @@ characters = {
 			traits = {
 				blitzkrieg_theorist
 			}
+		}
+	}
+
+    #GENERAL
+
+	KEK_anon2={
+		name="Anon 2"
+		portraits={
+			army={
+				large="gfx/leaders/KEK/anon2.png"
+				small="GFX_idea_gerd_von_rundstedt"
+			}
+		}
+		
+		field_marshal={
+			traits={ urban_assault_specialist defensive_doctrine }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+		}
+	}
+
+	KEK_anon1={
+		name="Anon 1"
+		portraits={
+			army={
+				large="gfx/leaders/KEK/anon1.png"
+				small=GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+		}
+	}	
+	
+	KEK_anon3={
+		name="Anon 3"
+		portraits={
+			army={
+				large="gfx/leaders/KEK/anon3.png"
+				small=GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious armor_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=5
+		}
+	}
+
+	KEK_anon4={
+		name="Anon 4"
+		portraits={
+			army={
+				large="gfx/leaders/KEK/anon4.png"
+				small=GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+		corps_commander={
+			traits={ trickster trait_reckless }
+			skill=5
+			attack_skill=6
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+		}
+	}
+
+	KEK_anon5={
+		name="Anon 5"
+		portraits={
+			army={
+				large="gfx/leaders/KEK/anon5.png"
+				small=GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+
+	KEK_anon6={
+		name="Anon 6"
+		portraits={
+			army={
+				large="gfx/leaders/KEK/anon6.png"
+				small=GFX_portrait_GER_friedrich_paulus_small
+			}
+		}
+		corps_commander={
+			traits={ career_officer inflexible_strategist }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
 		}
 	}	
 }

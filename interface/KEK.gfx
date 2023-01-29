@@ -1,0 +1,1141 @@
+spriteTypes = {	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_the_army_serve_the_state-262080"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_the_army_serve_the_state-262080.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_the_army_serve_the_state-262080_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_the_army_serve_the_state-262080.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_the_army_serve_the_state-262080.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_the_army_serve_the_state-262080.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_acquire_the_means_to_fight-262009"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_acquire_the_means_to_fight-262009.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_acquire_the_means_to_fight-262009_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_acquire_the_means_to_fight-262009.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_acquire_the_means_to_fight-262009.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_acquire_the_means_to_fight-262009.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_attract_kekistani_workers-262103"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_attract_kekistani_workers-262103.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_attract_kekistani_workers-262103_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_attract_kekistani_workers-262103.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_attract_kekistani_workers-262103.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_attract_kekistani_workers-262103.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_seize_the_factories-139714"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_seize_the_factories-139714.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_seize_the_factories-139714_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_seize_the_factories-139714.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_seize_the_factories-139714.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_seize_the_factories-139714.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_smoke_and_fire-410"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_smoke_and_fire-410.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_smoke_and_fire-410_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_smoke_and_fire-410.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_smoke_and_fire-410.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_smoke_and_fire-410.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_a_call_for_democracy-427"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_a_call_for_democracy-427.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_a_call_for_democracy-427_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_a_call_for_democracy-427.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_a_call_for_democracy-427.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_a_call_for_democracy-427.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_democratic_socialism-426"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_democratic_socialism-426.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_democratic_socialism-426_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_democratic_socialism-426.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_democratic_socialism-426.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_democratic_socialism-426.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_unite_the_people-88"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_unite_the_people-88.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_unite_the_people-88_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_unite_the_people-88.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_unite_the_people-88.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_unite_the_people-88.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_election_of_a_leader-262056"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_election_of_a_leader-262056.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_election_of_a_leader-262056_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_election_of_a_leader-262056.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_election_of_a_leader-262056.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_election_of_a_leader-262056.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_fight_capitalism-412"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_fight_capitalism-412.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_fight_capitalism-412_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_fight_capitalism-412.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_fight_capitalism-412.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_fight_capitalism-412.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_international_volunteers-262102"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_international_volunteers-262102.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_international_volunteers-262102_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_international_volunteers-262102.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_international_volunteers-262102.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_international_volunteers-262102.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_convert_the_fascist_to_socialist-262107"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_convert_the_fascist_to_socialist-262107.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_convert_the_fascist_to_socialist-262107_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_convert_the_fascist_to_socialist-262107.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_convert_the_fascist_to_socialist-262107.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_convert_the_fascist_to_socialist-262107.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_convert_the_authoritarian_to_socialist-262107"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_convert_the_authoritarian_to_socialist-262107.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_convert_the_authoritarian_to_socialist-262107_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_convert_the_authoritarian_to_socialist-262107.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_convert_the_authoritarian_to_socialist-262107.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_convert_the_authoritarian_to_socialist-262107.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_the_red_kekistani_army-262089"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_the_red_kekistani_army-262089.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_the_red_kekistani_army-262089_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_the_red_kekistani_army-262089.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_the_red_kekistani_army-262089.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_the_red_kekistani_army-262089.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_erase_opposition-262098"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_erase_opposition-262098.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_erase_opposition-262098_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_erase_opposition-262098.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_erase_opposition-262098.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_erase_opposition-262098.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_the_kekistani_republic-427"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_the_kekistani_republic-427.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_the_kekistani_republic-427_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_the_kekistani_republic-427.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_the_kekistani_republic-427.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_the_kekistani_republic-427.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_election_of_the_prime_minister-262077"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_election_of_the_prime_minister-262077.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_election_of_the_prime_minister-262077_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_election_of_the_prime_minister-262077.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_election_of_the_prime_minister-262077.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_election_of_the_prime_minister-262077.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_maintain_stability-262118"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_maintain_stability-262118.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_maintain_stability-262118_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_maintain_stability-262118.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_maintain_stability-262118.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_maintain_stability-262118.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_take_down_the_facsists-262135"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_take_down_the_facsists-262135.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_take_down_the_facsists-262135_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_take_down_the_facsists-262135.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_take_down_the_facsists-262135.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_take_down_the_facsists-262135.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_reclaim_the_lost_empire-259"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_reclaim_the_lost_empire-259.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_reclaim_the_lost_empire-259_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_reclaim_the_lost_empire-259.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_reclaim_the_lost_empire-259.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_reclaim_the_lost_empire-259.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_secure_the_danish_channel-262011"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_secure_the_danish_channel-262011.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_secure_the_danish_channel-262011_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_secure_the_danish_channel-262011.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_secure_the_danish_channel-262011.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_secure_the_danish_channel-262011.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_northern_expansion-262017"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_northern_expansion-262017.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_northern_expansion-262017_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_northern_expansion-262017.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_northern_expansion-262017.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_northern_expansion-262017.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_use_fascist_militias-262135"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_use_fascist_militias-262135.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_use_fascist_militias-262135_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_use_fascist_militias-262135.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_use_fascist_militias-262135.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_use_fascist_militias-262135.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_defense_of_the_nation-262105"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_defense_of_the_nation-262105.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_defense_of_the_nation-262105_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_defense_of_the_nation-262105.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_defense_of_the_nation-262105.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_defense_of_the_nation-262105.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_prepare_the_fascist_takeover-428"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_prepare_the_fascist_takeover-428.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_prepare_the_fascist_takeover-428_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_prepare_the_fascist_takeover-428.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_prepare_the_fascist_takeover-428.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_prepare_the_fascist_takeover-428.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_purge_in_the_party-262098"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_purge_in_the_party-262098.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_purge_in_the_party-262098_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_purge_in_the_party-262098.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_purge_in_the_party-262098.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_purge_in_the_party-262098.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_start_the_cloning_program-262135"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_start_the_cloning_program-262135.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_start_the_cloning_program-262135_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_start_the_cloning_program-262135.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_start_the_cloning_program-262135.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_start_the_cloning_program-262135.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_recruit_fascist_militias-262028"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_recruit_fascist_militias-262028.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_recruit_fascist_militias-262028_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_recruit_fascist_militias-262028.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_recruit_fascist_militias-262028.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_recruit_fascist_militias-262028.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_international_fascist_aid-428"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_international_fascist_aid-428.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_international_fascist_aid-428_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_international_fascist_aid-428.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_international_fascist_aid-428.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_international_fascist_aid-428.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_KEK_the_wrath_of_kek-280"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_the_wrath_of_kek-280.dds"
+	}
+
+	##Icon Shine For: 
+	SpriteType = { 
+		name = "GFX_KEK_the_wrath_of_kek-280_shine"
+		texturefile = "gfx/interface/goals/KEK/GFX_KEK_the_wrath_of_kek-280.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_the_wrath_of_kek-280.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/KEK/GFX_KEK_the_wrath_of_kek-280.dds"
+			animationtexturefile = "gfx/interface/goals/KEK/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+}

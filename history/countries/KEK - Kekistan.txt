@@ -100,7 +100,6 @@ recruit_character = KEK_bob_random
 recruit_character = KEK_luca_hill
 recruit_character = KEK_stanley_robinson
 recruit_character = KEK_jackson_watts
-recruit_character = KEK_jackson_watts
 recruit_character = KEK_nicholas_rodgers
 recruit_character = KEK_freddie_taylor
 recruit_character = KEK_graysen_mccarthy
@@ -133,5 +132,19 @@ recruit_character = KEK_jacob_henderson
 recruit_character = KEK_ethan_brooks
 recruit_character = KEK_reece_shaw
 recruit_character = KEK_lawson_craft
+
+recruit_character = KEK_anon1
+recruit_character = KEK_anon2
+recruit_character = KEK_anon3
+recruit_character = KEK_anon4
+recruit_character = KEK_anon5
+recruit_character = KEK_Anon6
+
+add_ideas = {
+	KEK_economic_crisis
+	KEK_the_army
+	partial_economic_mobilisation
+	KEK_foreign_controlled_industry
+}
 
 
