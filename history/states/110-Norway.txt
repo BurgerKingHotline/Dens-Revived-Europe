@@ -15,7 +15,8 @@ state={
 			6115 15 
 		}
 		
-		#owner = NOR
+		owner = ONI
+		add_core_of = ONI
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
@@ -27,7 +28,7 @@ state={
 				coastal_bunker = 3
 			}
 		}
-		#add_core_of = NOR
+		
 	}
 
 	provinces={

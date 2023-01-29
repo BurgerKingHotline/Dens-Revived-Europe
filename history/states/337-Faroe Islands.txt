@@ -8,7 +8,8 @@ state=
 	
 	history=
 	{
-		#owner = DEN
+		owner = ONI
+		add_core_of = ONI
 		buildings = {
 			infrastructure = 2
 			13003 = {

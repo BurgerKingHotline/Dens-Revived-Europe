@@ -47,3 +47,7 @@ KEK = { #prepare your painis
 	color = rgb { 0 204 0 }
 	color_ui = rgb { 0 204 0 }
 }
+ONI = { #ShyGuy
+	color = rgb { 23 79 118 }
+	color_ui = rgb { 23 79 118 }
+}
