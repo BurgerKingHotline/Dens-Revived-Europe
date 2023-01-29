@@ -1,0 +1,378 @@
+focus_tree = {
+    id = glg_focus
+    country = {
+        base = 0
+        modifier = {
+          add = 10
+          tag = GLG
+        }
+    }
+    default = no
+
+  focus = {
+  	id = GLG_the_two_solutions
+  	icon = GFX_
+  	x = 5
+  	y = 0
+  	cost = 5
+
+  	available = {
+  		NOT = {
+  			has_country_flag = GLG_collapse_flag
+  		}
+  	}
+
+  	completion_reward = {
+  		add_stability = 0.1
+  		add_political_power = 75
+  	}
+  }
+
+  focus = {
+  	id = GLG_reconciliation
+  	icon = GFX_
+  	prerequisite = {
+  		focus = GLG_the_two_solutions
+  	}
+  	relative_position_id = GLG_the_two_solutions
+  	x = -2
+  	y = 1
+  	cost = 5
+
+  	available = {
+  		NOT = {
+  			has_country_flag = GLG_collapse_flag
+  		}
+  	}
+
+  	completion_reward = {
+  		#decisions for stability and balancing between the Romanians and Bulgarians
+  	}
+  }
+
+  focus = {
+  	id = GLG_irredentism
+  	icon = GFX_
+  	prerequisite = {
+  		focus = GLG_the_two_solutions
+  	}
+  	relative_position_id = GLG_the_two_solutions
+  	x = 2
+  	y = 1
+  	cost = 5
+
+  	available = {
+  		NOT = {
+  			has_country_flag = GLG_collapse_flag
+  		}
+  	}
+
+  	completion_reward = {
+  		add_timed_idea = {
+  			idea = GLG_irredentism
+  			days = 365
+  		}
+  	}
+  }
+
+  focus = {
+  	id = GLG_demand_oltenia
+  	icon = GFX_
+  	prerequisite = {
+  		focus = GLG_irredentism
+  	}
+  	relative_position_id = GLG_irredentism
+  	x = 2
+  	y = 1
+  	cost = 5
+
+  	available = {
+  		NOT = {
+  			has_country_flag = GLG_collapse_flag
+  		}
+  		OR = {
+  			has_idea = GLG_irredentism
+  			has_government = neutrality
+  		}
+  	}
+
+  	bypass = {
+  		owns_state = 81
+  	}
+
+  	completion_reward = {
+  		add_state_claim = 81
+  		if = {
+  			limit = {
+  				81 = {
+  					OWNER = {
+  						is_subject_of = ROOT
+  					}
+  				}
+  			}
+  			transfer_state = 81
+  			add_state_core = 81
+  			else = {
+  				random_other_country = {
+  					limit = {
+  						owns_state = 81
+  					}
+  					#demand the land, or unlock a border conflict for it
+  				}
+  			}
+  		}
+  	}
+  }
+
+  focus = {
+  	id = GLG_preparing_great_assault
+  	icon = GFX_
+  	prerequisite = {
+  		focus = GLG_irredentism
+  	}
+  	relative_position_id = GLG_irredentism
+  	x = 0
+  	y = 1
+  	cost = 5
+
+  	available = {
+  		NOT = {
+  			has_country_flag = GLG_collapse_flag
+  		}
+  		has_idea = GLG_irredentism
+  	}
+
+  	completion_reward = {
+  		custom_effect_tooltip = GLG_claim_all_romanian_bulgarian_states
+  		add_equipment_to_stockpile = {
+  			type = infantry_equipment
+  			amount = 750
+  		}
+  		hidden_effect = {
+  			#moldova
+  			add_state_claim = 78
+  			add_state_claim = 766
+  			add_state_claim = 79
+  			add_state_claim = 80
+  			#transylvania
+  			add_state_claim = 76
+  			add_state_claim = 84
+  			add_state_claim = 83
+  			#bulgarian
+  			add_state_claim = 212
+  			add_state_claim = 48
+  			add_state_claim = 184
+  			add_state_claim = 106
+  		}
+  	}
+  }
+
+  focus = {
+  	id = GLG_serres_plan
+  	icon = GFX_
+  	prerequisite = {
+  		focus = GLG_preparing_great_assault
+  	}
+  	relative_position_id = GLG_preparing_great_assault
+  	x = 1
+  	y = 1
+  	cost = 5
+
+  	available = {
+  		NOT = {
+  			has_country_flag = GLG_collapse_flag
+  		}
+  	}
+
+  	completion_reward = {
+  		#event about whether to ask REP or MSR for help with Serres, or to go it alone
+  		#if one of them accepts, Serres gets a demand to be partitioned, and it can either accept or have war declared on it. If MSR aids, they get territory that GLG will eventually REALLY WANT 
+  	}
+  }
+
+  focus = {
+  	id = GLG_demand_transovan_submission
+  	icon = GFX_
+  	prerequisite = {
+  		focus = GLG_preparing_great_assault
+  	}
+  	relative_position_id = GLG_preparing_great_assault
+  	x = -2
+  	y = 1
+  	cost = 5
+
+  	available = {
+  		NOT = {
+  			has_country_flag = GLG_collapse_flag
+  		}
+  	}
+
+  	completion_reward = {
+  		#demand transovan become a subject, wargoal if they deny it
+  	}
+  }
+
+  focus = {
+  	id = GLG_securing_greater_romania
+  	icon = GFX_
+  	prerequisite = {
+  		focus = GLG_demand_transovan_submission
+  	}
+  	relative_position_id = GLG_demand_transovan_submission
+  	x = 0
+  	y = 1
+  	cost = 5
+
+  	available = {
+  		ZUP = {
+  			OR = {
+  				is_subject_of = GLG
+  				exists = no
+  			}
+  		}
+  	}
+
+  	completion_reward = {
+  		#unlocks decisions to core the Transovan states if they're annexed, if not, you get decisions to slowly integrate them
+  	}
+  }
+
+  focus = {
+  	id = GLG_thrace_debate
+  	icon = GFX_
+  	prerequisite = {
+  		focus = GLG_serres_plan
+  	}
+  	relative_position_id = GLG_serres_plan
+  	x = -1
+  	y = 1
+  	cost = 5
+
+  	available = {
+  		owns_state = 184
+  		ZSR = {
+  			exists = no
+  		}
+  	}
+
+  	completion_reward = {
+  		add_state_core = 212
+  		#event about whether to integrate the Serresian coast into Greater Bulgaria or not. Either ticks off the Bulgarians but gives you a nice lil puppet, or makes you have to struggle with the Serresian resistance as you 'settle' it
+  	}
+  }
+
+  focus = {
+  	id = GLG_demand_sofia
+  	icon = GFX_
+  	prerequisite = {
+  		focus = GLG_serres_plan
+  	}
+  	prerequisite = {
+  		focus = GLG_demand_oltenia
+  	}
+  	relative_position_id = GLG_serres_plan
+  	x = 1
+  	y = 1
+  	cost = 5
+
+  	available = {
+  		OR = {
+  			owns_state = 212
+  			owns_state = 81
+  		}
+  	}
+
+  	bypass = {
+  		owns_state = 48
+  	}
+
+  	completion_reward = {
+  		48 = {
+  			OWNER = {
+  				#demand sofia from wheover owns it, if they say no, get a claim on 803 and a wargoal
+  			}
+  		}
+  	}
+  }
+
+  focus = {
+  	id = GLG_mend_moravian_ties
+  	icon = GFX_
+  	prerequisite = {
+  		focus = GLG_demand_sofia
+  	}
+  	mutually_exclusive = {
+  		focus = GLG_push_into_western_balkans
+  	}
+  	relative_position_id = GLG_demand_sofia
+  	x = -1
+  	y = 1
+  	cost = 5
+
+  	available = {
+  		owns_state = 48
+  		ZAS = {
+  			exists = yes
+  			is_subject = no
+  		}
+  	}
+
+  	completion_reward = {
+  		ZAS = {
+  			#get an event offering support of their claim over montenegro in exchange for an alliance
+  		}
+  	}
+  }
+
+  focus = {
+  	id = GLG_push_into_western_balkans
+  	icon = GFX_
+  	prerequisite = {
+  		focus = GLG_demand_sofia
+  	}
+  	mutually_exclusive = {
+  		focus = GLG_mend_moravian_ties
+  	}
+  	relative_position_id = GLG_demand_sofia
+  	x = 1
+  	y = 1
+  	cost = 5
+
+  	available = {
+  		OR = {
+  			has_war_with = ZAS
+  			ZAS = {
+  				exists = no
+  			}
+  			has_subject = ZAS
+  			MSR = {
+  				owns_state = 106
+  			}
+  			MSR = {
+  				has_subject = ZAS
+  			}
+  			MSR = {
+  				owns_state = 108
+  			}
+  		}
+  	}
+
+  	completion_reward = {
+  		create_wargoal = {
+  			target = MSR
+  			type = puppet_wargoal_focus
+  		}
+  		if = {
+  			limit = {
+  				ZAS = {
+  					exists = yes
+  					is_subject = no
+  				}
+  			}
+  			create_wargoal = {
+	  			target = ZAS
+	  			type = puppet_wargoal_focus
+	  		}
+  		}
+  	}
+  }

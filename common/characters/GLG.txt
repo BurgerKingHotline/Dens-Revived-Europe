@@ -1,0 +1,78 @@
+characters = {
+	GLG_nicholas_i = {
+		name = GLG_nicholas_i
+		portraits = {
+			civilian={
+				large="GFX_Portrait_romania_ioan_mihail_racovita"
+			}
+			army={
+				large="GFX_Portrait_romania_ioan_mihail_racovita"
+				small="GFX_idea_ROM_ioan_mihail_racovita"
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits =  { GLG_disinterested_king }
+			expire = "2000.1.1.1"
+		}
+	}
+	GLG_king_michael={
+		name=ROM_king_michael
+		portraits={
+			civilian={
+				large="GFX_Portrait_romania_michael_i"
+			}
+		}
+		#add roles later
+	}
+	GLG_christian_rakovsky={
+		name=GLG_christian_rakovsky
+		portraits={
+			civilian={
+				large="GFX_Portrait_romania_constantin_ion_parhon"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	GLG_pencho_zlatev = {
+		name = GLG_pencho_zlatev
+		portraits = {
+			army = {
+				large = "GFX_portrait_bul_ivan_markov"
+				small = GFX_portrait_BUL_ivan_markov_small
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	GLG_nikola_mushanov = { 
+		name = BUL_nikola_mushanov
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_bul_nikola_mushanov"
+			}
+		}
+
+		country_leader={
+			ideology=liberalism
+			traits={ appeaser }
+			expire="1965.1.1"
+			id=-1
+		}
+	}
+}

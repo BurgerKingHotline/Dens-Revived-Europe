@@ -1,0 +1,107 @@
+ideas = {
+    country = {
+
+        GLG_unstable_union = {
+
+            picture = bul_second_national_catastrophe
+
+            removal_cost = -1
+            
+            allowed = {
+                always = no
+            }
+
+            cancel = {
+                has_civil_war = yes
+            }
+
+            modifier = {
+                stability_weekly = -0.005
+                political_power_cost = 0.2
+                conscription_factor = -0.2
+            }
+
+        }
+
+        GLG_irredentism = {
+
+            picture = generic_volunteer_expedition_bonus
+
+            removal_cost = -1
+            
+            allowed = {
+                always = no
+            }
+
+            cancel = {
+                has_civil_war = yes
+            }
+
+            on_remove = {
+                if = {
+                    limit = {
+                        has_civil_war = no
+                    }
+                    #some checks to make sure you at least got SOMETHING and aren't a useless pos, otherwise you cause a civil war :thumbsup:
+                }
+            }
+
+            modifier = {
+                war_support_factor = 0.1
+                conscription_factor = 0.1
+            }
+
+        }
+
+        GLG_agrarianism = {
+
+            picture = generic_agrarian_society
+
+            removal_cost = -1
+            
+            allowed = {
+                always = no
+            }
+            
+            modifier = {
+                consumer_goods_factor = 0.1
+                production_speed_buildings_factor = -0.05
+            }
+        }
+
+        GLG_agrarian_buildup = {
+
+            picture = generic_agrarian_society
+
+            removal_cost = -1
+            
+            allowed = {
+                always = no
+            }
+
+            modifier = {
+                monthly_population = 0.1
+                local_resources_factor = 0.1
+            }
+
+        }
+
+        GLG_industrial_buildup = {
+
+            picture = generic_volunteer_expedition_bonus
+
+            removal_cost = -1
+            
+            allowed = {
+                always = no
+            }
+
+            modifier = {
+                production_speed_buildings_factor = 0.1
+                global_building_slots_factor = 0.1
+            }
+
+        }
+
+    }
+}
