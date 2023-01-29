@@ -17,4 +17,4 @@ set_popularities = {
 	communism = 21
 }
 
-set_cosmetic_tag = TOM_kingdom
+set_cosmetic_tag = TOM_high_england

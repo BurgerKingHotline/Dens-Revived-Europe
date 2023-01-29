@@ -1,0 +1,18 @@
+characters = {
+	USE_Patton = {
+		name = "George S. Patton"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_USA_george_s_patton
+			}
+		}
+		country_leader = {
+			desc = 
+	expire = "1953.3.1"
+	ideology = conservatism
+	traits = {
+	}
+		}
+	}
+	
+}

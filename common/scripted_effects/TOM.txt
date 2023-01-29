@@ -32,7 +32,7 @@ TOM_set_up = {
         original_tag = TOM
         TOM_default = yes
         set_country_flag = TOM_mercia
-        set_cosmetic_tag = TOM_mercia_kingdom
+        set_cosmetic_tag = TOM_mercia
         transfer_state = 128
         add_state_core = 128
         add_state_core = 129
@@ -43,7 +43,7 @@ TOM_set_up = {
         original_tag = TOM
         TOM_default = yes
         set_country_flag = TOM_powys
-        set_cosmetic_tag = TOM_powys_earldom
+        set_cosmetic_tag = TOM_powys
         transfer_state = 910
         add_state_core = 910
         if = {
@@ -53,7 +53,7 @@ TOM_set_up = {
             TOA = {
                 set_autonomy = {
                     target = PREV
-                    autonomy_state = autonomy_TOM_earldom
+                    autonomy_state = autonomy_TOM_vassal
                 }
             }
         }
@@ -134,5 +134,46 @@ TOM_set_up = {
         set_cosmetic_tag = TOM_devon
         transfer_state = 123
         add_state_core = 123
+    }
+    create_dynamic_country = {
+        reserve_dynamic_country = yes
+        original_tag = TOM
+        TOM_default = yes
+        set_country_flag = TOM_east_anglia
+        set_cosmetic_tag = TOM_east_anglia
+        transfer_state = 125
+        add_state_core = 125
+    }
+    create_dynamic_country = {
+        reserve_dynamic_country = yes
+        original_tag = TOM
+        TOM_default = yes
+        set_country_flag = TOM_kent
+        set_cosmetic_tag = TOM_kent
+        transfer_state = 127
+        add_state_core = 127
+    }
+    create_dynamic_country = {
+        reserve_dynamic_country = yes
+        original_tag = TOM
+        TOM_default = yes
+        set_country_flag = TOM_celtic
+        set_cosmetic_tag = TOM_celtic
+        transfer_state = 122
+        add_state_core = 122
+        transfer_state = 911
+        add_state_core = 911
+    }
+    set_autonomy = {
+        target = TOH
+        autonomy_state = autonomy_TOM_vassal
+    }
+    set_autonomy = {
+        target = TOE
+        autonomy_state = autonomy_TOM_vassal
+    }
+    set_autonomy = {
+        target = TOK
+        autonomy_state = autonomy_TOM_vassal
     }
 }

@@ -1,4 +1,5 @@
 capital = 117
+set_variable = { dalauan_power_var = 50 }
 
 oob = "VKN_1936"
 if = {

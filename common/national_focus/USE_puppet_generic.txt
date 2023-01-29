@@ -1,11 +1,11 @@
 focus_tree = {
-	id = USE_puppet_focus
+	id = USE_puppet_generic
 	country = {
 		factor = 0
-		modifier = {
-			add = 10
-			is_subject_of = USE
-		}
+        modifier = {
+            is_subject_of = USE
+            add = 12
+        }
 	}
 	continuous_focus_position = { x = 0 y = 1000}
 	default = no
