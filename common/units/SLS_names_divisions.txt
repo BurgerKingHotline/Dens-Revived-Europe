@@ -1,0 +1,27 @@
+SLS_INF_01 = {
+	name = "Silesian Guard"
+	for_countries = { SLS }
+	can_use = { always = yes }
+	division_types = { "infantry" } 
+	fallback_name = "%d Gwardia Narodowa"
+	ordered = {
+		1 = { "%d Gwardia Opolska" }
+		2 = { "%d Gwardia Gliwicka" }
+		3 = { "%d Gwardia Katowicka I" }
+		4 = { "%d Gwardia Katowicka II" }
+		5 = { "%d Gwardia Śląska 'Węgiel'" }
+		6 = { "%d Gwardia Śląska 'Kopalnia'" }
+		7 = { "%d Gwardia Śląska 'Hałda'" }
+	}
+}
+SLS_INF_02 = {
+	name = "Schlesien Brigade"
+	for_countries = { SLS }
+	can_use = { always = yes }
+	division_types = { "infantry" } 
+	fallback_name = "%d Großschlesien Brigade"
+	ordered = {
+		1 = { "%d Brigade 'Breslau I' " }
+		2 = { "%d Brigade 'Breslau II'" }
+	}
+}

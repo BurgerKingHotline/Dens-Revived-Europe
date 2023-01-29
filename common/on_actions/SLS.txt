@@ -1,42 +1,33 @@
 on_actions = {
 	on_daily_SLS = {
 		effect = {
-			set_temp_variable = { temp1 = var:po_power}
-			set_temp_variable = { temp2 = var:cs_power}
-			set_temp_variable = { temp3 = var:dv_power}
-			multiply_temp_variable = { temp1 = 0.01}
-			multiply_temp_variable = { temp2 = 0.01}
-			multiply_temp_variable = { temp3 = 0.01}
-			add_to_variable = { 
-				var = SLS_days_left
-				value = -1
-			}
-			add_popularity = {
-				ideology = communism
-				popularity = var:temp2
-			}
-			add_popularity = {
-				ideology = democratic
-				popularity = var:temp1
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = var:temp3
-			}
-		}
-	}
-	on_daily_SLS = {
-		effect = {
-			check_variable = { var = SLS_days_left  value = 1  compare = less_than }
+			check_variable = { SLS_days_left = 0 }
 			set_variable = { var:po_power value = 0}
 			set_variable = { var:cs_power value = 0}
 			set_variable = { var:dv_power value = 0}
 			hold_election = SLS
 		}
 	}
+	on_daily_SLS = {
+		effect = {
+			add_to_variable = { SLS_days_left = -1}
+		}
+	}
 	on_startup = {
 		effect = {
 			SLS = {
+				add_dynamic_modifier = {
+					modifier = SLS_dv_dynmod
+					days = 30
+				}
+				add_dynamic_modifier = {
+					modifier = SLS_po_dynmod
+					days = 30
+				}
+				add_dynamic_modifier = {
+					modifier = SLS_cs_dynmod
+					days = 30
+				}
 				add_to_variable = { SLS_days_left = 30}
 			}
 		}

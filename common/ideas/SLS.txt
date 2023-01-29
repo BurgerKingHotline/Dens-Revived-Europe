@@ -1,0 +1,13 @@
+ideas = {
+	country = {
+		SLS_dying_party = {
+			modifier = {
+				neutrality_drift = -1.25
+			}
+		
+		}
+	
+	
+	
+	}
+}

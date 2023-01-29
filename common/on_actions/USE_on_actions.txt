@@ -1,0 +1,36 @@
+on_actions = {
+	on_puppet = {
+		effect = {
+			ROOT = {
+				if = {
+					limit = {
+						NOT = {
+							original_tag = USE
+						}
+					}
+					}
+				if = {
+					limit = {
+						is_subject_of = USE
+					}
+					create_country_leader = {
+						name = "American Military Commission"
+						desc = ""
+						picture = "gfx/leaders/USE/USE_puppet.dds"
+						expire = "2000.1.1"
+						ideology = conservatism
+						traits = {  }
+					}
+						load_focus_tree = USE_puppet_generic				
+				}
+					if = {
+						limit = {
+							is_subject_of = USE
+						}
+					set_cosmetic_tag = USE_puppetcosmetic	
+					}				
+
+	}
+	}
+	}
+	}

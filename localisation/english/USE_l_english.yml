@@ -1,11 +1,12 @@
 ﻿l_english:
  USE:0 "American Expeditionary Army"
- USE_DEF:0 "American"
+ USE_DEF:0 "the American Expedition"
  USE_ADJ:0 "American"
  VICTORY_POINTS_758:0 "New New York"
  VICTORY_POINTS_6734:0 "Washington"
  VICTORY_POINTS_9817:0 "East Dakota"
  VICTORY_POINTS_11673:0 "Drug and Alcohol Abuse Lake"
+ VICTORY_POINTS_11707:0 "East Carolina"
  #Ideas:
  USE_new_world_blues:0 "New World Blues"
  USE_wavering_morale:0 "Wavering Morale"
