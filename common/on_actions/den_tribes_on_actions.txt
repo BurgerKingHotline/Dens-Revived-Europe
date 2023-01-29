@@ -90,6 +90,18 @@ on_actions = {
                 count = 2
             	}
 						}
+						random_owned_controlled_state = {
+							limit = {
+								any_neighbor_state = {
+									NOT = { is_owned_by = PREV }
+								}
+							}
+							create_unit = {
+                division = "name = \"Tribal Division\" division_template = \"Tribal Division\" start_experience_factor = 0.2"
+                owner = PREV
+                count = 2
+            	}
+						}
 						capital_scope = {
 							create_unit = {
                 division = "name = \"Tribal Division\" division_template = \"Tribal Division\" start_experience_factor = 0.2"

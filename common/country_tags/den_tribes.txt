@@ -24,3 +24,7 @@ ZZA = "countries/ZZA.txt" #aragon-basque-bordeaux
 ZAA = "countries/ZAA.txt" #aland island 
 ZEV = "countries/ZEV.txt" #estonia-latvia
 ZCU = "countries/ZCU.txt" #greater courland+lithuania
+ZZP = "countries/ZZP.txt" #mini zapadoslavia
+ZWZ = "countries/ZWZ.txt" #warsaw
+ZSC = "countries/ZSC.txt" #denmark-scania
+ZLW = "countries/ZLW.txt" #carpathian ruthenia-lwow
