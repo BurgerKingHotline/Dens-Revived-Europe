@@ -8,7 +8,7 @@ ASF_mustrastik_republic = { # mustrjastik, but wholesome
 	color_ui = rgb { 20 15 85 }
 }
 
-TOM_mercia_kingdom = { 
+TOM_mercia = { 
 	color = rgb { 0 38 127 }
 	color_ui = rgb { 0 38 127 }
 }
@@ -31,4 +31,12 @@ TOM_britannia = {
 TOM_devon = {
     color = rgb { 0 130 74 }
     color_ui = rgb { 0 130 74 }
+}
+TOM_east_anglia = {
+    color = rgb { 255 205 39 }
+    color_ui = rgb { 255 205 39 }
+}
+TOM_celtic = {
+    color = rgb { 38 127 0 }
+    color_ui = rgb { 38 127 0 }
 }

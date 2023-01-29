@@ -1,6 +1,6 @@
-TOE = {
+TOH = {
 	original_tag = TOM
-	has_country_flag = TOM_essex
+	has_country_flag = TOM_havering
 }
 TOA = {
 	original_tag = TOM
@@ -17,4 +17,16 @@ TOB = {
 TOD = {
 	original_tag = TOM
 	has_country_flag = TOM_devon
+}
+TOE = {
+	original_tag = TOM
+	has_country_flag = TOM_east_anglia
+}
+TOK = {
+	original_tag = TOM
+	has_country_flag = TOM_kent
+}
+TOL = {
+	original_tag = TOM
+	has_country_flag = TOM_celtic
 }

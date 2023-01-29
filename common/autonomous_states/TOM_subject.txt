@@ -1,71 +1,9 @@
 autonomy_state = {
-	id = autonomy_TOM_kingdom
-	is_puppet = yes
-	min_freedom_level = 0.75
-	manpower_influence = 0.25
-	use_overlord_color = yes
-	
-	rule = {
-		desc = "RULE_DESC_IS_A_SUBJECT"
-		can_create_factions = yes
-		can_decline_call_to_war = no
-		can_join_factions = yes
-		units_deployed_to_overlord = yes
-	}
-	
-	modifier = { can_master_build_for_us = 1 }
-	ai_subject_wants_higher = { factor = 0.0 }
-	ai_overlord_wants_lower = { factor = 0.0 }
-	ai_overlord_wants_garrison = { always = yes }
-
-	allowed = {
-		has_dlc = "Together for Victory"
-		OR = {
-			is_TOM_subject = yes
-			OVERLORD = { is_TOM_subject = yes }
-		}
-	}
-	
-	can_take_level = { always = no }
-	can_lose_level = { always = no }
-}
-autonomy_state = {
-	id = autonomy_TOM_earldom
+	id = autonomy_TOM_vassal
 	default = yes
 	is_puppet = yes
 	min_freedom_level = 0.5
 	manpower_influence = 0.5
-	use_overlord_color = yes
-	
-	rule = {
-		desc = "RULE_DESC_IS_A_SUBJECT"
-		can_create_factions = yes
-		can_decline_call_to_war = no
-		can_join_factions = yes
-		units_deployed_to_overlord = yes
-	}
-	
-	modifier = { can_master_build_for_us = 1 }
-	ai_subject_wants_higher = { factor = 0.0 }
-	ai_overlord_wants_lower = { factor = 0.0 }
-	ai_overlord_wants_garrison = { always = yes }
-
-	allowed = {
-		has_dlc = "Together for Victory"
-		OR = {
-			is_TOM_subject = yes
-			OVERLORD = { is_TOM_subject = yes }
-		}
-	}
-	
-	can_take_level = { always = no }
-	can_lose_level = { always = no }
-}
-autonomy_state = {
-	id = autonomy_TOM_county
-	is_puppet = yes
-	min_freedom_level = 0.25
-	manpower_influence = 0.75
 	use_overlord_color = yes
 	
 	rule = {
