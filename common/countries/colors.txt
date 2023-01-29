@@ -30,6 +30,18 @@ SLS = { # misiekfid
 	color = rgb { 29 51 109 }
 	color_ui = rgb { 255 73 121 }
 }
+BSQ = {
+    color = rgb { 319 213 283 }
+    color_ui = rgb { 255 153 221 }
+}
+USE = { #Empire #btw, my balls really itch guys im serious
+    color = rgb { 13 73 125 }
+    color_ui = rgb { 255 73 121 }
+}
+VKN = { #Cocktor T
+    color = rgb { 87 10 89 }
+    color_ui = rgb { 87 10 89 } #Jesse what the fuck does color_ui mean
+}
 # ADD YOUR DAMN COUNTRY
 REL = { # neoreal
 	color = rgb { 54 57 146 }
@@ -42,4 +54,12 @@ MYC = { # ywfb
 KEK = { #prepare your painis
 	color = rgb { 0 204 0 }
 	color_ui = rgb { 0 204 0 }
+}
+ONI = { #ShyGuy
+	color = rgb { 23 79 118 }
+	color_ui = rgb { 23 79 118 }
+}
+MSR = {
+	color = rgb { 149 45 102 }
+	color_ui = rgb { 149 45 102 }
 }

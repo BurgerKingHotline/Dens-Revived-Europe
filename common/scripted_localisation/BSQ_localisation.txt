@@ -1,0 +1,40 @@
+defined_text = {
+    name = GetSCFsymbol
+    text = {
+        trigger = {
+            meta_trigger = {
+                text = {
+                    has_completed_focus = [FOCUS]
+                }
+                FOCUS = "[?SCF_focus_var.GetTokenKey]"
+            }
+        }
+        localization_key = GFX_focus_completed
+    }
+    text = {
+        trigger = {
+            meta_trigger = {
+                text = { 
+                    focus_progress = { focus = [FOCUS] progress > 0 }
+                }
+                FOCUS = "[?SCF_focus_var.GetTokenKey]"
+            }
+        }
+        localization_key = GFX_focus_current
+    }
+    text = {
+        trigger = {
+            meta_trigger = {
+                text = { 
+                    [FOCUS]_available = yes
+                    [FOCUS]_prerequisites = yes
+                }
+                FOCUS = "[?SCF_focus_var.GetTokenKey]"
+            }
+        }
+        localization_key = GFX_focus_can_start
+    }
+    text = {
+        localization_key = GFX_focus_unavailable
+    }
+}

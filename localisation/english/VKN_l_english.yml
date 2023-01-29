@@ -1,0 +1,32 @@
+﻿l_english:
+ VKN_fascism:0 "New Viking Empire"
+ VKN_fascism_DEF:0 "the New Viking Empire"
+ VKN_democratic:0 "Viking Republic"
+ VKN_democratic_DEF:0 "the Viking Republic of Naples"
+ VKN_neutrality:0 "Viking Kingdom of Naples"
+ VKN_neutrality_DEF:0 "the Viking Kingdom of Naples"
+ VKN_communism:0 "Viking Napoli Commune"
+ VKN_communism_DEF:0 "the Viking Napoli Commune"
+ VKN_fascism_ADJ:0 "Viking"
+ VKN_democratic_ADJ:0 "Viking"
+ VKN_neutrality_ADJ:0 "Viking"
+ VKN_communism_ADJ:0 "Viking"
+ VKN:0 "Viking Kingdom of Naples"
+ VKN_DEF:0 "the Viking Kingdom of Naples"
+ VKN_ADJ:0 "Saint Martiner"
+ 
+ VKN_viking_lord:0 "Viking Lord"
+ VKN_god_of_war:0 "God of War"
+  
+ ###VICTORY POINTS###
+ 
+ VICTORY_POINTS_391:0 "New Philipsburg"
+ VICTORY_POINTS_3211:0 "The Burial Ground"
+ VICTORY_POINTS_3262:0 "The Plantation"
+ VICTORY_POINTS_6241:0 "Cay Hill"
+ VICTORY_POINTS_6336:0 "West Dutch Human Wildlife Reserve"
+ VICTORY_POINTS_6496:0 "Cole Bay"
+ VICTORY_POINTS_9335:0 "East Dutch Human Wildlife Reserve"
+ VICTORY_POINTS_9363:0 "Mary's Fancy"
+ VICTORY_POINTS_9498:0 "Simpson Bay"
+ VICTORY_POINTS_11562:0 "French Quarter"

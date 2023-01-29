@@ -12,4 +12,17 @@ SLS_development_decisions = {
 	visible_when_empty = yes
 	priority = 100
 }
+SLS_election_decisions = {
+	
+	allowed = {
+		original_tag = SLS
+	}
+
+	visible = {
+		has_government = neutrality
+	}
+	scripted_gui = SLS_elections
+	visible_when_empty = yes
+	priority = 100
+}
 

@@ -1,0 +1,11 @@
+﻿l_english:
+ BSQ: "Baskonia"
+ BSQ_ADJ: "Basque"
+ BSQ_DEF: "Baskonia"
+ 
+ BSQ_test_focus: "Test focus"
+ 
+ BSQ_placeholder: "Placeholder leader"
+ 
+ BSQ_enable_second_focus: "Selecting the second focus:"
+ SCF_focus_name: "[?SCF_focus_var.GetTokenLocalizedKey]"

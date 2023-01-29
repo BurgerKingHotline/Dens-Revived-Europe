@@ -1,0 +1,82 @@
+focus_tree = {
+	id = MSR_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MSR
+		}
+	}
+	continuous_focus_position = { x = 2222 y = 810}
+	default = no
+
+	focus = {
+		id = MSR_declare_a_state_of_emergency
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 14
+		y = 0
+		available = {
+			has_country_flag = MSR_attempted_assassination_on_king_zog
+		}
+		
+		completion_reward = {
+			add_ideas = {
+				MSR_national_emergency
+			}
+			hidden_effect = {
+				country_event = {
+					id = albania_events.3
+					days = 8
+				}
+			}
+		}
+
+	}
+	
+	focus = {
+		id = MSR_disolve_the_national_congress
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite = { focus = MSR_declare_a_state_of_emergency }
+
+		relative_position_id = MSR_declare_a_state_of_emergency
+
+		available = {
+			has_country_flag = MSR_attempted_assassination_on_king_zog
+		}
+		
+		completion_reward = {
+			remove_ideas = MSR_national_congress
+		}
+
+	}
+	
+	focus = {
+		id = MSR_curtail_the_ministers
+		icon = GFX_goal_unknown
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = { focus = MSR_disolve_the_national_congress }
+
+		relative_position_id = MSR_disolve_the_national_congress
+
+		select_effect = {
+			add_days_remove  = {
+				decision = MSR_fire_hasha_pas
+				days = 70
+			}
+		}
+
+		available = {
+			has_country_flag = MSR_attempted_assassination_on_king_zog
+		}
+		
+		completion_reward = {
+		}
+
+	}
+}

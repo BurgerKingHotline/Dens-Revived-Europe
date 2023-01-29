@@ -1,0 +1,43 @@
+characters = {
+    VKN_lord_dalauan = {
+        name = "Lord Dalauan"
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_VKN_lord_dalauan"
+            }
+        }
+        country_leader = {
+            ideology = despotism	
+            traits = { VKN_viking_lord }
+            desc = 
+        }
+    }
+	
+	VKN_dalauan_god_of_war = {
+        name = "Dalauan: God of War"
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_VKN_dalauan_god_of_war"
+            }
+        }
+        country_leader = {
+            ideology = gen_nazism	
+            traits = { VKN_god_of_war }
+            desc = 
+        }
+    }
+	
+	VKN_president_dalauan = {
+        name = "President Dalauan"
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_VKN_president_dalauan"
+            }
+        }
+        country_leader = {
+            ideology = liberalism	
+            traits = { }
+            desc = 
+        }
+    }
+}

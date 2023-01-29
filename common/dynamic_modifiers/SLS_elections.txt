@@ -1,0 +1,18 @@
+SLS_po_dynmod = {
+	icon = GFX_idea_unknown
+	enable = { always = yes }
+	political_power_cost = var:po_power
+	democratic_drift = var:po_power
+}
+SLS_cs_dynmod = {
+	icon = GFX_idea_unknown
+	enable = { always = yes }
+	political_power_cost = var:cs_power
+	communism_drift = var:cs_power
+}
+SLS_dv_dynmod = {
+	icon = GFX_idea_unknown
+	enable = { always = yes }
+	political_power_cost = var:dv_power
+	fascism_drift = var:dv_power
+}

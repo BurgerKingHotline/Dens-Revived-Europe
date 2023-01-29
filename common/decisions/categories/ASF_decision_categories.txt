@@ -1,0 +1,14 @@
+################
+#### ASF ####
+################
+
+ASF_decisions = {
+	priority = 10
+	icon = generic_crisis
+
+	picture = GFX_decision_cat_picture_1936_election
+
+	allowed = {
+		tag = ASF
+	}
+}

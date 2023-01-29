@@ -1,0 +1,245 @@
+ASF_decisions = {
+	ASF_form_hanseatic_league = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = ASF
+		}
+		available = {
+			controls_state = 145
+			controls_state = 195
+			controls_state = 61
+			controls_state = 141
+			controls_state = 37
+			controls_state = 85
+			controls_state = 808
+			controls_state = 812
+			controls_state = 111
+		}
+		visible = {
+		always = yes
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 20
+		}
+		complete_effect = {
+set_cosmetic_tag = ASF_hanseatic_league
+		}
+	}
+	
+		ASF_invade_estonia = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = ASF
+		}
+		available = {
+		country_exists = ZEV
+		has_completed_focus = ASF_the_preparations
+		has_war = no
+		is_neighbor_of = ZEV
+		}
+		visible = {
+		has_completed_focus = ASF_the_preparations
+		country_exists = ZEV
+		}
+		cost = 30
+		days_remove = 70
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 20
+		}
+		remove_effect = {
+declare_war_on = {
+    target = ZEV
+    type = annex_everything
+}
+		}
+	}
+	
+	ASF_invade_aland = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = ASF
+		}
+		available = {
+		country_exists = ZAA
+		has_completed_focus = ASF_the_preparations
+		has_war = no
+has_navy_size = {
+    size > 0
+}
+		}
+		visible = {
+		has_completed_focus = ASF_the_preparations
+		country_exists = ZAA
+		}
+		cost = 30
+		days_remove = 70
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 20
+		}
+		remove_effect = {
+declare_war_on = {
+    target = ZAA
+    type = annex_everything
+}
+		}
+	}
+	
+	
+
+	ASF_invade_riga = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = ASF
+		}
+		available = {
+		country_exists = ZCU
+		has_completed_focus = ASF_the_preparations
+		has_war = no
+				is_neighbor_of = ZCU
+		}
+		visible = {
+		has_completed_focus = ASF_the_preparations
+		country_exists = ZCU
+		}
+		cost = 30
+		days_remove = 70
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 20
+		}
+		remove_effect = {
+declare_war_on = {
+    target = ZCU
+    type = annex_everything
+}
+		}
+	}
+	
+	ASF_invade_kaliningrad = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = ASF
+		}
+		available = {
+		country_exists = ZCU
+		has_completed_focus = ASF_the_preparations
+		has_war = no
+				is_neighbor_of = ZCU
+		}
+		visible = {
+		has_completed_focus = ASF_the_preparations
+		country_exists = ZCU
+		}
+		cost = 30
+		days_remove = 70
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 20
+		}
+		remove_effect = {
+declare_war_on = {
+    target = ZCU
+    type = annex_everything
+}
+		}
+	}
+	ASF_proclaim_baltic_liberation = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = ASF
+		}
+		available = {
+		controls_state = 98
+		controls_state = 807
+		controls_state = 85
+		controls_state = 5
+		controls_state = 763
+		controls_state = 188
+		controls_state = 814
+		controls_state = 11
+		controls_state = 815
+		controls_state = 189
+		controls_state = 190
+		controls_state = 809
+		controls_state = 808
+		controls_state = 810
+		controls_state = 12
+		controls_state = 191
+		controls_state = 13
+		controls_state = 813
+		controls_state = 812 
+		controls_state = 145
+		has_war = no
+		}
+		visible = {
+		has_completed_focus = ASF_the_preparations
+		}
+		cost = 15
+		days_remove = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 20
+		}
+		remove_effect = {
+		set_cosmetic_tag = ASF_USSR
+		add_state_core = 98
+		add_state_core  = 807
+		add_state_core  = 85
+		add_state_core  = 5
+		add_state_core  = 763
+		add_state_core  = 188
+		add_state_core  = 814
+		add_state_core  = 11
+		add_state_core  = 815
+		add_state_core  = 189
+		add_state_core  = 190
+		add_state_core  = 809
+		add_state_core  = 808
+		add_state_core  = 810
+		add_state_core  = 12
+		add_state_core  = 191
+		add_state_core  = 13
+		add_state_core  = 813
+		add_state_core  = 812 
+		add_state_core  = 145
+		set_capital = {state = 808}
+		763 = {
+		set_state_name = "Kaliningrad"
+		}
+		85 = {
+		set_state_name = "Dantsiig"
+		}
+		5 = {
+		set_state_name = "Alam-Kaliningrad"
+		}
+		98 = {
+		set_state_name = "Plokk"
+		}
+		807 = {
+		set_state_name = "Läänenõukogu"
+		}
+
+		}
+	}	
+	}	

@@ -1,0 +1,95 @@
+scripted_gui = {
+    SCF_button = {
+        window_name = SCF_button
+        context_type = player_context
+        parent_window_name = nationalfocusview
+        visible = {
+            tag = BSQ
+        }
+        
+        properties = {
+            CheckBox = {
+                frame = SCF_enabled?1
+            }
+        }
+        effects = {
+            CheckBox_click = {
+                if = {
+                    limit = {
+                        has_variable = SCF_enabled
+                    }
+                    clear_variable = SCF_enabled
+                }
+                else = {
+                    set_variable = { SCF_enabled = 2 }
+                }
+            }
+        }
+        
+        ai_enabled = {
+            always = no
+        }
+    }
+    SCF_tree = {
+        window_name = SCF_tree
+        context_type = player_context
+        parent_window_name = SCF_anchor
+        visible = {
+            tag = BSQ
+            has_variable = SCF_enabled
+        }
+        
+        dynamic_lists = {
+            SCF_focus_grid = {
+                array = SCF_focuses
+                value = SCF_focus_var
+                index = SCF_index
+                
+                entry_container = SCF_focus
+            }
+        }
+        
+        triggers = {
+            continuous_glow_visible = {
+                meta_trigger = {
+                    text = {
+                        focus_progress = { focus = [FOCUS] progress > 0 }
+                        NOT = { has_completed_focus = [FOCUS] }
+                    }
+                    FOCUS = "[?SCF_focus_var.GetTokenKey]"
+                }
+            }
+        }
+        
+        properties = {      # I did not find a way to move an entire ContainerWindowType. This is fucked up. 
+            continuous_glow = {
+                x = SCF_glows_x^SCF_index
+                y = SCF_glows_y^SCF_index
+            }
+            bg = {
+                x = SCF_icons^SCF_index
+                y = SCF_bgs^SCF_index
+                image = "[GetSCFsymbol]"
+            }
+            symbol = {
+                x = SCF_icons^SCF_index
+                y = SCF_symbols^SCF_index
+            }
+            name = {
+                x = SCF_names_x^SCF_index
+                y = SCF_names_y^SCF_index
+            }
+        }
+        
+        ai_enabled = {
+            always = no
+        }
+    }
+#    SCF_focus = {
+#        window_name = SCF_focus
+#        context_type = player_context
+#        
+#        properties = {
+#        }
+#    }
+}

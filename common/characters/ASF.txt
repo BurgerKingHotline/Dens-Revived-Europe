@@ -1,0 +1,61 @@
+characters = {
+	ASF_Arnold_Meri = {
+		name = ASF_Arnold_Meri_NAME
+		portraits = {
+			civilian = {
+				large = "GFX_ASF_Arnold_Meri_portrait"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire="2065.1.1.1"
+		}
+	}
+
+	ASF_democratic_placeholder = {
+		name = ASF_democratic_placeholder_NAME
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+            traits = { }
+			expire="2065.1.1.1"
+		}
+	}
+	
+	ASF_Fernando_Mustrastik_Collor = {
+		name = ASF_Mustrastik_NAME
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+            traits = { prince_of_terror backroom_backstabber smooth_talking_charmer spirit_of_genghis }
+			expire="2065.1.1.1"
+		}
+	}
+	
+	ASF_cabo_daciolo = {
+		name = ASF_cabo_daciolo_NAME
+		portraits = {
+			civilian = {
+				small = "GFX_idea_cabo_daciolo"
+			}
+		}
+        advisor = {
+            slot = political_advisor
+			idea_token = daciolo
+            allowed = { original_tag = ASF }
+            traits = { warrior_code popular_figurehead2 great_war_hero democratic_firebrand democratic_reformer }
+			ai_will_do = {
+				factor = 0.500
+			}
+        }
+	}
+}
+	

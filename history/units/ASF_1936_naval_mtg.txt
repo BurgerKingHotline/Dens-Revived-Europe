@@ -1,0 +1,66 @@
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Arnold Meri Revolutionary Fleet"			
+		naval_base = 185
+		task_force = { 
+			name = "Kuressaare Fleet"
+			location = 185
+			ship = { name = "AMRFS Kuressaare" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ASF version_name = "Oktoober Class" } } }				
+			ship = { name = "AMRFS Salme" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ASF version_name = "Lauristin Class" } } }		
+			ship = { name = "AMRFS Priboi" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ASF version_name = "Lauristin Class" } } }		
+			ship = { name = "AMRFS Abruka" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ASF version_name = "Käbin Class" } } }				
+		}
+		task_force = { 
+			name = "Vilsandi Fleet"
+			location = 185
+			ship = { name = "AMRFS Vilsandi" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ASF version_name = "Eestimaa Class" } } }				
+			ship = { name = "AMRFS Tuletorn" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ASF version_name = "Eestimaa Class" } } }				
+			ship = { name = "AMRFS Lembit" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ASF version_name = "Eestimaa Class" } } }				
+			ship = { name = "AMRFS Revolutsioon" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ASF version_name = "Kalev Class" } } }						
+			ship = { name = "AMRFS Riis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ASF version_name = "Võit Class" } } }		
+			ship = { name = "AMRFS Laine" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ASF version_name = "Võit Class" } } }		
+			ship = { name = "AMRFS Lääne" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ASF version_name = "Võit Class" } } }		
+			ship = { name = "AMRFS Lenin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ASF version_name = "Võit Class" } } }		
+		}
+		task_force = { 
+			name = "Muhu Fleet"
+			location = 185
+			ship = { name = "AMRFS Lembitu" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ASF version_name = "Oktoober Class" } } }				
+			ship = { name = "AMRFS Tapa" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ASF version_name = "Oktoober Class" } } }				
+		}
+		task_force = { 
+			name = "Visby Fleet"
+			location = 408
+			ship = { name = "AMRFS Sigtuna" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ASF version_name = "Oktoober Class" } } }				
+			ship = { name = "AMRFS Meri" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ASF version_name = "Oktoober Class" } } }
+			ship = { name = "AMRFS Vanapagan" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ASF version_name = "Saaremaa Class" } } }		
+			ship = { name = "AMRFS Nastik" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ASF version_name = "Saaremaa Class" } } }		
+			ship = { name = "AMRFS Must Surm" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ASF version_name = "Saaremaa Class" } } }		
+			ship = { name = "AMRFS Marks" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ASF version_name = "Kingisepp Class" } } }
+			ship = { name = "AMRFS Engels" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ASF version_name = "Kingisepp Class" } } }
+			ship = { name = "AMRFS Stalin" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ASF version_name = "Kingisepp Class" } } }
+			ship = { name = "AMRFS Au" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ASF version_name = "Udu Class" } } }
+			ship = { name = "AMRFS Tulevik" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ASF version_name = "Udu Class" } } }
+			ship = { name = "AMRFS Põhjanael" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ASF version_name = "Udu Class" } } }
+		}
+		task_force = { 
+			name = "Kalev Fleet"
+			location = 408
+			ship = { name = "AMRFS Linnutee" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ASF version_name = "Lenin Class" } } }				
+			ship = { name = "AMRFS Säre" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ASF version_name = "Hiiumaa Class" } } }				
+			# 2. Ubatsflottiljen				
+			ship = { name = "AMRFS ENSV" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ASF version_name = "Udu Class" } } }
+			ship = { name = "AMRFS NSVL" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ASF version_name = "Udu Class" } } }
+			ship = { name = "AMRFS Karotamm" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ASF version_name = "Udu Class" } } }
+			ship = { name = "AMRFS Dovator" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ASF version_name = "Udu Class" } } }
+			ship = { name = "AMRFS Võit" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ASF version_name = "Udu Class" } } }
+			# 3. Ubatsflottiljen				
+			ship = { name = "AMRFS Lev" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ASF version_name = "Udu Class" } } }
+			ship = { name = "AMRFS Anvelt" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ASF version_name = "Udu Class" } } }
+			ship = { name = "AMRFS Ots" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ASF version_name = "Udu Class" } } }
+			ship = { name = "AMRFS Keres" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ASF version_name = "Vanem Class" } } }
+		}
+	}
+}

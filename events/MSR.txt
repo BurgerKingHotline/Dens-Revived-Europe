@@ -1,0 +1,130 @@
+add_namespace = albania_events
+
+country_event = { #assasination attempt on king zog
+    id = albania_events.1
+    title = albania_events.1.t
+    desc = albania_events.1.d
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = MSR_attempted_assassination_on_king_zog
+    }
+
+    option = { #we must destroy these radicals
+        add_stability = -0.05
+        name = albania_events.1.a
+        hidden_effect = {
+            country_event = {
+                id = albania_events.4
+                days = 8
+            }
+        }
+	}
+}
+
+country_event = { #Hasha Pas coups the government!
+    id = albania_events.2
+    title = albania_events.2.t
+    desc = albania_events.2.d
+
+	fire_only_once = yes
+    is_triggered_only = yes
+    immediate = {
+        remove_ideas = MSR_widespread_opposition
+    }
+
+    option = { #ruh roh
+        name = albania_events.2.a
+        add_stability = -0.15
+        set_politics = {
+            ruling_party = fascism
+            elections_allowed = no
+        }
+        add_country_leader_role = {
+            character = MSR_hasha_pas
+            promote_leader = yes
+            country_leader = {
+                ideology = fascism_type
+                expire = "1965.1.1.1"
+                traits = { MSR_saviour_of_albania war_industrialist }
+            }
+        }
+	}
+}
+
+country_event = { #widespread opposition to the government
+    id = albania_events.3
+    title = albania_events.3.t
+    desc = albania_events.3.d
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    option = { #can this get any worse?
+        name = albania_events.3.a
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.05
+        }
+        swap_ideas = {
+            remove_idea = MSR_growing_republican_support
+            add_idea = MSR_widespread_opposition
+        }
+        activate_mission = MSR_destroy_the_opposition
+	}
+}
+
+country_event = { #Hasha pas is planning a coup on the government
+    id = albania_events.4
+    title = albania_events.4.t
+    desc = albania_events.4.d
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    option = { #can this get any worse?
+        name = albania_events.4.a
+        activate_mission = MSR_fire_hasha_pas
+	}
+}
+
+country_event = { #Republican forces breach the capitol building!
+    id = albania_events.5
+    title = albania_events.5.t
+    desc = albania_events.5.d
+
+	fire_only_once = yes
+    is_triggered_only = yes
+    immediate = {
+        deactivate_advisor = MSR_hasha_pas
+    }
+
+    option = { #we have no choice but to resign
+        name = albania_events.5.a
+        set_politics = {
+            ruling_party = democratic
+            elections_allowed = yes
+        }
+	}
+}
+
+country_event = { #King Zog visits the country side in an open top car
+    id = albania_events.6
+    title = albania_events.6.t
+    desc = albania_events.6.d
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    option = { #What could go wrong?
+        name = albania_events.6.a
+        hidden_effect = {
+            country_event = {
+                id = albania_events.1
+                days = 12
+            }
+        }
+	}
+}

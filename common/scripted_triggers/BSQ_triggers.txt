@@ -1,0 +1,11 @@
+
+BSQ_test_focus_available = {
+    has_political_power > 100
+}
+BSQ_test_focus_prerequisites = {
+}
+BSQ_test_focus_2_available = {
+}
+BSQ_test_focus_2_prerequisites = {
+    has_completed_focus = BSQ_test_focus
+}

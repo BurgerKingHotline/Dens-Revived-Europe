@@ -1,0 +1,46 @@
+leader_traits = {
+	MSR_king_of_albania_1 = {
+		random = no
+		political_power_gain = 0.15
+		compliance_growth = 0.1
+		command_power_gain_mult = 0.05
+		party_popularity_stability_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MSR_saviour_of_albania = {
+		random = no
+		stability_factor = -0.15
+		fascism_drift = 0.05
+		consumer_goods_factor = -0.03
+		resistance_target = -0.35
+		foreign_subversive_activites = -0.8
+		monthly_population = -0.25
+		political_power_gain = 0.15
+		non_core_manpower = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MSR_minister_of_the_interior = {
+		random = no
+		stability_factor = -0.1
+		neutrality_drift = 0.02
+		fascism_drift = 0.01
+		consumer_goods_factor = -0.03
+		resistance_target = -0.25
+		foreign_subversive_activites = -0.4
+		monthly_population = -0.15
+		political_power_gain = 0.15
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

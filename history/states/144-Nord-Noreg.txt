@@ -12,7 +12,8 @@ state={
 	}
 
 	history={
-		#owner = NOR
+		owner = ONI
+		add_core_of = ONI
 		buildings = {
 			infrastructure = 2
 			air_base = 1

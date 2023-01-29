@@ -1,0 +1,39 @@
+@focus_spacing_x = 96
+@focus_spacing_y = 130
+@glow_offset_x = 17
+@glow_offset_y = -40
+@icon_offset = 5
+@bg_offset = 40
+@symbol_offset = -44
+@name_offset_x = 15
+@name_offset_y = 58
+
+calculate_focus_positions = {
+    for_loop_effect = {
+        end = SCF_focuses^num
+        value = i
+        multiply_variable = { SCF_focuses_x^i = @focus_spacing_x }
+        multiply_variable = { SCF_focuses_y^i = @focus_spacing_y }
+        add_to_array = { SCF_glows_x = SCF_focuses_x^i }
+        add_to_variable = { SCF_glows_x^i = @glow_offset_x }
+        add_to_array = { SCF_glows_y = SCF_focuses_y^i }
+        add_to_variable = { SCF_glows_y^i = @glow_offset_y }
+        add_to_array = { SCF_icons = SCF_focuses_x^i }
+        add_to_variable = { SCF_icons^i = @icon_offset }
+        add_to_array = { SCF_bgs = SCF_focuses_y^i }
+        add_to_variable = { SCF_bgs^i = @bg_offset }
+        add_to_array = { SCF_symbols = SCF_focuses_y^i }
+        add_to_variable = { SCF_symbols^i = @symbol_offset }
+        add_to_array = { SCF_names_x = SCF_focuses_x^i }
+        add_to_variable = { SCF_names_x^i = @name_offset_x }
+        add_to_array = { SCF_names_y = SCF_focuses_y^i }
+        add_to_variable = { SCF_names_y^i = @name_offset_y }
+    }
+}
+
+BSQ_test_focus_reward = {
+
+}
+BSQ_test_focus_2_reward = {
+
+}

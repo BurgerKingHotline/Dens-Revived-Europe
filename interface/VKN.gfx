@@ -1,0 +1,18 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_portrait_VKN_lord_dalauan
+        texturefile = "gfx/leaders/VKN/portrait_VKN_lord_dalauan.dds"
+    }
+}
+spriteTypes = {
+    spriteType = {
+        name = GFX_portrait_VKN_dalauan_god_of_war
+        texturefile = "gfx/leaders/VKN/portrait_VKN_dalauan_god_of_war.dds"
+    }
+}
+spriteTypes = {
+    spriteType = {
+        name = GFX_portrait_VKN_president_dalauan
+        texturefile = "gfx/leaders/VKN/portrait_VKN_president_dalauan.dds"
+    }
+}

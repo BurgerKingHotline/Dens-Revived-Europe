@@ -1,0 +1,15 @@
+VKN_dalauan_categories = {
+	#icon = hol_war_on_pacifism
+	
+	allowed = {
+		original_tag = VKN
+	}
+
+	visible = {
+		always = yes
+	}
+	scripted_gui = SWI_centralization_bop
+	visible_when_empty = yes
+	priority = 1000
+}
+

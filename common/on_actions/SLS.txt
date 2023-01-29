@@ -1,0 +1,35 @@
+on_actions = {
+	on_daily_SLS = {
+		effect = {
+			check_variable = { SLS_days_left = 0 }
+			set_variable = { var:po_power value = 0}
+			set_variable = { var:cs_power value = 0}
+			set_variable = { var:dv_power value = 0}
+			hold_election = SLS
+		}
+	}
+	on_daily_SLS = {
+		effect = {
+			add_to_variable = { SLS_days_left = -1}
+		}
+	}
+	on_startup = {
+		effect = {
+			SLS = {
+				add_dynamic_modifier = {
+					modifier = SLS_dv_dynmod
+					days = 30
+				}
+				add_dynamic_modifier = {
+					modifier = SLS_po_dynmod
+					days = 30
+				}
+				add_dynamic_modifier = {
+					modifier = SLS_cs_dynmod
+					days = 30
+				}
+				add_to_variable = { SLS_days_left = 30}
+			}
+		}
+	}
+} 

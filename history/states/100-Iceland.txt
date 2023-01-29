@@ -9,7 +9,8 @@ state=
 	
 	history=
 	{
-		#owner = DEN
+		owner = ONI
+		add_core_of = ONI
 		victory_points = { 12674 1 }
 		buildings = {
 			infrastructure = 1

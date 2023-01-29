@@ -4,3 +4,43 @@
  TOM_ADJ: "English"
  VICTORY_POINTS_11221: "Buckingham"
  VICTORY_POINTS_11374: "Havering"
+ 
+ autonomy_TOM_kingdom: "Kingdom"
+ autonomy_TOM_earldom: "Earldom"
+ autonomy_TOM_county: "County"
+
+ TOM_havering: "Kingdom of Havering"
+ TOM_havering_DEF: "the Kingdom of Havering"
+ TOM_havering_ADJ: "Havering"
+
+ TOM_mercia_kingdom: "Kingdom of Mercia"
+ TOM_mercia_kingdom_DEF: "the Kingdom of Mercia"
+ TOM_mercia_kingdom_ADJ: "Mercian"
+
+ TOM_powys_earldom: "Duchy of Powys"
+ TOM_powys_earldom_DEF: "the Duchy of Powys"
+ TOM_powys_earldom_ADJ: "Powys"
+
+ TOM_confederacy: "Confederacy of the Free Boroughs"
+ TOM_confederacy_DEF: "the Confederacy of the Free Boroughs"
+ TOM_confederacy_ADJ: "Confederate"
+
+ TOM_cornwall: "Cornwall"
+ TOM_cornwall_DEF: "Cornwall"
+ TOM_cornwall_ADJ: "Cornwall"
+ TOM_cornwall_fascism: "State of Cornwall"
+ TOM_cornwall_fascism_DEF: "the State of Cornwall"
+ TOM_cornwall_fascism_ADJ: "Cornish"
+
+ TOM_britannia: "Holy Britannic Empire"
+ TOM_britannia_DEF: "the Holy Britannic Empire"
+ TOM_britannia_ADJ: "Holy Britannic"
+
+ TOM_devon: "United Electorates of Devon"
+ TOM_devon_DEF: "the United Electorates of Devon"
+ TOM_devon_ADJ: "Devon"
+
+ TOM_democratic_party: "Popular Society"
+ TOM_neutrality_party: "Noble-led Society"
+ TOM_communism_party: "Collectivist Society"
+ TOM_fascism_party: "Statist Society"

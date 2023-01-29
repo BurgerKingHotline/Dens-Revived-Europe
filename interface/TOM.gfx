@@ -11,4 +11,16 @@ spriteTypes = {
         name = "GFX_idea_TOM_irredentism"
         texturefile = "gfx/interface/ideas/TOM_irredentism.dds"
     }
+    spriteType = {
+        name = "GFX_autonomy_TOM_kingdom_icon"
+        texturefile = "gfx/interface/autonomy/autonomy_TOM_kingdom.dds"
+    }
+    spriteType = {
+        name = "GFX_autonomy_TOM_earldom_icon"
+        texturefile = "gfx/interface/autonomy/autonomy_TOM_earldom.dds"
+    }
+    spriteType = {
+        name = "GFX_autonomy_TOM_county_icon"
+        texturefile = "gfx/interface/autonomy/autonomy_TOM_county.dds"
+    }
 }

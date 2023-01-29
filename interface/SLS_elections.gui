@@ -1,0 +1,121 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "SLS_elections"
+		position = { x=0 y=0 }	
+		size = { width=500 height=300 }
+		
+		iconType = {
+			name = "SLS_PO"
+			position = { x= -220 y=-75 }
+			orientation = center
+			spriteType = "GFX_SLS_PO" 
+			pdx_tooltip = "SLS_PO_DESC"
+		}
+		iconType = {
+			name = "SLS_CS"
+			position = { x= -20 y=-75 }
+			orientation = center
+			spriteType = "GFX_SLS_CS" 
+			pdx_tooltip = "SLS_CS_DESC"
+		}
+		iconType = {
+			name = "SLS_DV"
+			position = { x= 180 y=-75 }
+			orientation = center
+			spriteType = "GFX_SLS_DV" 
+			pdx_tooltip = "SLS_DV_DESC"
+		}
+		
+		instantTextBoxType = {
+			name ="SLS_developmenttext"
+			position = { x= 50 y = -20 }
+			font = "hoi_18mbs"
+			text = "SLS_elections_text"
+			format = center
+			maxWidth = 420
+			maxHeight = 100
+			fixedsize = yes
+		}
+		
+		buttonType = {
+			name = "help_po"
+			spriteType = "GFX_zoom_in" 
+			position = { x= -180 y=20 }
+			orientation = center
+		}
+		buttonType = {
+			name = "unhelp_po"
+			spriteType = "GFX_zoom_out" 
+			position = { x= -230 y=20 }
+			orientation = center
+		}
+		
+		buttonType = {
+			name = "help_cs"
+			spriteType = "GFX_zoom_in" 
+			position = { x= 25 y=20 }
+			orientation = center
+		}
+		buttonType = {
+			name = "unhelp_cs"
+			spriteType = "GFX_zoom_out" 
+			position = { x= -25 y=20 }
+			orientation = center
+		}
+		
+		buttonType = {
+			name = "help_dv"
+			spriteType = "GFX_zoom_in" 
+			position = { x= 220 y=20 }
+			orientation = center
+		}
+		buttonType = {
+			name = "unhelp_dv"
+			spriteType = "GFX_zoom_out" 
+			position = { x= 170 y=20 }
+			orientation = center
+		}
+		instantTextBoxType = {
+			name ="po_power_spending"
+			position = { x= 10 y = 200 }
+			font = "hoi_18mbs"
+			text = "Current Spending for CP is -[?root.po_power|R]"
+			format = center
+			maxWidth = 100
+			maxHeight = 100
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="SLS_days_left_text"
+			position = { x= 215 y = 260 }
+			font = "hoi_18mbs"
+			text = "[?root.SLS_days_left|G] days until voting"
+			format = center
+			maxWidth = 100
+			maxHeight = 100
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="cs_power_spending"
+			position = { x= 215 y = 200 }
+			font = "hoi_18mbs"
+			text = "Current Spending for RB is -[?root.cs_power|R]"
+			format = center
+			maxWidth = 100
+			maxHeight = 100
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="dv_power_spending"
+			position = { x= 410 y = 200 }
+			font = "hoi_18mbs"
+			text = "Current Spending for DV is -[?root.dv_power|R]"
+			format = center
+			maxWidth = 100
+			maxHeight = 100
+			fixedsize = yes
+		}
+
+	}
+}

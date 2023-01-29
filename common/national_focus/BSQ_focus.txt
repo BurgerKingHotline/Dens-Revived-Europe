@@ -1,0 +1,41 @@
+focus_tree = {
+    id = baskonia_focus
+    country = {
+        base = 10
+        modifier = {
+            factor = 0
+            NOT = { tag = BSQ }
+        }
+    }
+    default = no
+    
+    focus = {
+        id = BSQ_test_focus
+        x = 0
+        y = 0
+        icon = GFX_focus_unknown
+        available = {
+            BSQ_test_focus_available = yes
+        }
+        
+        cost = 10
+        completion_reward = {
+            BSQ_test_focus_reward = yes
+        }
+    }
+    focus = {
+        id = BSQ_test_focus_2
+        x = 0
+        y = 1
+        icon = GFX_focus_unknown
+        prerequisite = { focus = BSQ_test_focus }
+        available = {
+            BSQ_test_focus_2_available = yes
+        }
+        
+        cost = 10
+        completion_reward = {
+            BSQ_test_focus_2_reward = yes
+        }
+    }
+}

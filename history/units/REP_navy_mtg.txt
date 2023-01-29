@@ -1,0 +1,21 @@
+﻿units = {
+
+	##### Naval OOB #####
+	fleet = {
+		name = "Cat navy uwu"
+		naval_base = 11912 
+		task_force = {				
+			name = "cat fleet owo"			
+			location = 4109
+			ship = { name = "Killer of kids" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = REP version_name = "Cat boat :3" } } }
+			ship = { name = ">w<" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = REP version_name = "Kitty boat :3" } } }
+			ship = { name = "OwO" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = REP version_name = "Kitty boat :3" } } }
+			ship = { name = "UwU" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = REP version_name = "Kitty boat :3" } } }
+			ship = { name = ">wO" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = REP version_name = "Kitty boat :3" } } }
+			ship = { name = "Ow<" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = REP version_name = "Kitty boat :3" } } }
+			ship = { name = "-w-" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = REP version_name = "Kitty boat :3" } } }
+		}	
+	}
+}
+
+
