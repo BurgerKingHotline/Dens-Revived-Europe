@@ -7,8 +7,7 @@ state={
 	state_category = city
 
 	history={
-		owner = ZSP
-		#add_core_of = GLC
+		owner = USE
 		victory_points = {
 			758 5
 		}
@@ -24,7 +23,7 @@ state={
 				naval_base = 6
 			}
 		}
-		add_core_of = ZSP
+		add_core_of = USE
 	}
 
 	provinces={

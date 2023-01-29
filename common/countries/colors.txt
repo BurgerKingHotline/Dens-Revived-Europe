@@ -34,6 +34,10 @@ BSQ = {
     color = rgb { 319 213 283 }
     color_ui = rgb { 255 153 221 }
 }
+USE = { #Empire #btw, my balls really itch guys im serious
+    color = rgb { 13 73 125 }
+    color_ui = rgb { 255 73 121 }
+}
 # ADD YOUR DAMN COUNTRY
 REL = { # neoreal
 	color = rgb { 54 57 146 }
@@ -46,4 +50,8 @@ MYC = { # ywfb
 KEK = { #prepare your painis
 	color = rgb { 0 204 0 }
 	color_ui = rgb { 0 204 0 }
+}
+ONI = { #ShyGuy
+	color = rgb { 23 79 118 }
+	color_ui = rgb { 23 79 118 }
 }
