@@ -1,0 +1,20 @@
+scripted_gui = {
+  dalauan_power_bar = {
+    window_name = "vkn_dalauan_power_window"
+	context_type = decision_category
+
+    visible = {
+	tag = VKN
+    }
+
+    properties = {
+	dalauan_power_bar = {
+        frame = dalauan_power_var
+    }
+    }
+
+    ai_enabled = {
+		always = no
+    }
+  }
+}

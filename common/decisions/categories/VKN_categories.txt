@@ -8,7 +8,7 @@ VKN_dalauan_categories = {
 	visible = {
 		always = yes
 	}
-	scripted_gui = SWI_centralization_bop
+	scripted_gui = dalauan_power_bar
 	visible_when_empty = yes
 	priority = 1000
 }
