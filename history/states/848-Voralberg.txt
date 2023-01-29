@@ -5,12 +5,12 @@ state={
 	manpower = 154354
 	state_category = pastoral
 	history={
-		owner = ZAL
+		owner = FOR
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = ZAL
+		add_core_of = FOR
 	}
 	provinces={
 		6678 6680 
