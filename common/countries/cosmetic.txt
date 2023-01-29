@@ -32,3 +32,8 @@ TOM_devon = {
     color = rgb { 0 130 74 }
     color_ui = rgb { 0 130 74 }
 }
+
+USE_puppetcosmetic = {
+    color = rgb { 13 73 125 }
+    color_ui = rgb { 255 73 121 }
+}

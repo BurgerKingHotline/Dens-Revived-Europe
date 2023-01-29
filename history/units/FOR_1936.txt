@@ -1,0 +1,259 @@
+﻿division_template = {
+	name = "Fortress Division"
+	division_names_group = FOR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+	}
+}
+
+
+units = {
+
+	division = { 
+	name = "1st Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "2nd Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "3rd Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "4th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "5th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "6th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "7th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "8th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "9th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "10th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "11th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "12th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "13th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "14th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "15th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "16th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "17th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "18th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "19th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "20th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "21st Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "22nd Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "23rd Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "24th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "25th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "26th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "27th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "28th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "29th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name = "30th Fortress Division"
+		location = 9620  # 
+		division_template = "Fortress Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+}

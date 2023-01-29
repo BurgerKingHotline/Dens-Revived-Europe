@@ -38,6 +38,18 @@ if = {
 	}
 }
 
+set_variable = { GLG_romanian_aggro = 15 }
+set_variable = { GLG_bulgarian_aggro = 25 }
+
+recruit_character = GLG_nicholas_i
+recruit_character = GLG_king_michael
+recruit_character = GLG_christian_rakovsky
+recruit_character = GLG_pencho_zlatev
+recruit_character = GLG_nikola_mushanov
+
+add_ideas = {
+	GLG_unstable_union
+}
 set_research_slots = 3
 set_stability = 0.3
 set_war_support = 0.4

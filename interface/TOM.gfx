@@ -12,7 +12,7 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/TOM_irredentism.dds"
     }
     spriteType = {
-        name = "GFX_autonomy_TOM_kingdom_icon"
+        name = "GFX_autonomy_TOM_vassal_icon"
         texturefile = "gfx/interface/autonomy/autonomy_TOM_kingdom.dds"
     }
     spriteType = {

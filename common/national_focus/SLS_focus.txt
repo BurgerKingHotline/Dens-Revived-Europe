@@ -1,0 +1,525 @@
+
+shared_focus = {
+	id = SLS_the_last_days_of_durs
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 10
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_the_last_days_of_durs"
+	}
+}
+
+shared_focus = {
+	id = SLS_preparing_for_elections
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_preparing_for_elections"
+	}
+	relative_position_id = SLS_the_last_days_of_durs
+	prerequisite = { focus = SLS_the_last_days_of_durs }
+}
+
+shared_focus = {
+	id = SLS_the_sun_setting_on_durs
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_the_sun_setting_on_durs"
+	}
+	relative_position_id = SLS_the_last_days_of_durs
+	prerequisite = { focus = SLS_the_last_days_of_durs }
+}
+
+shared_focus = {
+	id = SLS_farewell
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_farewell"
+	}
+	relative_position_id = SLS_preparing_for_elections
+	prerequisite = { focus = SLS_preparing_for_elections }
+	prerequisite = { focus = SLS_the_sun_setting_on_durs }
+}
+focus_tree = {
+    id = SLS_focus_durs
+    country = {
+        base = 0
+        modifier = {
+            add = 10
+            original_tag = SLS
+        }
+    }
+	continuous_focus_position = { x = 50 y = 2000 }
+	shared_focus = SLS_the_last_days_of_durs
+	shared_focus = SLS_two_industries
+	shared_focus = SLS_democracy_the_best_system
+}
+
+shared_focus = {
+	id = SLS_two_industries
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 25
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_two_industries"
+	}
+}
+
+shared_focus = {
+	id = SLS_civilian
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_civilian"
+	}
+	relative_position_id = SLS_two_industries
+	prerequisite = { focus = SLS_two_industries }
+}
+
+shared_focus = {
+	id = SLS_military
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_military"
+	}
+	relative_position_id = SLS_two_industries
+	prerequisite = { focus = SLS_two_industries }
+}
+
+shared_focus = {
+	id = SLS_under_our_feet
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_under_our_feet"
+	}
+	relative_position_id = SLS_civilian
+	prerequisite = { focus = SLS_civilian }
+}
+
+shared_focus = {
+	id = SLS_above_our_heads
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_above_our_heads"
+	}
+	relative_position_id = SLS_civilian
+	prerequisite = { focus = SLS_civilian }
+}
+
+shared_focus = {
+	id = SLS_beyond_our_borders
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_beyond_our_borders"
+	}
+	relative_position_id = SLS_above_our_heads
+	prerequisite = { focus = SLS_above_our_heads }
+}
+
+shared_focus = {
+	id = SLS_silesias_pride
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_silesias_pride"
+	}
+	relative_position_id = SLS_under_our_feet
+	prerequisite = { focus = SLS_under_our_feet }
+}
+
+shared_focus = {
+	id = SLS_deals_with_the_republics
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_deals_with_the_republics"
+	}
+	relative_position_id = SLS_beyond_our_borders
+	prerequisite = { focus = SLS_beyond_our_borders }
+}
+
+shared_focus = {
+	id = SLS_opening_the_katowice_metro
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_opening_the_katowice_metro"
+	}
+	relative_position_id = SLS_silesias_pride
+	prerequisite = { focus = SLS_silesias_pride }
+}
+
+shared_focus = {
+	id = SLS_developing_the_nation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_developing_the_nation"
+	}
+	relative_position_id = SLS_deals_with_the_republics
+	prerequisite = { focus = SLS_deals_with_the_republics }
+	prerequisite = { focus = SLS_opening_the_katowice_metro }
+}
+
+shared_focus = {
+	id = SLS_new_arms_industries
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_new_arms_industries"
+	}
+	relative_position_id = SLS_military
+	prerequisite = { focus = SLS_military }
+}
+
+shared_focus = {
+	id = SLS_deals_with_the_americans
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_deals_with_the_americans"
+	}
+	relative_position_id = SLS_new_arms_industries
+	prerequisite = { focus = SLS_new_arms_industries }
+}
+
+shared_focus = {
+	id = SLS_schlesien_garrisons
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_schlesien_garrisons"
+	}
+	relative_position_id = SLS_deals_with_the_americans
+	prerequisite = { focus = SLS_deals_with_the_americans }
+}
+
+shared_focus = {
+	id = SLS_buying_our_own_arms
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_buying_our_own_arms"
+	}
+	relative_position_id = SLS_military
+	prerequisite = { focus = SLS_military }
+}
+
+shared_focus = {
+	id = SLS_deals_with_edward
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_deals_with_edward"
+	}
+	relative_position_id = SLS_buying_our_own_arms
+	prerequisite = { focus = SLS_buying_our_own_arms }
+}
+
+shared_focus = {
+	id = SLS_polish_guard
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_polish_guard"
+	}
+	relative_position_id = SLS_deals_with_edward
+	prerequisite = { focus = SLS_deals_with_edward }
+}
+
+shared_focus = {
+	id = SLS_the_prepared_nation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_the_prepared_nation"
+	}
+	relative_position_id = SLS_schlesien_garrisons
+	prerequisite = { focus = SLS_schlesien_garrisons }
+	prerequisite = { focus = SLS_polish_guard }
+}
+
+shared_focus = {
+	id = SLS_democracy_the_best_system
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 15
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_democracy_the_best_system"
+	}
+}
+
+shared_focus = {
+	id = SLS_new_morning_in_old_katowice
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_new_morning_in_old_katowice"
+	}
+	relative_position_id = SLS_democracy_the_best_system
+	prerequisite = { focus = SLS_democracy_the_best_system }
+}
+
+shared_focus = {
+	id = SLS_a_report_from_wroclaw
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_a_report_from_wroclaw"
+	}
+	relative_position_id = SLS_democracy_the_best_system
+	prerequisite = { focus = SLS_democracy_the_best_system }
+}
+
+shared_focus = {
+	id = SLS_imprison_dv_leaders
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_imprison_dv_leaders"
+	}
+	relative_position_id = SLS_new_morning_in_old_katowice 
+	prerequisite = { focus = SLS_new_morning_in_old_katowice }
+	prerequisite = { focus = SLS_a_report_from_wroclaw }
+}
+
+shared_focus = {
+	id = SLS_a_meeting_with_jaruzelski
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_a_meeting_with_jaruzelski"
+	}
+	relative_position_id = SLS_new_morning_in_old_katowice 
+	prerequisite = { focus = SLS_new_morning_in_old_katowice }
+}
+
+shared_focus = {
+	id = SLS_repurpose_dv_headquarters
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_repurpose_dv_headquarters"
+	}
+	relative_position_id = SLS_a_report_from_wroclaw 
+	prerequisite = { focus = SLS_a_report_from_wroclaw }
+}
+
+shared_focus = {
+	id = SLS_the_true_program
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_the_true_program"
+	}
+	relative_position_id = SLS_imprison_dv_leaders 
+	prerequisite = { focus = SLS_imprison_dv_leaders }
+	prerequisite = { focus = SLS_a_meeting_with_jaruzelski }
+	prerequisite = { focus = SLS_repurpose_dv_headquarters }
+}
+
+shared_focus = {
+	id = SLS_the_zapadoslavian_region
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_the_zapadoslavian_region"
+	}
+	relative_position_id = SLS_the_true_program 
+	prerequisite = { focus = SLS_the_true_program }
+}
+
+shared_focus = {
+	id = SLS_the_poznan_region
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_the_poznan_region"
+	}
+	relative_position_id = SLS_the_zapadoslavian_region 
+	prerequisite = { focus = SLS_the_zapadoslavian_region }
+}
+
+shared_focus = {
+	id = SLS_the_warsaw_region
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_the_warsaw_region"
+	}
+	relative_position_id = SLS_the_zapadoslavian_region 
+	prerequisite = { focus = SLS_the_zapadoslavian_region }
+}
+
+shared_focus = {
+	id = SLS_negotiations_with_hedgehogs
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_negotiations_with_hedgehogs"
+	}
+	relative_position_id = SLS_the_poznan_region 
+	prerequisite = { focus = SLS_the_poznan_region }
+	prerequisite = { focus = SLS_the_warsaw_region }
+}
+
+shared_focus = {
+	id = SLS_negotiations_succeed
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_negotiations_succeed"
+	}
+	mutually_exclusive = { focus = SLS_negotiations_fail }
+	relative_position_id = SLS_negotiations_with_hedgehogs 
+	prerequisite = { focus = SLS_negotiations_with_hedgehogs }
+}
+
+shared_focus = {
+	id = SLS_negotiations_fail
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_negotiations_fail"
+	}
+	mutually_exclusive = { focus = SLS_negotiations_succeed }
+	relative_position_id = SLS_negotiations_with_hedgehogs 
+	prerequisite = { focus = SLS_negotiations_with_hedgehogs }
+}
+
+shared_focus = {
+	id = SLS_follow_through_with_our_promises
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_follow_through_with_our_promises"
+	}
+	relative_position_id = SLS_negotiations_succeed 
+	prerequisite = { focus = SLS_negotiations_succeed }
+}
+
+shared_focus = {
+	id = SLS_central_european_alliance
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_central_european_alliance"
+	}
+	relative_position_id = SLS_negotiations_succeed 
+	prerequisite = { focus = SLS_negotiations_succeed }
+}
+
+shared_focus = {
+	id = SLS_develop_new_voivodeships
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_develop_new_voivodeships"
+	}
+	relative_position_id = SLS_negotiations_fail 
+	prerequisite = { focus = SLS_negotiations_fail }
+}
+
+shared_focus = {
+	id = SLS_autonomous_hedgehog_voivodeship
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_autonomous_hedgehog_voivodeship"
+	}
+	relative_position_id = SLS_negotiations_fail 
+	prerequisite = { focus = SLS_negotiations_fail }
+}
+
+

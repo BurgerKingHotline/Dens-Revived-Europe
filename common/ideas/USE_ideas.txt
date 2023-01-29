@@ -8,7 +8,7 @@ ideas = {
 			democratic_acceptance = 25
             }
         }
-        USE_wavering_morale = {
+        USE_wavering_morale_1 = {
 #            picture = 
             modifier = {
 			surrender_limit = -0.1
@@ -16,6 +16,9 @@ ideas = {
 			justify_war_goal_time = 0.25
 			consumer_goods_factor = 0.1
             }
+			rule = {
+			    can_join_factions = no
+			}			
         }
         USE_mcdonalds_1 = {
 #            picture = 
