@@ -36,4 +36,40 @@ country_event = { #Intro Paragraph?
         add_political_power = 5
 	}
 }
+country_event = { #Icelandic Story
+    id = ONI_events.2
+    title = ONI_events.2.t
+    desc = ONI_events.2.d
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+    }
+
+    option = {
+        name = ONI_events.2.a
+	}
+}
+country_event = { #Swedish Story
+    id = ONI_events.3
+    title = ONI_events.3.t
+    desc = ONI_events.3.d
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+    }
+
+    option = {
+        name = ONI_events.3.a
+        custom_effect_tooltip = NOI_not_madness_start_tt
+	}
+    option = {
+        name = ONI_events.3.b
+        custom_effect_tooltip = NOI_madness_start_tt
+        set_country_flag = NOI_flag_started_madness
+	}
+}
 

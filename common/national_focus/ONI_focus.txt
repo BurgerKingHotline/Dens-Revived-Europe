@@ -10,18 +10,127 @@ focus_tree = {
 	continuous_focus_position = { x = 2222 y = 810}
 	default = no
 
-	focus = {
-		id = ORI_debug
-		icon = GFX_goal_unknown
-		cost = 5
-		x = 14
-		y = 0
-		available = {
-		
-		}
-		
-		completion_reward = {
-		}
 
+	###LE FOCUS TREE###
+	###LE FOCUS TREE###
+
+	#Out of the Ashes
+	focus = {
+		id = ONI_out_ash
+		icon = GFX_goal_continuous_increase_nu
+		x = 10
+		y = 0
+		
+		#prerequisite = { focus = NEG_fascist }
+		
+		#relative_position_id = NEG_fascist
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 8000
+		}
+		completion_reward = {
+			ROOT = {
+				country_event = ONI_events.1
+			}
+		}
+	}
+	focus = {
+		id = ONI_new_comms
+		icon = GFX_goal_continuous_increase_nu
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = ONI_out_ash }
+		
+		relative_position_id = ONI_out_ash
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 8000
+		}
+		completion_reward = {
+			100 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			ROOT = {
+				country_event = ONI_events.2
+			}
+		}
+	}
+	focus = {
+		id = ONI_new_defense
+		icon = GFX_goal_continuous_increase_nu
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = ONI_out_ash }
+		
+		relative_position_id = ONI_out_ash
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 8000
+		}
+		completion_reward = {
+			division_template = {
+				name = "Provisional Militia"
+				priority = 1
+				division_names_group = USA_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+		
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+		
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+				}
+			}
+			ROOT = {
+				country_event = ONI_events.3
+			}
+			
+		}
 	}
 }
