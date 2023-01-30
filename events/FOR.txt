@@ -1,0 +1,24 @@
+add_namespace = fortress
+
+
+country_event = {
+	id = fortress.1
+	title = fortress.1.t
+	desc = fortress.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = fortress.1.a
+		FOR = {
+			set_cosmetic_tag = FOR_darkness
+		}
+	}
+	
+	option = {
+		name = fortress.1.b
+		FOR = {
+			set_cosmetic_tag = FOR_light
+		}
+	}
+}
