@@ -1,0 +1,62 @@
+ideas = {
+	country = {
+		ONI_broken_infra = {
+					
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ONI_broken_infra
+			
+			modifier = {
+				production_speed_infrastructure_factor = -0.15
+				production_speed_rail_way_factor = -0.15
+				mobilization_speed = -0.1
+			}
+		}
+		ONI_unification_for_survival = {
+					
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ONI_forced_unification
+			
+			modifier = {
+				conscription_factor = -0.2
+				stability_factor = -0.05
+			}
+		}
+		ONI_provisional_govt = {
+					
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ONI_prov_govt
+			
+			modifier = {
+				political_power_gain = 0.2
+				political_advisor_cost_factor = 0.30
+				stability_factor = -0.1
+			}
+		}
+		
+		
+	}
+}

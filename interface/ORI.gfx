@@ -1,0 +1,14 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_idea_ONI_forced_unification"
+        texturefile = "gfx/interface/ideas/ONI_gfx_forced_unification.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ONI_broken_infra"
+        texturefile = "gfx/interface/ideas/ONI_gfx_broken_infra.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_ONI_prov_govt"
+        texturefile = "gfx/interface/ideas/ONI_gfx_prov_govt.dds"
+    }
+}
