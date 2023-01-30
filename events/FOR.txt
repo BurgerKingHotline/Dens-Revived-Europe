@@ -12,6 +12,7 @@ country_event = {
 		name = fortress.1.a
 		FOR = {
 			set_cosmetic_tag = FOR_darkness
+			load_focus_tree = fortress_darkness_focus
 		}
 	}
 	
@@ -19,6 +20,7 @@ country_event = {
 		name = fortress.1.b
 		FOR = {
 			set_cosmetic_tag = FOR_light
+			load_focus_tree = fortress_light_focus
 		}
 	}
 }

@@ -1,28 +1,28 @@
 focus_tree = {
-	id = fortress_focus
+	id = fortress_darkness_focus
 	
 	country = {
 		factor = 0
 		
 		modifier = {
 			add = 10
-			tag = FOR	
+			has_cosmetic_tag = FOR_darkness
 		}
 	}
 	
 	default = no
 
 	focus = {
-		id = FOR_A_Decision
+		id = FOR_Darkness_Takes_Over
 		icon = GFX_focus_ger_return_of_the_kaiser
 		x = 12
 		y = 0
-		cost = 6
+		cost = 8
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			country_event = fortress.1
+			add_stability = 0.05
 		}
 		
 	}
