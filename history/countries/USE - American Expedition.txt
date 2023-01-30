@@ -96,6 +96,10 @@ set_popularities = {
 }
 
 recruit_character = USE_Patton
+recruit_character = USE_Hogan
+recruit_character = USE_Mcdonalds
+recruit_character = USE_CommunistPlaceholder
+recruit_character = USE_Marshal_Brick
 
 ### VARIANTS ###
 # 1936 Start #

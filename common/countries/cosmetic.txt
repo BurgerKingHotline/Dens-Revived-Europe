@@ -33,7 +33,12 @@ TOM_devon = {
     color_ui = rgb { 0 130 74 }
 }
 
-USE_puppetcosmetic = {
+USE_puppetcosmetic_democratic = {
     color = rgb { 13 73 125 }
     color_ui = rgb { 255 73 121 }
+}
+
+USE_puppetcosmetic_fascism = {
+    color = rgb { 225 25 0 }
+    color_ui = rgb { 255 246 0 }
 }

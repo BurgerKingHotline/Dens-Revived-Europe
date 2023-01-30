@@ -2,16 +2,13 @@ on_actions = {
 	on_puppet = {
 		effect = {
 			ROOT = {
-				if = {
-					limit = {
-						NOT = {
-							original_tag = USE
-						}
-					}
-					}
+			#Democratic
 				if = {
 					limit = {
 						is_subject_of = USE
+						USE = {
+						has_government = democratic
+						}
 					}
 					create_country_leader = {
 						name = "American Military Commission"
@@ -26,10 +23,39 @@ on_actions = {
 					if = {
 						limit = {
 							is_subject_of = USE
+					USE = {
+						has_government = democratic
+						}							
 						}
-					set_cosmetic_tag = USE_puppetcosmetic	
+					set_cosmetic_tag = USE_puppetcosmetic_democratic	
 					}				
-
+			#Hamborger
+				if = {
+					limit = {
+						is_subject_of = USE
+						USE = {
+						has_government = fascism
+						}
+					}
+					create_country_leader = {
+						name = "Human Resources Department"
+						desc = ""
+						picture = "gfx/leaders/USE/USE_The_Corporation.dds"
+						expire = "4000.1.1"
+						ideology = fascism_ideology
+						traits = {  }
+					}
+						load_focus_tree = USE_puppet_fascist				
+				}
+					if = {
+						limit = {
+							is_subject_of = USE
+					USE = {
+						has_government = fascism
+						}							
+						}
+					set_cosmetic_tag = USE_puppetcosmetic_fascism	
+					}
 	}
 	}
 	}

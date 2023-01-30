@@ -20,6 +20,8 @@ focus_tree = {
         
         cost = 10
         completion_reward = {
+		add_political_power = 100
+		add_stability = -0.1
         }
     }
 	
@@ -35,13 +37,14 @@ focus_tree = {
 
 		prerequisite = { focus = USE_State_of_Disunion }
         
-        cost = 10
+        cost = 5
         completion_reward = {
+army_experience = 25
         }
     }
-	
+
     focus = {
-        id = USE_Retirement
+        id = USE_One_Last_Job
         x = 0
         y = 1
 		relative_position_id = USE_Army_With_A_State			
@@ -51,7 +54,64 @@ focus_tree = {
  		prerequisite = { focus = USE_Army_With_A_State }       
         cost = 10
         completion_reward = {
+create_wargoal = {
+    target = ZPR
+    type = take_state_focus
+    generator = {181}
+}
         }
     }
+	
+    focus = {
+        id = USE_Retirement
+        x = 0
+        y = 1
+		relative_position_id = USE_One_Last_Job			
+        icon = GFX_focus_unknown
+        available = {
+        }
+ 		prerequisite = { focus = USE_One_Last_Job }       
+        cost = 10
+        completion_reward = {
+        }
+    }
+	
+#FASCIST BRANCH
+
+    focus = {
+        id = USE_McDonalds
+        x = 4
+        y = 0
+        icon = GFX_focus_unknown
+        available = {
+		has_government = fascism
+        }
+        
+        cost = 10
+        completion_reward = {
+        }
+    }		
+   focus = {
+        id = USE_The_Mayo
+        x = -2
+        y = 1
+		relative_position_id = USE_McDonalds	
+        icon = GFX_focus_unknown
+        available = {
+		has_government = fascism
+		is_in_faction_with = KEK
+		KEK = {
+has_country_leader = {
+	character = KEK_tate 
+	ruling_only = yes
+}		
+		}
+        }
+ 		prerequisite = { focus = USE_McDonalds } 
+        cost = 10
+        completion_reward = {
+		
+        }
+    }	
 	
 }

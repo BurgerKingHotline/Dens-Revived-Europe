@@ -4,7 +4,7 @@ focus_tree = {
 		factor = 0
         modifier = {
             is_subject_of = USE
-			has_government = democratic
+			has_government = fascism
             add = 12
         }
 	}

@@ -15,4 +15,55 @@ characters = {
 		}
 	}
 	
+	USE_Hogan = {
+		name = "First Citizen Hogan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USE/USE_First_Citizen_Hogan2.dds"
+			}
+		}		
+		country_leader = {
+			desc = 
+	expire = "1953.3.1"
+	ideology = despotism
+	traits = {
+	}
+		}
+	}
+	
+	USE_Mcdonalds = {
+		name = "The Board of Directors"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USE/USE_The_Corporation.dds"
+			}
+		}
+		country_leader = {
+			desc = 
+	expire = "1953.3.1"
+	ideology=fascism_ideology 
+	traits = {
+	}
+		}
+	}
+
+	USE_Marshal_Brick = {
+		name = "Literal Pile of Bricks"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USE/USE_Literal_Pile_of_Bricks.dds"
+			}
+		}
+		field_marshal={
+			traits={  }
+			skill=2
+			attack_skill=1
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+
+	
 }
