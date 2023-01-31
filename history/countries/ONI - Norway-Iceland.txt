@@ -1,6 +1,8 @@
 ﻿capital = 110
 
-#oob = "ORI_1936"
+oob = "ONI_1936"
+
+set_research_slots = 4
 
 # Starting tech
 if = {
