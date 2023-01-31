@@ -1,0 +1,10 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_portrait_BAV_Rupprecht_Wittelsbach"
+        texturefile = "gfx/leaders/BAV/portrait_BAV_Rupprecht_Wittelsbach.dds"
+    }
+	spriteType = {
+        name = "GFX_portrait_BAV_Heydrich"
+        texturefile = "gfx/leaders/BAV/portrait_BAV_Heydrich.dds"
+    }
+}
