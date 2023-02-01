@@ -1,0 +1,68 @@
+political_actions = {
+	MSR_fire_hasha_pas = {
+
+		icon = generic_civil_support
+
+		allowed = { always = no }
+
+		available = {
+			fascism < 0.3
+		}
+
+		is_good = no
+		fire_only_once = yes
+		selectable_mission = yes
+		days_mission_timeout = 150
+
+		cost = 300
+
+		complete_effect = {
+			retire_character = MSR_hasha_pas
+			set_country_flag = MSR_coup_foiled
+		}
+
+		timeout_effect = {
+			country_event = albania_events.2
+		}
+	}
+	MSR_destroy_the_opposition = {
+
+		icon = generic_civil_support
+
+		allowed = { always = no }
+
+		available = {
+			has_stability > 0.5
+			democratic < 0.2
+			communism < 0.2
+		}
+
+		cost = 150
+
+		is_good = no
+		fire_only_once = yes
+		selectable_mission = yes
+		days_mission_timeout = 150
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_idea = MSR_widespread_opposition
+				}
+				remove_ideas = MSR_widespread_opposition
+			}
+			if = {
+				limit = {
+					has_idea = MSR_growing_republican_support
+				}
+				remove_ideas = MSR_growing_republican_support
+			}
+			set_country_flag = MSR_opposition_destroyed
+		}
+
+		timeout_effect = {
+			country_event = albania_events.2
+		}
+	}
+
+}

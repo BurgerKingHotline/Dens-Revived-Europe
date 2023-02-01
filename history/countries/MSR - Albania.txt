@@ -21,6 +21,7 @@ recruit_character = MSR_hasan_begolli
 recruit_character = MSR_fiqri_dine
 recruit_character = MSR_midhat_frasheri
 recruit_character = MSR_jocelyn_percy
+recruit_character = MSR_hasha_pas
 
 capital = 44
 
