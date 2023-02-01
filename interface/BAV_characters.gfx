@@ -7,4 +7,8 @@ spriteTypes = {
         name = "GFX_portrait_BAV_Heydrich"
         texturefile = "gfx/leaders/BAV/portrait_BAV_Heydrich.dds"
     }
+    spriteType = {
+        name = "GFX_portrait_BAV_Himmler"
+        texturefile = "gfx/leaders/BAV/portrait_BAV_Himmler.dds"
+    }
 }

@@ -11,6 +11,18 @@ characters = {
             expire = "2065.1.1.1"
         }
     }
+    BAV_Himmler = {
+        name = "Heinrich Himmler"
+        portraits = {
+            civilian = {
+                large = GFX_portrait_BAV_Himmler
+            }
+        }
+        country_leader = {
+            ideology = nazism
+            expire = "2065.1.1.1"
+        }
+    }
     BAV_Heydrich = {
         name = "Reinhard Heydrich"
         portraits = {
@@ -24,4 +36,3 @@ characters = {
         }
     }
 }
-portrait_BAV_Heydrich.dds
