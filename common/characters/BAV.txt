@@ -1,0 +1,38 @@
+characters = {
+    BAV_Rupprecht = {
+        name = "Rupprecht von Wittelsbach"
+        portraits = {
+            civilian = {
+                large = GFX_portrait_BAV_Rupprecht_Wittelsbach
+            }
+        }
+        country_leader = {
+            ideology = despotism
+            expire = "2065.1.1.1"
+        }
+    }
+    BAV_Himmler = {
+        name = "Heinrich Himmler"
+        portraits = {
+            civilian = {
+                large = GFX_portrait_BAV_Himmler
+            }
+        }
+        country_leader = {
+            ideology = nazism
+            expire = "2065.1.1.1"
+        }
+    }
+    BAV_Heydrich = {
+        name = "Reinhard Heydrich"
+        portraits = {
+            civilian = {
+                large = GFX_portrait_BAV_Heydrich
+            }
+        }
+        country_leader = {
+            ideology = nazism
+            expire = "2065.1.1.1"
+        }
+    }
+}

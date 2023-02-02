@@ -87,6 +87,10 @@ country_event = { #Hasha pas is planning a coup on the government
     option = { #can this get any worse?
         name = albania_events.4.a
         activate_mission = MSR_fire_hasha_pas
+        country_event = {
+            id = albania_events.7
+            days = 50
+        }
 	}
 }
 
@@ -126,5 +130,23 @@ country_event = { #King Zog visits the country side in an open top car
                 days = 12
             }
         }
+	}
+}
+
+country_event = { #fascist paramilitary forces form
+    id = albania_events.7
+    title = albania_events.7.t
+    desc = albania_events.7.d
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    option = { #What could go wrong?
+        name = albania_events.7.a
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.05
+        }
+        add_war_support = 0.05
 	}
 }

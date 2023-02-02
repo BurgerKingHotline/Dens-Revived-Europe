@@ -1,0 +1,76 @@
+﻿division_template = {
+	name = "Provisorisk Divisjon"
+	division_names_group = ORI_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery = { x = 3 y = 1 }
+	}
+	support = {
+		#military_police = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Milits"
+	division_names_group = ORI_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "1st Provisorisk Divisjon"
+		location = 6115 #Oslo
+		division_template = "Provisorisk Divisjon"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "2nd Provisorisk Divisjon"
+		location = 53 
+		division_template = "Provisorisk Divisjon"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "3rd Provisorisk Divisjon"
+		location = 11028 
+		division_template = "Provisorisk Divisjon"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "4th Provisorisk Divisjon"
+		location = 3022 
+		division_template = "Provisorisk Divisjon"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+		start_manpower_factor = 1
+	}
+	
+}

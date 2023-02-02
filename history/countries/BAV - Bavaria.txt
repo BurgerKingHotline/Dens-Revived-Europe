@@ -1,0 +1,24 @@
+﻿capital = 52
+
+recruit_character = BAV_Rupprecht
+recruit_character = BAV_Himmler
+recruit_character = BAV_Heydrich
+
+add_ideas = {
+	BAV_independence
+	BAV_SS
+	}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.12.24"
+	election_frequency = 72
+	elections_allowed = no
+
+}
+set_popularities = {
+	democratic = 10
+	fascism = 25
+	communism = 20
+	neutrality = 45
+}

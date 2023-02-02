@@ -10,18 +10,339 @@ focus_tree = {
 	continuous_focus_position = { x = 2222 y = 810}
 	default = no
 
-	focus = {
-		id = ORI_debug
-		icon = GFX_goal_unknown
-		cost = 5
-		x = 14
-		y = 0
-		available = {
-		
-		}
-		
-		completion_reward = {
-		}
 
+	###LE FOCUS TREE###
+	###LE FOCUS TREE###
+
+	#Out of the Ashes
+	focus = {
+		id = ONI_out_ash
+		icon = GFX_goal_continuous_increase_nu
+		x = 20
+		y = 0
+		
+		#prerequisite = { focus = NEG_fascist }
+		
+		#relative_position_id = NEG_fascist
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 8000
+		}
+		completion_reward = {
+			ROOT = {
+				country_event = ONI_events.1
+			}
+		}
+	}
+
+	focus = {
+		id = ONI_new_comms
+		icon = GFX_goal_continuous_increase_nu
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = ONI_out_ash }
+		
+		relative_position_id = ONI_out_ash
+	
+		available = {
+			divisions_in_state = {
+				type = infantry
+				size > 0
+				state = 100
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 8000
+		}
+		completion_reward = {
+			100 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			ROOT = {
+				country_event = ONI_events.2
+			}
+		}
+	}
+
+	focus = {
+		id = ONI_new_defense
+		icon = GFX_goal_continuous_increase_nu
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = ONI_out_ash }
+		
+		relative_position_id = ONI_out_ash
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 8000
+		}
+		completion_reward = {
+			custom_effect_tooltip = NOI_spawn_militia2_tt
+			hidden_effect = {
+				110 = {
+					create_unit = {
+						division = "name = \"Provisorisk Milits\" division_template = \"Milits\" start_experience_factor = 0.1" 
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Provisorisk Milits\" division_template = \"Milits\" start_experience_factor = 0.1" 
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Provisorisk Milits\" division_template = \"Milits\" start_experience_factor = 0.1" 
+						owner = PREV
+					}
+				}
+				142 = {
+					create_unit = {
+						division = "name = \"Provisorisk Milits\" division_template = \"Milits\" start_experience_factor = 0.1" 
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Provisorisk Milits\" division_template = \"Milits\" start_experience_factor = 0.1" 
+						owner = PREV
+					}
+				}
+				143 ={
+					create_unit = {
+						division = "name = \"Provisorisk Milits\" division_template = \"Milits\" start_experience_factor = 0.1" 
+						owner = PREV
+					}
+				}
+			}
+			ROOT = {
+				country_event = ONI_events.3
+			}
+			
+		}
+		
+	}
+
+	focus = {
+		id = ONI_rebuild_govt
+		icon = GFX_goal_continuous_increase_nu
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = ONI_out_ash }
+		
+		relative_position_id = ONI_out_ash
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 8000
+		}
+		completion_reward = {
+			add_political_power = 120
+			swap_ideas = {
+				remove_idea = ONI_provisional_govt_1
+				add_idea = ONI_provisional_govt_2
+			}
+			
+		}
+	}
+	focus = {
+		id = ONI_better_unification
+		icon = GFX_goal_continuous_increase_nu
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = ONI_out_ash }
+		
+		relative_position_id = ONI_out_ash
+	
+		available = {
+			has_political_power = 100
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 8000
+		}
+		completion_reward = {
+			add_political_power = -100
+			swap_ideas = {
+				remove_idea = ONI_unification_for_survival_1
+				add_idea = ONI_unification_for_survival_2
+			}
+			
+		}
+	}
+	focus = {
+		id = ONI_new_europe
+		icon = GFX_goal_continuous_increase_nu
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = ONI_new_comms }
+		prerequisite = { focus = ONI_rebuild_govt }
+		prerequisite = { focus = ONI_better_unification }
+		prerequisite = { focus = ONI_new_defense }
+		
+		relative_position_id = ONI_better_unification
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 8000
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ONI_provisional_govt_2
+				add_idea = ONI_provisional_govt_3
+			}
+			
+		}
+	}
+	focus = {
+		id = ONI_restore_to_the_arctic
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		x = -10
+		y = 1
+		
+		prerequisite = { focus = ONI_new_europe }
+		
+		relative_position_id = ONI_new_europe
+	
+		available = {
+			#has_political_power = 100
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			144 = {
+				add_dynamic_modifier = {
+					modifier = ITA_libyan_railway_modifier2
+					#scope = 144
+					#days = 14 
+				}
+			}
+			
+			
+		}
+	}
+	focus = {
+		id = ONI_new_arctic_rail
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		x = -7
+		y = 1
+		
+		prerequisite = { focus = ONI_restore_to_the_arctic }
+		
+		relative_position_id = ONI_restore_to_the_arctic
+	
+		available = {
+			#hidden = {
+				IF = {
+					NOT = {
+						#has_dynamic_modifier  {
+						#	modifier = ONI_near_anarchy
+						#}	
+					}
+				}
+			#}
+			
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			custom_effect_tooltip = NOI_northernrail1_tt
+			custom_effect_tooltip = NOI_northernrail2_tt
+			hidden_effect = {
+				build_railway = {
+					level = 1
+					path = { 6038 115 6173 6187 3126 3088 3048 6071 6214 9126 38 3132 3034 192 }
+				}
+				build_railway = {
+					level = 1
+					path = { 192 3145 91 11050 }
+				}	
+			}
+			
+		}
 	}
 }

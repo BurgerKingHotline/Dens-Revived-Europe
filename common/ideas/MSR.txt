@@ -80,5 +80,91 @@ ideas = {
 				stability_weekly = -0.01
 			}
 		}
+		MSR_production_increase = {
+					
+			allowed = {
+				original_tag = REP
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ast_volunteer_defence_corps
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.08
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		MSR_production_increase1 = {
+			name = MSR_production_increase
+					
+			allowed = {
+				original_tag = REP
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ast_volunteer_defence_corps
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				consumer_goods_factor = -0.02
+			}
+		}
+		MSR_production_increase2 = {
+			name = MSR_production_increase
+					
+			allowed = {
+				original_tag = REP
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ast_volunteer_defence_corps
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.25
+			}
+		}
+		MSR_military_staff_purged = {
+					
+			allowed = {
+				original_tag = REP
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ast_volunteer_defence_corps
+			
+			modifier = {
+				experience_gain_army_factor = -0.3
+				experience_gain_navy_factor = -0.3
+				experience_gain_air_factor = -0.3
+				land_doctrine_cost_factor = 0.15
+				naval_doctrine_cost_factor = 0.15
+				air_doctrine_cost_factor = 0.15
+				army_org_factor = -0.05
+			}
+		}
 	}
 }

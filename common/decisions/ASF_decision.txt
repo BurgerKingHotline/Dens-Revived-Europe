@@ -1,0 +1,32 @@
+ASF_decisions = {
+	ASF_form_hanseatic_league = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = ASF
+		}
+		available = {
+			controls_state = 145
+			controls_state = 195
+			controls_state = 61
+			controls_state = 141
+			controls_state = 37
+			controls_state = 85
+			controls_state = 808
+			controls_state = 812
+			controls_state = 111
+		}
+		visible = {
+		always = yes
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+set_cosmetic_tag = ASF_hanseatic_league
+		}
+	}
+}	
