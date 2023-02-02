@@ -73,9 +73,9 @@ if = {
 		basic_depth_charges = 1
 	}
 }
-add_ideas = ONI_unification_for_survival
-add_ideas = ONI_provisional_govt
-add_ideas = ONI_broken_infra
+add_ideas = ONI_unification_for_survival_1
+add_ideas = ONI_provisional_govt_1
+add_ideas = ONI_broken_infra_1
 
 set_convoys = 10
 

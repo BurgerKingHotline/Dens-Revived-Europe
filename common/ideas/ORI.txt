@@ -1,7 +1,8 @@
 ideas = {
 	country = {
-		ONI_broken_infra = {
-					
+		ONI_broken_infra_1 = {
+			
+			name = ONI_broken_infra
 			allowed = {
 			}
 
@@ -19,8 +20,9 @@ ideas = {
 				mobilization_speed = -0.1
 			}
 		}
-		ONI_unification_for_survival = {
-					
+		ONI_unification_for_survival_1 = {
+				
+			name = ONI_unification_for_survival
 			allowed = {
 			}
 
@@ -37,8 +39,28 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
-		ONI_provisional_govt = {
-					
+		ONI_unification_for_survival_2 = {
+				
+			name = ONI_unification_for_survival
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ONI_forced_unification
+			
+			modifier = {
+				conscription_factor = -0.1
+				stability_factor = -0.05
+			}
+		}
+		ONI_provisional_govt_1 = {
+				
+			name = ONI_provisional_govt
 			allowed = {
 			}
 
@@ -54,6 +76,48 @@ ideas = {
 				political_power_gain = 0.2
 				political_advisor_cost_factor = 0.30
 				stability_factor = -0.1
+				improve_relations_maintain_cost_factor = 1
+			}
+		}
+		ONI_provisional_govt_2 = {
+				
+			name = ONI_provisional_govt
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ONI_prov_govt
+			
+			modifier = {
+				political_power_gain = 0.2
+				political_advisor_cost_factor = 0.1
+				stability_factor = -0.05
+				improve_relations_maintain_cost_factor = 1
+			}
+		}
+		ONI_provisional_govt_3 = {
+				
+			name = ONI_provisional_govt
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ONI_prov_govt
+			
+			modifier = {
+				political_power_gain = 0.2
+				political_advisor_cost_factor = 0.1
+				stability_factor = -0.05
 			}
 		}
 		

@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "Provisorisk Divisjon"
-	division_names_group = FOR_INF_01
+	division_names_group = ORI_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -23,7 +23,7 @@
 
 division_template = {
 	name = "Milits"
-	division_names_group = FOR_INF_01
+	division_names_group = ORI_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
