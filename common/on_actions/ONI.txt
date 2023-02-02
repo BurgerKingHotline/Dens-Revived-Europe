@@ -1,0 +1,25 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					ONI = {
+						exists = yes
+					}
+				}
+				ONI = {
+					144 = {
+						if = {
+							limit = {
+								is_owned_and_controlled_by = ONI
+							}
+							add_dynamic_modifier = { modifier = ONI_near_anarchy }
+						}
+					}
+				}
+				
+			}
+			
+		}
+	}
+} 

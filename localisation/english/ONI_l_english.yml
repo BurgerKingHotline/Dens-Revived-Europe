@@ -30,10 +30,18 @@
  ONI_unification_for_survival_desc:0 "The merging of the Icelandic and Norwegian governments was not one of passion, but of neccesity. Neither nation was prepared for this, and the people still do not fully support this action."
  ONI_broken_infra:0 "Broken Infrastructure"
  ONI_broken_infra_desc:0 "After the disaster, our infrastructure was left in tatters, especially in the northern reaches. Much work will have to be done to repair this damage."
+ ONI_arctic_mission_cost:0 "Financing the Arctic Expedition"
+ONI_arctic_mission_cost_desc:0 "Who knows what they will find?"
 
 #OTHER
 NOI_spawn_militia2_tt:0 "Raise §H6 Militia Units§! across the nation.\n\n"
 ORI_near_anarchy:0 "Lack of Government Control"
 NOI_northernrail1_tt:0 "Build a level §H1§! railway from §HTrondheim§! to §HNarvik§!."
 NOI_northernrail2_tt:0 "Build a level §H1§! railway from §HNarvik§! to §HTrømso§!."
+NOI_northernrail3_tt:0 "Build a level §H1§! railway from §HNarvik§! to §HLofoten§!."
+NOI_arctic_mission_start_tt:0 "We will send a §HSmall Expeditionary Force§! to check on our holdings in the Arctic."
 
+ONI_near_anarchy:0 "Arctic Isolation"
+
+#VICTORY POINTS
+VICTORY_POINTS_11157:0 "Svolvær"

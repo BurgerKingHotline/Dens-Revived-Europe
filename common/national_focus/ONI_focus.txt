@@ -269,7 +269,6 @@ focus_tree = {
 		relative_position_id = ONI_new_europe
 	
 		available = {
-			#has_political_power = 100
 		}
 		
 		bypass = {
@@ -285,8 +284,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			144 = {
-				add_dynamic_modifier = {
-					modifier = ITA_libyan_railway_modifier2
+				remove_dynamic_modifier = {
+					modifier = ONI_near_anarchy
 					#scope = 144
 					#days = 14 
 				}
@@ -306,16 +305,13 @@ focus_tree = {
 		relative_position_id = ONI_restore_to_the_arctic
 	
 		available = {
-			#hidden = {
-				IF = {
-					NOT = {
-						#has_dynamic_modifier  {
-						#	modifier = ONI_near_anarchy
-						#}	
-					}
+			IF = {
+				NOT = {
+						has_dynamic_modifier  {
+						modifier = ONI_near_anarchy
+					}	
 				}
-			#}
-			
+			}	
 		}
 		
 		bypass = {
@@ -343,6 +339,84 @@ focus_tree = {
 				}	
 			}
 			
+		}
+	}
+	focus = {
+		id = ONI_slovar_navalbase
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = ONI_new_arctic_rail }
+		
+		relative_position_id = ONI_new_arctic_rail
+	
+		available = {
+			has_full_control_of_state = 144
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			custom_effect_tooltip = NOI_northernrail3_tt
+			hidden_effect = {
+				build_railway = {
+					level = 1
+					path = { 3145 11157}
+				}	
+			}
+			add_victory_points = {
+				province = 11157
+				value = 1
+			}
+			144 = {
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					province = 11157
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = ONI_far_arctic_mission
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = ONI_slovar_navalbase }
+		
+		relative_position_id = ONI_slovar_navalbase
+	
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 3.6
+		
+		
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = ONI_arctic_mission_cost
+			custom_effect_tooltip = NOI_arctic_mission_start_tt
 		}
 	}
 }

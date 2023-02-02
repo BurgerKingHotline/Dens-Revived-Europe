@@ -120,6 +120,22 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
+		ONI_arctic_mission_cost = {
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_foreign_capital
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
 		
 		
 	}

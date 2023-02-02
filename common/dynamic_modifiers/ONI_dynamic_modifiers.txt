@@ -26,11 +26,13 @@
 #	can be added to countries, states or unit leaders
 #	will only updated daily, unless forced by force_update_dynamic_modifier effect
 
-ITA_libyan_railway_modifier2 = { #WHY
-	enable = { always = yes }
-	icon = GFX_modifiers_generic_railways
+ONI_near_anarchy = {
 
-	state_production_speed_rail_way_factor = 0.25
-	compliance_gain = 0.01
+	icon = GFX_decision_revolt
+
+	local_manpower = -0.9
+	local_resources = -0.9
+	local_building_slots_factor = -0.6
+	production_speed_buildings_factor = -0.6
 }
 
