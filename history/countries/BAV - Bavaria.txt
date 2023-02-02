@@ -4,6 +4,11 @@ recruit_character = BAV_Rupprecht
 recruit_character = BAV_Himmler
 recruit_character = BAV_Heydrich
 
+add_ideas = {
+	BAV_independence
+	BAV_SS
+	}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.12.24"
