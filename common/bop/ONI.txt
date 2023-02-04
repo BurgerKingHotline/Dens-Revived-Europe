@@ -1,0 +1,64 @@
+
+ORO_power_balance = {
+	initial_value = 1.0
+	left_side = ONI_oregon_left
+	right_side = ONI_norwayiceland_right
+#	decision_category = GER_mefo_bills_category
+	side = { #NORWAY-ICELAND
+		id = ONI_norwayiceland_right
+		icon = GFX_bop_ONI_norwayiceland_side
+		range = { #No Immigration
+			id = ONI_far_right_range
+			min = 0.9
+			max = 1
+			modifier = {
+				war_support_weekly = 0.9
+			}
+		}
+		range = { #Immigration of Oregonians
+			id = ONI_right_range
+			min = 0.2
+			max = 0.6
+			modifier = {
+				war_support_weekly = 0.9
+			}
+		}
+	}
+	range = { #Oregonians in Government
+		id = ONI_mid_range
+		min = -0.2
+		max = 0.2
+		modifier = {
+			war_support_weekly = 0.5
+		}
+	}
+	side = { #OREGON
+		id = ONI_oregon_left
+		icon = GFX_bop_ONI_oregon_side
+		range = { #Oregon wants more representation - Becomes more of a Commonwealth
+			id = ONI_mid_left_range
+			min = -0.6
+			max = -0.2
+			modifier = {
+				war_support_weekly = 0.1
+			}
+		}
+		range = { #Major Oregonian Sway - More Unbalanced
+			id = ONI_left_range
+			min = -0.9
+			max = -0.6
+			modifier = {
+				war_support_weekly = 0.1
+			}
+		}
+		range = { #New Oregon Colony =)
+			id = ONI_far_left_range
+			min = -1
+			max = -0.9
+			modifier = {
+				war_support_weekly = 0.1
+			}
+		}
+	}
+}
+

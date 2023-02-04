@@ -1,4 +1,21 @@
 ﻿l_english:
+ #FOCUS
+ ONI_out_ash:0 "Out of the Ashes"
+ ONI_out_ash_desc:0 ""
+ ONI_new_comms:0 "Re-establish Communications with Iceland"
+ ONI_rebuild_govt:0 "Rebuild the Government"
+ ONI_better_unification:0 "Calm Unification Woes"
+ ONI_new_defense:0 "Temporary National Defense"
+ ONI_new_europe:0 "New Europe"
+
+ ONI_open_diplo:0 "Open the Scandanavian Communications Office"
+ 
+ ONI_restore_to_the_arctic:0 "Restore Civilization to the Arctic"
+ ONI_slovar_navalbase:0 "Svolvær Naval Base"
+  
+ 
+ 
+ 
  #EVENTS =)
  ONI_events.0.t:0 "DEBUG - Balance of Power"
  ONI_events.0.d:0 "test lmao"
@@ -56,3 +73,14 @@ ONI_near_anarchy:0 "Arctic Isolation"
 
 #VICTORY POINTS
 VICTORY_POINTS_11157:0 "Svolvær"
+
+#BALANCE OF POWER
+ORO_power_balance:0 "National Balance of Power"
+ONI_oregon_left:0 "Oregonian National Council"
+ONI_norwayiceland_right:0 "Norwegian-Icelandic Government"
+ONI_far_right_range:0 "Total Norwegian-Icelandic Control"
+ONI_right_range:0 "Norwegian-Icelandic Control"
+ONI_mid_range:0 "Limited Commonwealth Control"
+ONI_mid_left_range:0 "New Commonwealth Control"
+ONI_left_range:0 "Oregonian National Council Control"
+ONI_far_left_range:0 "Total Oregonian Control"
