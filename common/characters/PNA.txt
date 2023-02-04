@@ -1,0 +1,26 @@
+characters = {
+    PNA_Mehmed_Handzic = {
+        name = "Mehmed Handžić"
+        portraits = {
+            civilian = {
+                large = GFX_PNA_Mehmed_Handzic
+            }
+        }
+        country_leader = {
+            ideology = despotism
+            expire = "2065.1.1.1"
+        }
+    }
+    PNA_Vojislav_Kecmanovic = {
+        name = "Vojislav Kecmanović"
+        portraits = {
+            civilian = {
+                large = GFX_PNA_Vojislav_Kecmanovic
+            }
+        }
+        country_leader = {
+            ideology = marxism
+            expire = "2065.1.1.1"
+        }
+    }
+}

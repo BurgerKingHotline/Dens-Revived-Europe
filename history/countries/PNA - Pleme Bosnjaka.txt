@@ -9,3 +9,18 @@ set_technology = {
 	transport = 1
 	basic_train = 1
 }
+
+recruit_character = PNA_Mehmed_Handzic
+recruit_character = PNA_Vojislav_Kecmanovic
+
+set_popularities = {
+	neutrality = 77
+	communism = 13
+	fascism = 6
+	democratic = 4
+}
+
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+}
