@@ -12,6 +12,39 @@ guiTypes = {
 			position = { x=10 y=50 }
 		}
 		
+		instantTextBoxType = {
+		name = "VKN_dalauan_respect"
+		position = { x = 15 y = 60 }
+		font = "hoi_18mbs"
+		text = [VKN_dalauan_respect]
+		format = left
+		maxWidth = 250
+		maxHeight = 50
+		fixedsize = no
+		}
+		
+		instantTextBoxType = {
+		name = "VKN_dalauan_power"
+		position = { x = 15 y = 130 }
+		font = "hoi_18mbs"
+		text = [VKN_dalauan_power]
+		format = left
+		maxWidth = 250
+		maxHeight = 50
+		fixedsize = no
+		}
+		
+		instantTextBoxType = {
+		name = "VKN_next_god" #odin/zeus tyr/ares mars/aesir minerva/balder
+		position = { x = 15 y = 160 }
+		font = "hoi_18mbs"
+		text = [VKN_next_god]
+		format = left
+		maxWidth = 250
+		maxHeight = 50
+		fixedsize = no
+		}
+		
 
 
 }
