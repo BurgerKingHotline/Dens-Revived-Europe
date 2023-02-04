@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_PNA_Mehmed_Handzic"
+		textureFile = "gfx/leaders/PNA/Portrait_Mehmed_Handzic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_PNA_Vojislav_Kecmanovic"
+		textureFile = "gfx/leaders/PNA/Portrait_Vojislav_Kecmanovic.dds"
+	}
+}
