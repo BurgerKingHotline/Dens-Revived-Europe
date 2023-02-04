@@ -1,5 +1,11 @@
 capital = 117
 set_variable = { dalauan_power_var = 50 }
+set_variable = { dalauan_monthly_power = 1 }
+set_country_flag = pantheon_alive
+set_country_flag = odin_zeus_balanced
+set_country_flag = tyr_ares_balanced
+set_country_flag = mars_aesir_balanced
+set_country_flag = minerva_balder_balanced
 
 oob = "VKN_1936"
 if = {

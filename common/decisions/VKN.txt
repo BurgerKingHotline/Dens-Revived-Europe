@@ -1,0 +1,73 @@
+VKN_dalauan_categories = {
+	VKN_dalauan_gains_power = {
+
+		icon = generic_civil_support
+
+		allowed = { always = yes }
+
+		available = {
+		always = no
+		}
+		
+		is_good = yes
+		fire_only_once = no
+		selectable_mission = no
+		days_mission_timeout = 10
+
+		timeout_effect = {
+			add_to_variable = { dalauan_power_var = dalauan_monthly_power }
+		}
+	}
+	
+	VKN_sacrifice_to_dalauan = {
+
+		icon = generic_civil_support
+
+		allowed = { always = yes }
+
+		available = {
+		always = yes
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			add_to_variable = { dalauan_power_var = 5 }
+		}
+	}
+	
+	VKN_request_aid_from_dalauan = {
+
+		icon = generic_civil_support
+
+		allowed = { always = yes }
+
+		available = {
+		always = yes
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			add_to_variable = { dalauan_power_var = -5 }
+		}
+	}
+	
+	VKN_request_aid_from_the_pantheon = {
+
+		icon = generic_civil_support
+
+		allowed = { always = yes }
+
+		available = {
+		always = yes
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			add_to_variable = { dalauan_power_var = -10 }
+		}
+	}
+
+}

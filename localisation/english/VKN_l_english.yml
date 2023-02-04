@@ -17,16 +17,18 @@
  
  VKN_viking_lord:0 "Viking Lord"
  VKN_god_of_war:0 "God of War"
-  
- ###VICTORY POINTS###
  
- VICTORY_POINTS_391:0 "New Philipsburg"
- VICTORY_POINTS_3211:0 "The Burial Ground"
- VICTORY_POINTS_3262:0 "The Plantation"
- VICTORY_POINTS_6241:0 "Cay Hill"
- VICTORY_POINTS_6336:0 "West Dutch Human Wildlife Reserve"
- VICTORY_POINTS_6496:0 "Cole Bay"
- VICTORY_POINTS_9335:0 "East Dutch Human Wildlife Reserve"
- VICTORY_POINTS_9363:0 "Mary's Fancy"
- VICTORY_POINTS_9498:0 "Simpson Bay"
- VICTORY_POINTS_11562:0 "French Quarter"
+ VKN_pantheon_tt:0 "§YThe Pantheon of Gods is active in Naples§"
+ VKN_dalauan_supremacy_tt:0 "§tDalauan has bested the Old Gods§"
+ VKN_odin_zeus_balanced_tt:0 "Odin and Zeus's armies currently battle in Valhall§"
+ VKN_odin_winning_tt:0 "The Gods of the North under Odin are gaining ground in Valhalla"
+ VKN_odin_supremacy_tt:0 "The Gods of the North under Odin are in control of Valhalla"
+ VKN_zeus_winning_tt:0 "Zeus's faction is gaining ground in Valhalla"
+ VKN_zeus_supremacy_tt:0 "The New Gods under Zeus are in control of Valhalla"
+ VKN_zeus_odin_destroyed_tt:0 "Dalauan is in full control of Valhalla§
+ VKN_tyr_ares_balanced_tt:0 "Tyr and Ares lock blades in Valhalla"
+ VKN_tyr_supremacy_tt:0 "Tyr has slain Ares and consolidated power"
+ VKN_ares_supremacy_tt:0 "Ares has slain Tyr and gained power in Valhalla's martial courts"
+ VKN_mars_aesir_balanced_tt:0 "Mars battles the army of the Aesir in Valhalla"
+ VKN_minerva_balder_balanced_tt:0 "Minerva and Balder fight over the hearts of Valhalla"
+ ###VICTORY POINTS###
