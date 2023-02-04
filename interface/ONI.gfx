@@ -11,4 +11,12 @@ spriteTypes = {
         name = "GFX_idea_ONI_prov_govt"
         texturefile = "gfx/interface/ideas/ONI_gfx_prov_govt.dds"
     }
+    spriteType = {
+        name = "GFX_bop_ONI_norwayiceland_side"
+        texturefile = "gfx/interface/bop/ONI_norwayiceland_side.dds"
+    }
+    spriteType = {
+        name = "GFX_bop_ONI_oregon_side"
+        texturefile = "gfx/interface/bop/ONI_oregon_side.dds"
+    }
 }

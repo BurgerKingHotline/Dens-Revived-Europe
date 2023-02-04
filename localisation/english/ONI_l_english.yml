@@ -19,9 +19,20 @@
  NOI_madness_start_tt:0 "§RThis may lead to unknown and disastrous finds in the future.§!"
  NOI_not_madness_start_tt:0 "§BThis will make future investigations much harder.§!"
 
- ONI_events.4.t:0 "Survival"
- ONI_events.4.d:0 ""
- ONI_events.4.a:0 ""
+ ONI_events.4.t:0 "The First Voyage"
+ ONI_events.4.d:0 "Crowds cheered as the first diplomatic voyage set off from Oslo. A fleet of over "The whole of Oslo seemed to cheer as the first diplomatic voyage set off from the city. Comprising a mix of civilian shipping boats and steamers, it only had one mission - to find out what the rest of Europe feared during the chaos. At the front of the pack lay a mighty Antediluvian-class battleship, repaired and gleaming, the only of its kind to survive the great change. On it lay the head admiral, ready and determined to find out what lay beyond the ocean.\n\nThe Admiral didn’t know what to expect from this voyage. In a perfect world he would arrive in a normal state, full of normal people in a normal world. But after hearing the whispers and reports of what has happened across the border, he cannot be too sure. The lack of any outside communication nagged him, pressing doubt and even fear. But that did not concern him, he had direct orders from the Prime minister to push forward across the waves. In his hand still lay the printed initiative, pointing him towards an unknown coast.\n\nPulling the paper out of his pocket, he read the neatly inked text once more:"
+ ONI_events.4.a:0 "Head towards the English Channel and London."
+ ONI_events.4.b:0 "Head towards the German Coast and Hamburg."
+ ONI_events.4.c:0 "Head towards the Danish Straits and Copenhagen"
+ ONI_events.4.e:0 "Head towards the Scottish Coast and Edinburgh"
+ NOI_mission_info.tt:0 "§HThe voyage will return results in time.§!"
+
+ ONI_events.5.t:0 "A Foriegn Visitor"
+ ONI_events.5.d:0 "At any other time, this would be seen as a normal occurrence, unusual at best. A passenger ship full to the brim with people, signaling to dock at with whatever options they had on board. But these are not normal times. I can say with honor that the workers and officials at the Terminal Reykjavik handled this situation all according to regulation, even in these trying times. We successfully signaled the ship down, and sent forward two craft to go investigate this mystery ship. What they returned with was unexpected.\n\nAccording to their report, the ship (called the USR Gearhart) is full of immigrants from the United States of America. But the people on board didn’t refer to themselves as Americans, interestingly, but as “Oregonians”. According to the migrants, the United States has collapsed, and Oregon is currently embattled with a civil war unlike no other. They said that they were only the first ship able to make it across the sea, and that others are searching for a safe civilisation to seek refuge in.\n\nI am asking simply to let these immigrants in, and start an immigration program from the collapsed USA. I hope you can respond in haste, as it is getting dark out, and these people can only survive on the Gearhart for so long."
+ ONI_events.5.a:0 "What are we thinking, let them in!"
+ ONI_events.5.b:0 "§RForiegn Immmigrants can go fuck off somewhere else.§!"
+ NOI_no_let_oregon_in.tt:0 "§tThis will essentially end the game for you.§!"
+
  
 #IDEAS
  ONI_provisional_govt:0 "Provisional Government"

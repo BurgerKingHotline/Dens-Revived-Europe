@@ -258,6 +258,48 @@ focus_tree = {
 			
 		}
 	}
+
+	#Start Diplomacy
+	focus = {
+		id = ONI_open_diplo
+		icon = GFX_goal_generic_trade
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = ONI_new_europe }
+		
+		relative_position_id = ONI_new_europe
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 150
+			ROOT = {
+				country_event = ONI_events.4
+			}	
+		}
+	}
+
+
+
+
+
+
+
+
+	#Expansion + Internal Growth
 	focus = {
 		id = ONI_restore_to_the_arctic
 		icon = GFX_focus_hol_prepare_the_inundation_lines
