@@ -14,10 +14,10 @@ focus_tree = {
 
 	focus = {
 		id = FOR_Seeing_The_Light
-		icon = GFX_focus_ger_return_of_the_kaiser
-		x = 12
+		icon = GFX_focus_SWI_federal_police
+		x = 22
 		y = 0
-		cost = 8
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -26,4 +26,103 @@ focus_tree = {
 		}
 		
 	}
+	
+	focus = {
+		id = FOR_Its_Red
+		prerequisite = { focus = FOR_Seeing_The_Light }
+		icon = GFX_goal_generic_support_communism
+		x = 6
+		y = 1.5
+		cost = 6
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.4
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+		
+	}
+	
+	focus = {
+		id = FOR_Its_Blue
+		prerequisite = { focus = FOR_Seeing_The_Light }
+		icon = GFX_goal_generic_support_democracy
+		x = 14
+		y = 1.5
+		cost = 6
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.4
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+		}
+		
+	}
+	
+	focus = {
+		id = FOR_Its_White
+		prerequisite = { focus = FOR_Seeing_The_Light }
+		icon = GFX_goal_generic_neutrality_focus
+		x = 28
+		y = 1.5
+		cost = 6
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.25
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+		}
+		
+	}
+	
+	focus = {
+		id = FOR_Its_Orange
+		prerequisite = { focus = FOR_Seeing_The_Light }
+		icon = GFX_goal_generic_support_fascism
+		x = 36
+		y = 1.5
+		cost = 6
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.4
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+		}
+		
+	}
+
 }

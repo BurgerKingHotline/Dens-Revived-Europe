@@ -14,15 +14,141 @@ focus_tree = {
 
 	focus = {
 		id = FOR_Darkness_Takes_Over
-		icon = GFX_focus_ger_return_of_the_kaiser
-		x = 12
+		icon = GFX_goal_generic_wolf_pack
+		x = 22
 		y = 0
-		cost = 8
+		cost = 4
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_stability = -0.1
+		}
+		
+	}
+	
+	focus = {
+		id = FOR_Secure_Our_Grip
+		prerequisite = { focus = FOR_Darkness_Takes_Over }
+		icon = GFX_goal_generic_wolf_pack
+		x = 22
+		y = 1
+		cost = 4
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
 			add_stability = 0.05
+		}
+		
+	}
+	
+	focus = {
+		id = FOR_Fifty_Shades_Of_Black
+		prerequisite = { focus = FOR_Secure_Our_Grip }
+		icon = GFX_goal_generic_wolf_pack
+		x = 22
+		y = 2
+		cost = 4
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+		
+	}
+	
+	focus = {
+		id = FOR_Infrared
+		prerequisite = { focus = FOR_Fifty_Shades_Of_Black }
+		icon = GFX_goal_generic_support_communism
+		x = 14
+		y = 3
+		cost = 4
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.4
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+		
+	}
+	
+	focus = {
+		id = FOR_Heat_The_Embers
+		prerequisite = { focus = FOR_Infrared }
+		icon = GFX_goal_generic_support_communism
+		x = 14
+		y = 4
+		cost = 4
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.4
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+		
+	}
+	
+	focus = {
+		id = FOR_Its_Just_Black
+		prerequisite = { focus = FOR_Fifty_Shades_Of_Black }
+		icon = GFX_goal_generic_support_communism
+		x = 22
+		y = 3
+		cost = 4
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.25
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+		}
+		
+	}
+	
+	focus = {
+		id = FOR_Orange_New_Black
+		prerequisite = { focus = FOR_Fifty_Shades_Of_Black }
+		icon = GFX_goal_generic_support_fascism
+		x = 30
+		y = 3
+		cost = 4
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.4
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
 		}
 		
 	}
