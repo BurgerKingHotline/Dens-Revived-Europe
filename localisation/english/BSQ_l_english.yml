@@ -2,10 +2,15 @@
  BSQ: "Baskonia"
  BSQ_ADJ: "Basque"
  BSQ_DEF: "Baskonia"
+ BSQ_technocracy: "Technocracy"
+ BSQ_technocracy_desc: "Based on the scientific method, technocracy is a form of government in which decision-makers are selected based off their technical expertise on the subject rather than their popularity or ideology."
  
- BSQ_test_focus: "Test focus"
+ BSQ_nerd_nation: "A Scientific Approach"
+ BSQ_nerd_nation_desc: "The principle of technocracy is power based off knowledge. By investing further into education, we can ensure that more people can get into position of power and make better decisions."
+ BSQ_line_goes_up: "Focus on the Statistics"
  
  BSQ_placeholder: "Placeholder leader"
  
  BSQ_enable_second_focus: "Selecting the second focus:"
+ SCF_technical_limits: "Due to technical limitations, this appears on every national focus tree in the game."
  SCF_focus_name: "[?SCF_focus_var.GetTokenLocalizedKey]"

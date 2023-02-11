@@ -1,3 +1,4 @@
+# relative_position_id is not used due to the fact that it's easier to make the second focus system this way
 focus_tree = {
     id = baskonia_focus
     country = {
@@ -10,32 +11,32 @@ focus_tree = {
     default = no
     
     focus = {
-        id = BSQ_test_focus
-        x = 0
+        id = BSQ_nerd_nation
+        x = 6
         y = 0
         icon = GFX_focus_unknown
         available = {
-            BSQ_test_focus_available = yes
+            BSQ_nerd_nation_available = yes
         }
         
         cost = 10
         completion_reward = {
-            BSQ_test_focus_reward = yes
+            BSQ_nerd_nation_reward = yes
         }
     }
     focus = {
-        id = BSQ_test_focus_2
-        x = 0
+        id = BSQ_line_goes_up
+        x = 5
         y = 1
         icon = GFX_focus_unknown
-        prerequisite = { focus = BSQ_test_focus }
+        prerequisite = { focus = BSQ_nerd_nation }
         available = {
-            BSQ_test_focus_2_available = yes
+            BSQ_line_goes_up_available = yes
         }
         
         cost = 10
         completion_reward = {
-            BSQ_test_focus_2_reward = yes
+            BSQ_line_goes_up_reward = yes
         }
     }
 }

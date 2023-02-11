@@ -8,7 +8,7 @@ state={
 	}
 
 	history={
-		owner = BSQ
+		owner = ZZA
 		victory_points = {
 			9737 20 
 		}
@@ -25,7 +25,7 @@ state={
 
 		}
 		#add_core_of = OCC
-		add_core_of = BSQ
+		add_core_of = ZZA
 
 	}
 

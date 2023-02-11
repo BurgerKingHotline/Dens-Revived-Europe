@@ -31,9 +31,9 @@ calculate_focus_positions = {
     }
 }
 
-BSQ_test_focus_reward = {
+BSQ_nerd_nation_reward = {
 
 }
-BSQ_test_focus_2_reward = {
+BSQ_line_goes_up_reward = {
 
 }
