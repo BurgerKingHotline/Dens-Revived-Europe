@@ -40,20 +40,94 @@ characters = {
 			id = -1
 		}
 	}
-
-	KEK_bob_random = {
-		name = "Bob-Ran Dom" 
+	KEK_sundowner = {
+		name = "Sundowner" 
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/KEK/bob.png"
+				large = "gfx/leaders/KEK/sundowner.jpg"
+			}
+		}
+	}	
+	KEK_jesus = {
+		name = "Jesus Christ" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KEK/jesus.jpg"
+			}
+		}
+	}
+
+	KEK_kek_god = {
+		name = "Kek" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KEK/kek_god.jpg"
+			}
+		}
+	}		
+
+	KEK_osama = {
+		name = "Osama bin Laden" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KEK/bin_laden_wow.jpg"
+			}
+		}
+	}
+
+	KEK_michael_rosen = {
+		name = "Michael Rosen" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KEK/michael_rosen.jpg"
+			}
+		}
+	}
+	KEK_elon_musk = {
+		name = "Elon Musk" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KEK/elon_musk.jpg"
+			}
+		}
+	}		
+
+	KEK_jackie = {
+		name = "Jackie Chan" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KEK/jacki_chan.jpg"
+			}
+		}
+	}		
+	
+	KEK_dem_council = {
+		name = "Kekstag Council" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KEK/KEK_dem_council.jpg"
 			}
 		}
 		country_leader = {
-			ideology = stalinism
+			ideology = conservatism
 			expire = "1950.1.1.1"
 			id = -1
 		}
 	}
+
+	KEK_com_council = {
+		name = "Kekstag Council" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KEK/KEK_dem_council.jpg"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}		
 
     ##CONSEILLÉ POLITIQUE
 

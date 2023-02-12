@@ -15,4 +15,19 @@ bitmapfonts = {
 			T = { 255 255 255 }
 		}
 	}
+    bitmapfont = {
+		name = "hoi_20"
+		fontfiles = {
+			"gfx/fonts/hoi_20"
+		}
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
 }
