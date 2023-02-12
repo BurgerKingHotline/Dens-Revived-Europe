@@ -1,0 +1,16 @@
+﻿l_english:
+  REL_neutrality:0 "SNP Scotland"
+  REL_neutrality_DEF:0 "The Scottish National Party Republic of Scotland
+  REL_neutrality_ADJ:0 "The Scottish National Party Republic of Scotland
+  REL_democratic: 0 "Scottish Republic"
+  REL_democratic_DEF:0 "The Scottish Republic"
+  REL_democratic_ADJ::0 "The Scottish Republic"
+  REL_fascism:0 "Scottish Republic"
+  REL_fascism_DEF:0 "The Scottish Republic"
+  REL_fascism_ADJ::0 "The Scottish Republic"
+  REL_communism:0 "Scottish People's Republic"
+  REL_communism_DEF:0 "The Scottish People's Republic"
+  REL_communism_ADJ:0 "The Scottish People's Republic"
+  
+  REL_1936_election:0 "1936 Scottish Election"
+  REL_1936_election:0 "The Quinquennial Scottish Election is a Scottish custom, in which nothing changes except from the SNP's seat count being 100-115 and there being around 13-28 Independents, who act to give an illusion of democracy."
