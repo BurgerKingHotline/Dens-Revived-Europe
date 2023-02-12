@@ -1,6 +1,6 @@
-﻿capital = 64 #Grozny
+﻿capital = 64 
 
-#oob = "CIN_1936"
+oob = "KEK_1936"
 
 set_research_slots = 3
 
@@ -16,7 +16,6 @@ set_technology = {
 	motorised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
-	mass_assault = 1
 	fleet_in_being = 1
 }
 if = {
@@ -94,9 +93,17 @@ set_popularities = {
 
 
 recruit_character = KEK_tyronne
-recruit_character = KEK_moot
+recruit_character = KEK_dem_council
+recruit_character = KEK_com_council
+recruit_character = KEK_osama
+recruit_character = KEK_jackie
 recruit_character = KEK_tate
-recruit_character = KEK_bob_random
+recruit_character = KEK_elon_musk
+recruit_character = KEK_michael_rosen
+recruit_character = KEK_jesus
+recruit_character = KEK_kek_god
+recruit_character = KEK_sundowner
+
 recruit_character = KEK_luca_hill
 recruit_character = KEK_stanley_robinson
 recruit_character = KEK_jackson_watts
@@ -141,10 +148,27 @@ recruit_character = KEK_anon5
 recruit_character = KEK_Anon6
 
 add_ideas = {
-	KEK_economic_crisis
-	KEK_the_army
 	partial_economic_mobilisation
 	KEK_foreign_controlled_industry
 }
+
+#ECONOMIC CRISIS
+set_variable = { var = KEK_economic_crisis_consumer_goods value = 0.1 }
+set_variable = { var = KEK_economic_crisis_factory_output value = -0.2 }
+set_variable = { var = KEK_economic_crisis_civ_build_speed value = -0.05 }
+add_dynamic_modifier = { modifier = KEK_economic_crisis }
+
+#THE ARMY
+set_variable = { var = KEK_the_army_surrender_limit value = 0.2 }
+set_variable = { var = KEK_the_army_attack_factor value = -0.2 }
+set_variable = { var = KEK_the_army_defense_factor value = -0.2 }
+set_variable = { var = KEK_the_army_div_speed value = -0.05 }
+set_variable = { var = KEK_the_army_org_factor value = -0.1 }
+set_variable = { var = KEK_the_army_bunker_build_speed value = 0 }
+set_variable = { var = KEK_the_army_conscription_thing value = 0 }
+set_variable = { var = KEK_train_time_thing value = 0 }
+set_variable = { var = KEK_weekly_manpower_thing value = 0 }
+set_variable = { var = KEK_justify_time value = 0 }
+add_dynamic_modifier = { modifier = KEK_the_army }
 
 
