@@ -42,3 +42,8 @@ USE_puppetcosmetic_fascism = {
     color = rgb { 225 25 0 }
     color_ui = rgb { 255 246 0 }
 }
+
+GLG_puppet = {
+	color = rgb { 65 160 95 }
+	color_ui = rgb { 255 73 121 }
+}

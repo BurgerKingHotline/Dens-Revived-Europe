@@ -1,0 +1,330 @@
+GLG_stabilizing_union = {
+
+	GLG_promote_shared_balkan_identity = {
+
+		fire_only_once = yes
+		cost = 50
+
+		visible = {
+			has_completed_focus = GLG_reconciliation
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			add_stability = 0.05
+		}
+
+	}
+
+	GLG_support_romanian_industry = {
+
+		fire_only_once = yes
+		cost = 25
+
+		visible = {
+			has_completed_focus = GLG_reconciliation
+		}
+
+		days_remove = 35
+
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = GLG_decreases_rom_aggro
+			subtract_from_variable = { GLG_romanian_aggro = 5 }
+  		clamp_variable = { var = GLG_romanian_aggro min = 0 }
+		}
+
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = GLG
+					OR = {
+						state = 78
+						state = 79
+						state = 766
+						state = 76
+						state = 84
+						state = 81
+						state = 46
+					}
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+
+	GLG_support_bulgarian_pride = {
+
+		fire_only_once = yes
+		cost = 25
+
+		visible = {
+			has_completed_focus = GLG_reconciliation
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			custom_effect_tooltip = GLG_decreases_bul_aggro
+			subtract_from_variable = { GLG_bulgarian_aggro = 5 }
+  		clamp_variable = { var = GLG_bulgarian_aggro min = 0 }
+		}
+
+	}
+	
+	GLG_blank_decision = {
+
+		visible = {
+			always = yes
+		}
+
+		available = {
+			always = no
+		}
+
+	}
+
+	GLG_silence_legionary_newspapers = {
+
+		fire_only_once = yes
+		cost = 50
+
+		visible = {
+			has_completed_focus = GLG_deal_with_paramilitaries
+		}
+
+		complete_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+		}
+
+	}
+
+	GLG_raid_legionary_gatherings = {
+
+		cost = 10
+
+		days_re_enable = 14
+
+		available = {
+			has_equipment = {
+				infantry_equipment > 100
+			}
+		}
+
+		visible = {
+			has_completed_focus = GLG_deal_with_paramilitaries
+		}
+
+		complete_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.03
+			}
+			add_equipment_to_stockpile = {
+  			type = infantry_equipment
+  			amount = -100
+  		}
+		}
+
+	}
+
+	GLG_end_legionary_threat = {
+
+		fire_only_once = yes
+		cost = 25
+
+		available = {
+			fascism < 0.05
+		}
+
+		visible = {
+			has_completed_focus = GLG_deal_with_paramilitaries
+		}
+
+		complete_effect = {
+			remove_ideas = GLG_legionary_buildup
+		}
+
+	}
+
+}
+
+GLG_integrating_upper_romanians = {
+	
+	GLG_integrate_ZUP_states = {
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_core_of = ZUP
+				is_owned_by = GLG
+			}
+		}
+
+		cost = 50
+
+		available = {
+			FROM = {
+				compliance > 20
+			}
+			has_equipment = {
+				infantry_equipment > 249
+			}
+		}
+
+		modifier = {
+			political_power_cost = 0.1
+		}
+
+		days_remove = 35
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -250
+			}
+		}
+
+		remove_effect = {
+			FROM = {
+				add_core_of = GLG
+			}
+		}
+
+	}
+
+	GLG_integrate_transylvania = {
+
+		visible = {
+			OR = {
+				ZUP = {
+					is_subject_of = GLG
+					owns_state = 76
+					owns_state = 84
+				}
+				TRA = {
+					is_subject_of = GLG
+					owns_state = 76
+					owns_state = 84
+				}
+			}
+		}
+
+		cost = 25
+
+		modifier = {
+			political_power_cost = 0.2
+		}
+
+		days_remove = 70
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_subject = ZUP
+					ZUP = {
+						owns_state = 78
+						owns_state = 79
+					}
+				}
+				hidden_effect = {
+					MOL = {
+						add_state_core = 78
+						add_state_core = 79
+						add_state_core = 80
+						transfer_state = 78
+						transfer_state = 79
+						transfer_state = 80
+						set_cosmetic_tag = GLG_puppet
+					}
+					puppet = MOL
+				}
+			}
+			transfer_state = 84
+			transfer_state = 76
+		}
+
+		remove_effect = {
+			add_state_core = 76
+			add_state_core = 84
+		}
+
+	}
+
+	GLG_integrate_moldova = {
+
+		visible = {
+			OR = {
+				ZUP = {
+					is_subject_of = GLG
+					owns_state = 76
+					owns_state = 84
+				}
+				TRA = {
+					is_subject_of = GLG
+					owns_state = 76
+					owns_state = 84
+				}
+			}
+		}
+
+		cost = 25
+
+		modifier = {
+			political_power_cost = 0.2
+		}
+
+		days_remove = 70
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_subject = ZUP
+					ZUP = {
+						owns_state = 76
+						owns_state = 84
+					}
+				}
+				hidden_effect = {
+					TRA = {
+						add_state_core = 76
+						add_state_core = 84
+						transfer_state = 76
+						transfer_state = 84
+						set_cosmetic_tag = GLG_puppet
+					}
+					puppet = TRA
+				}
+			}
+			transfer_state = 78
+			transfer_state = 79
+			transfer_state = 80
+		}
+
+		remove_effect = {
+			add_state_core = 78
+			add_state_core = 79
+			add_state_core = 80
+		}
+
+	}
+
+}

@@ -1,0 +1,522 @@
+add_namespace = glugistan
+
+country_event = { #collapse time lessgooo
+	id = glugistan.1
+	title = glugistan.1.t
+	desc = glugistan.1.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = GLG_collapse_flag
+	}
+
+	option = { #romanians revolt
+		name = glugistan.1.a
+		trigger = {
+			check_variable = { GLG_romanian_aggro > 0 }
+		}
+		subtract_from_variable = { GLG_romanian_aggro = 10 }
+  	clamp_variable = { var = GLG_romanian_aggro min = 0 }
+		every_state = {
+			limit = {
+				is_owned_by = GLG
+				OR = {
+					state = 78
+					state = 79
+					state = 766
+					state = 76
+					state = 84
+					state = 81
+					state = 46
+				}
+			}
+			remove_core_of = GLG
+			add_core_of = ROM
+			hidden_effect = {
+				add_claim_by = GLG
+			}
+			ROM = {
+				transfer_state = PREV
+			}
+		}
+		hidden_effect = {
+			ROM = {
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.5
+				}
+			}
+			transfer_units_fraction = {
+				target = ROM
+				size = 0.3
+			}
+		}
+		declare_war_on = {
+			target = ROM
+			type = annex_everything
+		}
+	}
+	option = { #bulgarians revolt
+		name = glugistan.1.b
+		trigger = {
+			check_variable = { GLG_bulgarian_aggro > 0 }
+		}
+		subtract_from_variable = { GLG_bulgarian_aggro = 10 }
+  	clamp_variable = { var = GLG_bulgarian_aggro min = 0 }
+		every_state = {
+			limit = {
+				is_owned_by = GLG
+				OR = {
+					state = 211
+					state = 341
+					state = 184
+					state = 801
+					state = 184
+					state = 731
+					state = 106
+					state = 212
+					state = 48
+					state = 803
+				}
+			}
+			remove_core_of = GLG
+			add_core_of = BUL
+			hidden_effect = {
+				add_claim_by = GLG
+			}
+			BUL = {
+				transfer_state = PREV
+			}
+		}
+		hidden_effect = {
+			BUL = {
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.5
+				}
+			}
+			transfer_units_fraction = {
+				target = BUL
+				size = 0.3
+			}
+		}
+		declare_war_on = {
+			target = BUL
+			type = annex_everything
+		}
+	}
+}
+
+country_event = { #legionary revolt
+	id = glugistan.2
+	title = glugistan.2.t
+	desc = glugistan.2.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = GLG_collapse_flag
+	}
+
+	trigger = {
+		NOT = {
+			OR = {
+				has_war_with = BUL
+				has_war_with = ROM
+				has_country_flag = GLG_collapse_flag
+			}
+		}
+	}
+
+	option = { #crush them!
+		name = glugistan.2.a
+		start_civil_war = {
+			ideology = fascism
+		}
+	}
+	option = { #crush the moronarchists!
+		name = glugistan.2.b
+		start_civil_war = {
+			ruling_party = fascism
+			ideology = ROOT
+		}
+	}
+}
+
+country_event = { #GLG demanding oltenia from ZHS
+	id = glugistan.3
+	title = glugistan.3.t
+	desc = glugistan.3.d
+
+	is_triggered_only = yes
+
+	option = { #give them to daddy
+		name = glugistan.3.a
+		ai_chance = {
+			base = 5
+		}
+		GLG = {
+			country_event = { id = glugistan.4 hours = 3 }
+		}
+	}
+	option = { #nah fam
+		name = glugistan.3.b
+		ai_chance = {
+			base = 0 #literally just because I don't wanna make a border conflict
+		}
+		GLG = {
+			country_event = { id = glugistan.5 hours = 3 }
+		}
+	}
+}
+
+country_event = { #ZHS gives us Oltenia
+	id = glugistan.4
+	title = glugistan.4.t
+	desc = glugistan.4.d
+
+	is_triggered_only = yes
+
+	option = { #nice
+		name = glugistan.4.a
+		ai_chance = {
+			base = 5
+		}
+		transfer_state = 81
+		add_state_core = 81
+	}
+}
+
+country_event = { #ZHS does not gives us Oltenia
+	id = glugistan.5
+	title = glugistan.5.t
+	desc = glugistan.5.d
+
+	is_triggered_only = yes
+
+	option = { #dang
+		name = glugistan.5.a
+		ai_chance = {
+			base = 5
+		}
+	}
+}
+
+country_event = { #serres plan
+	id = glugistan.6
+	title = glugistan.6.t
+	desc = glugistan.6.d
+
+	is_triggered_only = yes
+
+	option = { #ask the albanians for aid
+		name = glugistan.6.a
+		ai_chance = {
+			base = 5
+		}
+		MSR = {
+			country_event = { id = glugistan.7 hours = 3 }
+		}
+	}
+	option = { #ask the republic :3 for aid
+		name = glugistan.6.b
+		ai_chance = {
+			base = 5
+		}
+		REP = {
+			country_event = { id = glugistan.7 hours = 3 }
+		}
+	}
+	option = { #we can do it ourselves
+		name = glugistan.6.c
+		ai_chance = {
+			base = 2
+		}
+		add_state_claim = 106
+		add_state_claim = 731
+		create_wargoal = {
+			target = ZSR
+			type = annex_everything
+		}
+	}
+}
+
+country_event = { #serres plan invite
+	id = glugistan.7
+	title = glugistan.7.t
+	desc = glugistan.7.d
+
+	is_triggered_only = yes
+
+	option = { #sure let's go
+		name = glugistan.7.a
+		ai_chance = {
+			base = 5
+		}
+		add_state_claim = 106
+		add_state_claim = 731
+		GLG = {
+			country_event = { id = glugistan.8 hours = 3 }
+		}
+	}
+	option = { #nah
+		name = glugistan.7.b
+		ai_chance = {
+			base = 3
+		}
+		GLG = {
+			country_event = { id = glugistan.9 hours = 3 }
+		}
+	}
+}
+
+country_event = { #FROM agrees to serres plan
+	id = glugistan.8
+	title = glugistan.8.t
+	desc = glugistan.8.d
+
+	is_triggered_only = yes
+
+	option = { #nice demand serres be split
+		name = glugistan.8.a
+		ai_chance = {
+			base = 5
+		}
+		hidden_effect = {
+			FROM = {
+				set_country_flag = GLG_serres_partner
+			}
+		}
+		ZSR = {
+			country_event = { id = glugistan.10 hours = 3 }
+		}
+	}
+}
+
+country_event = { #FROM says no to serres plan
+	id = glugistan.9
+	title = glugistan.9.t
+	desc = glugistan.9.d
+
+	is_triggered_only = yes
+
+	option = { #dang guess we're on our own
+		name = glugistan.9.a
+		ai_chance = {
+			base = 5
+		}
+		add_state_claim = 106
+		add_state_claim = 731
+		create_wargoal = {
+			target = ZSR
+			type = annex_everything
+		}
+	}
+}
+
+country_event = { #serres demand to be split by GLG and someone else
+	id = glugistan.10
+	title = glugistan.10.t
+	desc = glugistan.10.d
+
+	is_triggered_only = yes
+
+	option = { #alright chap
+		name = glugistan.10.a
+		ai_chance = {
+			base = 5
+		}
+		random_other_country = {
+			limit = {
+				has_country_flag = GLG_serres_partner
+			}
+			transfer_state = 106
+			transfer_state = 731
+		}
+		GLG = {
+			country_event = { id = glugistan.11 hours = 3 }
+			transfer_state = 212
+			transfer_state = 184
+		}
+	}
+	option = { #no
+		name = glugistan.10.b
+		ai_chance = {
+			base = 5
+		}
+		GLG = {
+			country_event = { id = glugistan.12 hours = 3 }
+		}
+	}
+}
+
+country_event = { #serres split by GLG and someone else
+	id = glugistan.11
+	title = glugistan.11.t
+	desc = glugistan.11.d
+
+	is_triggered_only = yes
+	option = { #LETS GOOO
+		name = glugistan.11.a
+		effect_tooltip = {
+			transfer_state = 212
+			transfer_state = 184
+		}
+	}
+}
+
+country_event = { #serres don't wanna be split
+	id = glugistan.12
+	title = glugistan.12.t
+	desc = glugistan.12.d
+
+	is_triggered_only = yes
+	option = { #then get cut in half
+		name = glugistan.12.a
+		declare_war_on = {
+			target = ZSR
+			type = annex_everything
+		}
+		random_other_country = {
+			limit = {
+				has_country_flag = GLG_serres_partner
+			}
+			declare_war_on = {
+				target = ZSR
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = { #thrace question
+	id = glugistan.13
+	title = glugistan.13.t
+	desc = glugistan.13.d
+
+	is_triggered_only = yes
+	option = { #sure the bulgarians can have it
+		name = glugistan.13.a
+		add_state_core = 184
+		if = {
+			limit = {
+				owns_state = 731
+			}
+			add_state_core = 731
+			add_timed_idea = {
+				idea = GLG_serresian_resistance
+				days = 140
+			}
+			else = {
+				add_timed_idea = {
+					idea = GLG_serresian_resistance
+					days = 70
+				}
+			}
+		}
+	}
+	option = { #nah the serresians can keep it
+		name = glugistan.13.a
+		hidden_effect = {
+			ZSR = {
+				remove_state_core = 212
+			}
+			if = {
+				limit = {
+					owns_state = 106
+				}
+				ZSR = {
+					remove_state_core = 106
+				}
+			}
+		}
+		release_puppet = ZSR
+		hidden_effect = {
+			ZSR = {
+				remove_ideas = ZZZ_tribal_nation_at_peace
+				country_lock_all_division_template = no
+			}
+			184 = {
+				create_unit = {
+          division = "name = \"Serresian Division\" division_template = \"Tribal Division\" start_experience_factor = 0.2"
+          owner = ZSR
+          count = 2
+        }
+			}
+		}
+	}
+}
+
+country_event = { #GLG demanding sofia from ZAS
+	id = glugistan.14
+	title = glugistan.14.t
+	desc = glugistan.14.d
+
+	is_triggered_only = yes
+
+	option = { #give them to daddy
+		name = glugistan.14.a
+		ai_chance = {
+			base = 5
+		}
+		GLG = {
+			country_event = { id = glugistan.15 hours = 3 }
+		}
+	}
+	option = { #nah fam
+		name = glugistan.14.b
+		ai_chance = {
+			base = 5 
+		}
+		GLG = {
+			country_event = { id = glugistan.16 hours = 3 }
+		}
+	}
+}
+
+country_event = { #ZAS gives Sofia
+	id = glugistan.15
+	title = glugistan.15.t
+	desc = glugistan.15.d
+
+	is_triggered_only = yes
+
+	option = { #nice
+		name = glugistan.15.a
+		ai_chance = {
+			base = 5
+		}
+		transfer_state = 48
+		add_state_core = 48
+	}
+}
+
+country_event = { #ZAS does not give Sofia
+	id = glugistan.16
+	title = glugistan.16.t
+	desc = glugistan.16.d
+
+	is_triggered_only = yes
+
+	option = { #dang
+		name = glugistan.16.a
+		ai_chance = {
+			base = 5
+		}
+		add_state_claim = 48
+		add_state_claim = 803
+		create_wargoal = {
+			target = ZAS
+			type = annex_everything
+		}
+	}
+}

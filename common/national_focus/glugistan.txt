@@ -11,7 +11,7 @@ focus_tree = {
 
   focus = {
   	id = GLG_the_two_solutions
-  	icon = GFX_
+  	icon = GFX_goal_generic_neutrality_focus
   	x = 5
   	y = 0
   	cost = 5
@@ -30,12 +30,12 @@ focus_tree = {
 
   focus = {
   	id = GLG_reconciliation
-  	icon = GFX_
+  	icon = GFX_goal_generic_national_unity
   	prerequisite = {
   		focus = GLG_the_two_solutions
   	}
   	relative_position_id = GLG_the_two_solutions
-  	x = -2
+  	x = -3
   	y = 1
   	cost = 5
 
@@ -46,18 +46,95 @@ focus_tree = {
   	}
 
   	completion_reward = {
-  		#decisions for stability and balancing between the Romanians and Bulgarians
+  		unlock_decision_category_tooltip = GLG_stabilizing_union
+  	}
+  }
+
+  focus = {
+  	id = GLG_deal_with_paramilitaries
+  	icon = GFX_goal_generic_political_pressure
+  	prerequisite = {
+  		focus = GLG_reconciliation
+  	}
+  	relative_position_id = GLG_reconciliation
+  	x = -1
+  	y = 1
+  	cost = 5
+
+  	available = {
+  		NOT = {
+  			has_country_flag = GLG_collapse_flag
+  		}
+  	}
+
+  	completion_reward = {
+  		unlock_decision_tooltip = GLG_silence_legionary_newspapers
+  		unlock_decision_tooltip = GLG_raid_legionary_gatherings
+  		unlock_decision_tooltip = GLG_end_legionary_threat
+  	}
+  }
+
+  focus = {
+  	id = GLG_promote_bulgarian_politicians
+  	icon = GFX_focus_BUL_promote_bulgarian_nationalism
+  	prerequisite = {
+  		focus = GLG_reconciliation
+  	}
+  	relative_position_id = GLG_reconciliation
+  	x = 1
+  	y = 1
+  	cost = 5
+
+  	available = {
+  		NOT = {
+  			has_country_flag = GLG_collapse_flag
+  		}
+  	}
+
+  	completion_reward = {
+  		#unlock advisors like prince kiril - monarchist, nikola mihaylov mihov - fascist, todor pavlov - democratic, and venelin ganev - communist
+  		custom_effect_tooltip = GLG_decreases_bul_aggro
+  		subtract_from_variable = { GLG_bulgarian_aggro = 5 }
+  		clamp_variable = { var = GLG_bulgarian_aggro min = 0 }
+  	}
+  }
+
+  focus = {
+  	id = GLG_a_better_union
+  	icon = GFX_focus_generic_monarchy_1
+  	prerequisite = {
+  		focus = GLG_deal_with_paramilitaries
+  	}
+  	prerequisite = {
+  		focus = GLG_promote_bulgarian_politicians
+  	}
+  	relative_position_id = GLG_reconciliation
+  	x = 0
+  	y = 2
+  	cost = 5
+
+  	available = {
+  		NOT = {
+  			has_country_flag = GLG_collapse_flag
+  			has_idea = GLG_legionary_buildup
+  		}
+  		#has recruited one of the bulgarian advisors
+  	}
+
+  	completion_reward = {
+  		remove_ideas = GLG_unstable_union
+  		add_stability = 0.1
   	}
   }
 
   focus = {
   	id = GLG_irredentism
-  	icon = GFX_
+  	icon = GFX_focus_spr_the_anti_fascist_workers_revolution
   	prerequisite = {
   		focus = GLG_the_two_solutions
   	}
   	relative_position_id = GLG_the_two_solutions
-  	x = 2
+  	x = 3
   	y = 1
   	cost = 5
 
@@ -77,7 +154,7 @@ focus_tree = {
 
   focus = {
   	id = GLG_demand_oltenia
-  	icon = GFX_
+  	icon = GFX_goal_generic_demand_territory
   	prerequisite = {
   		focus = GLG_irredentism
   	}
@@ -117,7 +194,7 @@ focus_tree = {
   					limit = {
   						owns_state = 81
   					}
-  					#demand the land, or unlock a border conflict for it
+  					country_event = { id = glugistan.3 hours = 3 }
   				}
   			}
   		}
@@ -126,7 +203,7 @@ focus_tree = {
 
   focus = {
   	id = GLG_preparing_great_assault
-  	icon = GFX_
+  	icon = GFX_focus_generic_strike_at_democracy1
   	prerequisite = {
   		focus = GLG_irredentism
   	}
@@ -146,7 +223,7 @@ focus_tree = {
   		custom_effect_tooltip = GLG_claim_all_romanian_bulgarian_states
   		add_equipment_to_stockpile = {
   			type = infantry_equipment
-  			amount = 750
+  			amount = 1200
   		}
   		hidden_effect = {
   			#moldova
@@ -169,7 +246,7 @@ focus_tree = {
 
   focus = {
   	id = GLG_serres_plan
-  	icon = GFX_
+  	icon = GFX_focus_generic_befriend_greece
   	prerequisite = {
   		focus = GLG_preparing_great_assault
   	}
@@ -185,6 +262,7 @@ focus_tree = {
   	}
 
   	completion_reward = {
+  		country_event = { id = glugistan.6 hours = 2 }
   		#event about whether to ask REP or MSR for help with Serres, or to go it alone
   		#if one of them accepts, Serres gets a demand to be partitioned, and it can either accept or have war declared on it. If MSR aids, they get territory that GLG will eventually REALLY WANT 
   	}
@@ -192,7 +270,7 @@ focus_tree = {
 
   focus = {
   	id = GLG_demand_transovan_submission
-  	icon = GFX_
+  	icon = GFX_goal_generic_territory_or_war
   	prerequisite = {
   		focus = GLG_preparing_great_assault
   	}
@@ -208,13 +286,16 @@ focus_tree = {
   	}
 
   	completion_reward = {
-  		#demand transovan become a subject, wargoal if they deny it
+  		create_wargoal = {
+  			type = puppet_wargoal_focus
+  			target = ZUP
+  		}
   	}
   }
 
   focus = {
   	id = GLG_securing_greater_romania
-  	icon = GFX_
+  	icon = GFX_GFX_focus_rom_preserve_romania
   	prerequisite = {
   		focus = GLG_demand_transovan_submission
   	}
@@ -233,13 +314,13 @@ focus_tree = {
   	}
 
   	completion_reward = {
-  		#unlocks decisions to core the Transovan states if they're annexed, if not, you get decisions to slowly integrate them
+  		unlock_decision_category_tooltip = GLG_integrating_upper_romanians
   	}
   }
 
   focus = {
   	id = GLG_thrace_debate
-  	icon = GFX_
+  	icon = GFX_focus_generic_aegean_sea_focus
   	prerequisite = {
   		focus = GLG_serres_plan
   	}
@@ -257,13 +338,20 @@ focus_tree = {
 
   	completion_reward = {
   		add_state_core = 212
+  		if = {
+  			limit = {
+  				owns_state = 106
+  			}
+  			add_state_core = 106
+  		}
+  		country_event = { id = glugistan.13 hours = 3 }
   		#event about whether to integrate the Serresian coast into Greater Bulgaria or not. Either ticks off the Bulgarians but gives you a nice lil puppet, or makes you have to struggle with the Serresian resistance as you 'settle' it
   	}
   }
 
   focus = {
   	id = GLG_demand_sofia
-  	icon = GFX_
+  	icon = GFX_focus_BUL_condemn_macedonian_organizations
   	prerequisite = {
   		focus = GLG_serres_plan
   	}
@@ -289,7 +377,7 @@ focus_tree = {
   	completion_reward = {
   		48 = {
   			OWNER = {
-  				#demand sofia from wheover owns it, if they say no, get a claim on 803 and a wargoal
+  				country_event = { id = glugistan.14 hours = 3 }
   			}
   		}
   	}
@@ -297,7 +385,7 @@ focus_tree = {
 
   focus = {
   	id = GLG_mend_moravian_ties
-  	icon = GFX_
+  	icon = GFX_goal_generic_improve_relations
   	prerequisite = {
   		focus = GLG_demand_sofia
   	}
@@ -326,7 +414,7 @@ focus_tree = {
 
   focus = {
   	id = GLG_push_into_western_balkans
-  	icon = GFX_
+  	icon = GFX_focus_ITA_albanian_fascist_militia
   	prerequisite = {
   		focus = GLG_demand_sofia
   	}
@@ -373,6 +461,69 @@ focus_tree = {
 	  			target = ZAS
 	  			type = puppet_wargoal_focus
 	  		}
+  		}
+  	}
+  }
+
+  #industrial tree #political tree too? idk
+
+  focus = {
+  	id = GLG_finding_skilled_engineers
+  	icon = GFX_goal_generic_industry
+  	x = 15
+  	y = 0
+  	cost = 5
+
+  	completion_reward = {
+  		add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.75
+				uses = 1
+				category = industry
+			}
+  	}
+  }
+
+  focus = {
+  	id = GLG_promote_farmers
+  	icon = GFX_focus_SOV_breadbasket_of_the_union
+  	prerequisite = {
+  		focus = GLG_finding_skilled_engineers
+  	}
+  	relative_position_id = GLG_finding_skilled_engineers
+  	mutually_exclusive = {
+  		focus = GLG_two_year_plan
+  	}
+  	x = -1
+  	y = 1
+  	cost = 5
+
+  	completion_reward = {
+  		add_timed_idea = {
+  			idea = GLG_agrarian_buildup
+  			days = 730
+  		}
+  	}
+  }
+
+  focus = {
+  	id = GLG_two_year_plan
+  	icon = GFX_goal_generic_construct_civ_factory
+  	prerequisite = {
+  		focus = GLG_finding_skilled_engineers
+  	}
+  	relative_position_id = GLG_finding_skilled_engineers
+  	mutually_exclusive = {
+  		focus = GLG_promote_farmers
+  	}
+  	x = 1
+  	y = 1
+  	cost = 5
+
+  	completion_reward = {
+  		add_timed_idea = {
+  			idea = GLG_industrial_buildup
+  			days = 730
   		}
   	}
   }
