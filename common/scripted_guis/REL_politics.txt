@@ -1,0 +1,15 @@
+scripted_gui = {
+	REL_politics = { 
+		window_name = "REL_politics"
+		context_type = decision_category
+		
+	visible = {
+	tag = REL
+    }
+
+    properties = {
+    }
+
+    ai_enabled = {
+		always = no
+    }
