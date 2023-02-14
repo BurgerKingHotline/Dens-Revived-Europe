@@ -1,0 +1,150 @@
+focus_tree = {
+	id = BAV_neutral
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BAV	
+		}
+	}
+	
+	default = no
+
+	focus = {
+		id = BAV_we_remember
+		icon = GFX_goal_NRS_council_of_novorossiya
+		x = 3
+		y = 0
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 8000
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	#####HARD PATH#####
+
+	focus = {
+		id = BAV_put_pressure_on_himmler
+		icon = GFX_goal_continuous_increase_nu
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = BAV_we_remember }
+
+		mutually_exclusive = {
+			focus = BAV_try_to_negotiate_with_SS
+			focus = BAV_embrace_new_ideas
+		}
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 8000
+		}
+		completion_reward = {
+			add_political_power = 120
+			add_timed_idea = {
+				idea = idea_political_correctness days = 140
+			}			
+		}
+	}
+
+	#####SOFT PATH#####
+
+	focus = {
+		id = BAV_try_to_negotiate_with_SS
+		icon = GFX_goal_continuous_increase_nu
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = BAV_we_remember }
+
+		mutually_exclusive = {
+			focus = BAV_put_pressure_on_himmler
+			focus = BAV_embrace_new_ideas
+		}
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 8000
+		}
+		completion_reward = {
+			add_political_power = 120
+			add_timed_idea = {
+				idea = idea_political_correctness days = 140
+			}			
+		}
+	}
+
+	#####EMBRACING####
+
+	focus = {
+		id = BAV_embrace_new_ideas
+		icon = GFX_goal_continuous_increase_nu
+		x = 5
+		y = 1
+		
+		prerequisite = { focus = BAV_we_remember }
+
+		mutually_exclusive = {
+			focus = BAV_put_pressure_on_himmler
+			focus = BAV_try_to_negotiate_with_SS
+		}
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 8000
+		}
+		completion_reward = {
+			add_political_power = 120
+			add_timed_idea = {
+				idea = idea_political_correctness days = 140
+			}			
+		}
+	}
+}
