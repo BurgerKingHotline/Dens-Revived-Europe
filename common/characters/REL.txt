@@ -1,0 +1,13 @@
+characters = {
+    REL_Nicola_Sturgeon = {
+        name = "Nicola Sturgeon"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/REL/Nicola_Sturgeon.dds"
+            }
+        }
+        country_leader = {
+            ideology = despotism
+            expire = "2099.1.1.1"
+        }
+    }

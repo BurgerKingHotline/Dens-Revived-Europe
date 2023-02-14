@@ -1,5 +1,5 @@
 focus_tree = {
-	id = kekistan
+	id = kekistanfocus_tree
 	continuous_focus_position = { x = -40 y = 1050 } 
 	country = {
 		factor = 0
@@ -17,9 +17,14 @@ focus_tree = {
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_WAR_SUPPORT
-		}
+		}		
 		prerequisite = { focus = KEK_seize_military_factories  } prerequisite = { focus = KEK_the_takeover_begins  }
 		ai_will_do = { factor = 1000 }
+		
+		completion_reward = {
+            add_stability = 0.1
+			add_war_support = 0.1
+		}		
 	}
 
 	#Acquire the Means to Fight
@@ -32,8 +37,16 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_WAR_SUPPORT
 		}
-		prerequisite = { focus = KEK_the_chadism_of_andrew_tate  }
+		prerequisite = { focus = KEK_the_chadism_of_andrew_tate focus = KEK_the_savagery_of_sundowner}
 		ai_will_do = { factor = 1000 }
+		
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+			    type = infantry_equipment
+				amount = 1000
+			    producer = KEK
+			}
+		}
 	}
 
 	#Rebuild the Destryed Ones
@@ -42,12 +55,24 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 8
 		y = 4
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = { focus = KEK_repair_damaged_factories  }
 		ai_will_do = { factor = 1000 }
+		
+		completion_reward = {
+        	random_owned_state = {
+                add_extra_state_shared_building_slots = 1
+				
+				add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+			}			
+ 		}
 	}
 
 	#Attract Kekistani Workers
@@ -62,6 +87,12 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_oust_privare_businesses  }
 		ai_will_do = { factor = 1000 }
+		
+		completion_reward = {
+			add_to_variable = { var = KEK_economic_crisis_factory_output value = 0.1 }
+			
+			custom_effect_tooltip = KEK_attract_kek_worker_tt
+		}
 	}
 
 	#Industrial Modernization
@@ -76,6 +107,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_attract_kekistani_workers  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_to_variable = { var = KEK_economic_crisis_civ_build_speed value = 0.05 }
+		    custom_effect_tooltip = KEK_industry_modernize_tt
+		}
 	}
 
 	#Streghten the Party
@@ -90,6 +125,11 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_secure_power  }
 		ai_will_do = { factor = 1000 }
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 120
+		}
 	}
 
 	#Seize the Factories
@@ -103,6 +143,11 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		ai_will_do = { factor = 1000 }
+		
+		completion_reward = {
+		    remove_ideas = { KEK_foreign_controlled_industry } 
+		
+		}
 	}
 
 	#Oust Privare Businesses
@@ -117,6 +162,11 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_seize_the_factories  }
 		ai_will_do = { factor = 1000 }
+		
+		completion_reward = {
+		    add_to_variable = { var = KEK_economic_crisis_consumer_goods value = -0.1 }
+			custom_effect_tooltip = KEK_oust_private_business_tt
+		}
 	}
 
 	#Refurbish Old Military Factories
@@ -131,6 +181,18 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_oust_privare_businesses  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    random_owned_state = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				    type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			
+			}
+		
+		}
 	}
 
 	#Ramp Up the Production
@@ -145,6 +207,11 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_refurbish_old_military_factories  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_to_variable = { var = KEK_economic_crisis_factory_output value = 0.1 }
+			custom_effect_tooltip = KEK_attract_kek_worker_tt
+		
+		}
 	}
 
 	#The Berlin Institute of Science
@@ -159,6 +226,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_industrial_modernization  } prerequisite = { focus = KEK_ramp_up_the_production  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_research_slot = 1
+		}
 	}
 
 	#Tank studies
@@ -167,12 +237,19 @@ focus_tree = {
 		icon = GFX_goal_generic_army_tanks
 		x = 6
 		y = 3
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
 		}
 		prerequisite = { focus = KEK_artillery_studies  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_tech_bonus = {
+                bonus = 0.75
+                uses = 2
+                category = armor
+            }
+		}		
 	}
 
 	#Attract foreign investment
@@ -187,6 +264,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_seize_the_factories  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_ideas = { KEK_foreign_investment }
+		}
 	}
 
 	#Infantry weapons Studies
@@ -195,12 +275,19 @@ focus_tree = {
 		icon = GFX_focus_focus_fra_maquis
 		x = 4
 		y = 2
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
 		}
 		prerequisite = { focus = KEK_attract_foreign_investment  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_tech_bonus = {
+                bonus = 0.5
+                uses = 2
+                category = infantry_weapons
+            }
+		}
 	}
 
 	#Mobile Infantry Studies
@@ -209,12 +296,19 @@ focus_tree = {
 		icon = GFX_focus_BUL_support_macedonian_organizations
 		x = 4
 		y = 3
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
 		}
 		prerequisite = { focus = KEK_infantry_weapons_studies  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_tech_bonus = {
+                bonus = 0.5
+                uses = 2
+                category = cat_mechanized_equipment
+            }			
+		}		
 	}
 
 	#Foreign Designer
@@ -223,12 +317,15 @@ focus_tree = {
 		icon = GFX_goal_generic_dangerous_deal
 		x = 4
 		y = 4
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
 		}
 		prerequisite = { focus = KEK_mobile_infantry_studies  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_ideas = { KEK_foreign_manufacturer }
+		}
 	}
 
 	#Artillery Studies
@@ -237,12 +334,19 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery2
 		x = 6
 		y = 2
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
 		}
 		prerequisite = { focus = KEK_attract_foreign_investment  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_tech_bonus = {
+                bonus = 0.5
+                uses = 2
+                category = artillery
+            }			
+		}		
 	}
 
 	#Anti-tank Equipment Studies
@@ -251,12 +355,19 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery
 		x = 6
 		y = 4
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
 		}
 		prerequisite = { focus = KEK_tank_studies  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_tech_bonus = {
+                bonus = 0.5
+                uses = 2
+                category = cat_anti_tank
+            }
+		}		
 	}
 
 	#Repair damaged Factories
@@ -265,12 +376,22 @@ focus_tree = {
 		icon = GFX_goal_continuous_non_factory_construct
 		x = 8
 		y = 3
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = { focus = KEK_seize_abandoned_factories  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+            random_owned_state = {    
+				add_extra_state_shared_building_slots = 1
+			    add_building_construction = {
+			        type = industrial_complex
+				    level = 1
+					instant_build = yes
+			    }
+			}	
+		}		
 	}
 
 	#Seize Abandoned Factories
@@ -279,12 +400,22 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 8
 		y = 2
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = { focus = KEK_attract_foreign_investment  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+            random_owned_state = {
+			    add_extra_state_shared_building_slots = 2
+			    add_building_construction = {
+			        type = industrial_complex
+				    level = 2
+					instant_build = yes
+			    }
+			}	
+		}		
 	}
 
 	#Defend the Fatherland
@@ -300,6 +431,12 @@ focus_tree = {
 		prerequisite = { focus = KEK_reorganize_the_army  }
 		mutually_exclusive = { focus = KEK_an_offensive_army  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_to_variable = { var = KEK_the_army_defense_factor value = 0.1 }
+			add_to_variable = { var = KEK_the_army_attack_factor value = 0.05 }
+			add_to_variable = { var = KEK_the_army_org_factor value = 0.05 }
+			custom_effect_tooltip = KEK_defend_fatherland_tt
+		}
 	}
 
 	#Artillery Progress
@@ -314,6 +451,13 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_smoke_and_fire  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {	
+			add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = artillery
+            }
+		}	
 	}
 
 	#Exploit Our Land
@@ -328,6 +472,20 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_seize_the_factories  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+	        every_owned_state = {    
+				limit = {
+				    is_core_of = KEK
+				}
+				
+				add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }				
+		
+		}
 	}
 
 	#Exploit the Hamburg Oil Fields
@@ -342,6 +500,14 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_exploit_our_land  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_resource = {
+                type = oil
+                amount = 20
+                state = 58
+            }
+		
+		}
 	}
 
 	#Reorganize the Army
@@ -355,6 +521,18 @@ focus_tree = {
 			FOCUS_FILTER_WAR_SUPPORT
 		}
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_to_variable = { var = KEK_the_army_org_factor value = 0.1 }
+			add_to_variable = { var = KEK_the_army_attack_factor value = 0.1 }
+			add_to_variable = { var = KEK_the_army_defense_factor value = 0.1 }
+			custom_effect_tooltip = KEK_reorg_the_army_tt
+			
+			set_rule = {
+			
+			    can_create_factions = yes
+			}
+		
+		}
 	}
 
 	#An Offensive Army
@@ -370,6 +548,12 @@ focus_tree = {
 		prerequisite = { focus = KEK_reorganize_the_army  }
 		mutually_exclusive = { focus = KEK_defend_the_fatherland  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_to_variable = { var = KEK_the_army_attack_factor value = 0.1 }
+			add_to_variable = { var = KEK_the_army_defense_factor value = 0.05 }
+			add_to_variable = { var = KEK_the_army_div_speed value = 0.05 }
+			custom_effect_tooltip = KEK_offensive_army_tt
+		}
 	}
 
 	#Quick War Policy
@@ -385,6 +569,16 @@ focus_tree = {
 		prerequisite = { focus = KEK_an_offensive_army  }
 		mutually_exclusive = { focus = KEK_smoke_and_fire  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_to_variable = { var = KEK_the_army_div_speed value = 0.05 }
+			add_to_variable = { var = KEK_the_army_org_factor value = 0.05 }
+			custom_effect_tooltip = KEK_quick_war_tt
+			add_doctrine_cost_reduction = {
+                cost_reduction = 0.5
+                uses = 2
+                category = cat_mobile_warfare
+            }
+		}
 	}
 
 	#Progress in the Mechanized Field
@@ -399,6 +593,13 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_quick_war_policy  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = armor
+            } 
+		}
 	}
 
 	#A Fast Army
@@ -413,6 +614,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_progress_in_the_mechanized_field  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_to_variable = { var = KEK_the_army_div_speed value = 0.05 }
+			custom_effect_tooltip = KEK_a_fast_army_tt
+		}
 	}
 
 	#Smoke and Fire
@@ -428,6 +633,15 @@ focus_tree = {
 		prerequisite = { focus = KEK_an_offensive_army  }
 		mutually_exclusive = { focus = KEK_quick_war_policy  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_to_variable = { var = KEK_the_army_attack_factor value = 0.05 }
+			custom_effect_tooltip = KEK_smoke_n_fire_tt
+			add_doctrine_cost_reduction = {
+                cost_reduction = 0.5
+                uses = 2
+                category = cat_superior_firepower
+            }			
+		}
 	}
 
 	#As Aggressive As Possible
@@ -442,6 +656,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_artillery_progress  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_to_variable = { var = KEK_the_army_attack_factor value = 0.05 }
+			custom_effect_tooltip = KEK_smoke_n_fire_tt			
+		}
 	}
 
 	#Fortify the Capital
@@ -456,6 +674,27 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_defend_the_fatherland  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_to_variable = { var = KEK_the_army_defense_factor value = 0.05 }
+			add_to_variable = { var = KEK_the_army_org_factor value = 0.05 }
+			custom_effect_tooltip = KEK_fortify_capital_tt
+			
+			add_doctrine_cost_reduction = {
+                cost_reduction = 0.5
+                uses = 2
+                category = cat_grand_battle_plan
+            }
+            64 = {    
+				add_building_construction = {
+                    type = bunker
+                    level = 3
+                    instant_build = yes
+                    province = {
+                        id = 6521
+                    }
+                }
+            }				
+		}
 	}
 
 	#Optimize Fort Building
@@ -470,6 +709,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_fortify_the_capital  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_to_variable = { var = KEK_the_army_bunker_build_speed value = 0.15 }
+			custom_effect_tooltip = KEK_fort_build_tt
+		}
 	}
 
 	#Modify the Conscription Laws
@@ -484,6 +727,11 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_optimize_fort_building  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_to_variable = { var = KEK_the_army_conscription_thing value = 0.015 }
+			add_to_variable = { var = KEK_the_army_defense_factor value = 0.05 }
+			custom_effect_tooltip = KEK_cons_law_tt
+		}
 	}
 
 	#War Games
@@ -498,6 +746,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_reorganize_the_army  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    army_experience = 25
+		}
 	}
 
 	#Field Maneuvers
@@ -512,6 +763,13 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_war_games  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+                cost_reduction = 0.5
+                uses = 1
+                category = land_doctrine
+            }		    
+		}
 	}
 
 	#A Call for Democracy
@@ -526,6 +784,13 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = KEK_convene_the_berlin_council  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_stability = -0.1
+			add_popularity = {
+               ideology = democratic
+               popularity = 0.05
+            }
+		}
 	}
 
 	#Strikes in Hamburg
@@ -534,12 +799,19 @@ focus_tree = {
 		icon = GFX_focus_generic_strike_at_democracy2
 		x = 22
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = KEK_a_call_for_democracy  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_political_power = 75
+			add_popularity = {
+               ideology = democratic
+               popularity = 0.05
+            }
+		}		
 	}
 
 	#The Berlin March
@@ -548,12 +820,19 @@ focus_tree = {
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		x = 24
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = KEK_a_call_for_democracy  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_stability = -0.05
+			add_popularity = {
+               ideology = democratic
+               popularity = 0.05
+            }
+		}		
 	}
 
 	#Acquire Weapons
@@ -568,6 +847,17 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_strikes_in_hamburg  } prerequisite = { focus = KEK_the_berlin_march  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1000
+                producer = KEK
+            }
+			add_popularity = {
+               ideology = democratic
+               popularity = 0.05
+            }
+		}		
 	}
 
 	#Socialist support
@@ -576,12 +866,24 @@ focus_tree = {
 		icon = GFX_focus_prc_agrarian_socialism
 		x = 22
 		y = 2
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_WAR_SUPPORT
 		}
 		prerequisite = { focus = KEK_strikes_in_hamburg  } prerequisite = { focus = KEK_the_berlin_march  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_stability = -0.02
+		    add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1000
+                producer = KEK
+            }			
+			add_popularity = {
+               ideology = communism
+               popularity = 0.1
+            }
+		}		
 	}
 
 	#Extended Socialist Support
@@ -590,12 +892,23 @@ focus_tree = {
 		icon = GFX_focus_prc_agrarian_socialism
 		x = 21
 		y = 3
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
 		}
 		prerequisite = { focus = KEK_socialist_support  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_popularity = {
+               ideology = communism
+               popularity = 0.03
+            }
+		    add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1000
+                producer = KEK
+            }			
+		}		
 	}
 
 	#Deposit Tyronne
@@ -604,12 +917,24 @@ focus_tree = {
 		icon = GFX_focus_focus_fra_fascist_threat
 		x = 23
 		y = 4
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = KEK_acquire_weapons  focus = KEK_socialist_support  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_popularity = {
+               ideology = neutrality
+               popularity = -1
+            }
+            set_politics = {
+	            ruling_party = democratic
+                elections_allowed = yes
+                last_election = "1935.12.17"
+                election_frequency = 48
+            }			
+		}
 	}
 
 	#The Fate of the Dictator
@@ -618,12 +943,15 @@ focus_tree = {
 		icon = GFX_focus_RAJ_lions_of_the_great_war
 		x = 23
 		y = 5
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = KEK_deposit_tyronne  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    country_event = { id = kek.7 }
+		}
 	}
 
 	#Democratic Socialism
@@ -639,6 +967,20 @@ focus_tree = {
 		prerequisite = { focus = KEK_extended_socialist_support  } prerequisite = { focus = KEK_the_fate_of_the_dictator  }
 		mutually_exclusive = { focus = KEK_the_kekistani_republic  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_popularity = {
+               ideology = communism
+               popularity = 0.3
+            }
+            set_politics = {
+	            ruling_party = communism
+                elections_allowed = yes
+                last_election = "1935.12.17"
+                election_frequency = 48
+            }
+			add_ideas = KEK_freedom_legion_resistance
+            add_stability = -0.1		    
+		}
 	}
 
 	#Regain the Trust of the Democrats
@@ -653,6 +995,13 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_democratic_socialism  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_popularity = {
+               ideology = communism
+               popularity = 0.1
+            }
+            add_stability = 0.1		    
+		}
 	}
 
 	#Fight the Fascists
@@ -668,6 +1017,12 @@ focus_tree = {
 		prerequisite = { focus = KEK_secure_power  }
 		mutually_exclusive = { focus = KEK_use_fascist_militias  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -1
+			}
+		}
 	}
 
 	#Anti-Fascist Legions
@@ -682,6 +1037,14 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_fight_the_fascists  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_manpower = 60000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+				producer = KEK
+			}
+		}
 	}
 
 	#Strenghten our Position
@@ -690,12 +1053,16 @@ focus_tree = {
 		icon = GFX_focus_eng_move_to_secure_the_dominions
 		x = 15
 		y = 8
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = KEK_regain_the_trust_of_the_democrats  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_stability = 0.1
+			add_political_power = 120
+		}
 	}
 
 	#Calm the strikes
@@ -704,12 +1071,16 @@ focus_tree = {
 		icon = GFX_goal_generic_war_with_comintern
 		x = 17
 		y = 8
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_STABILITY
 		}
 		prerequisite = { focus = KEK_regain_the_trust_of_the_democrats  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_stability = 0.05
+			add_war_support = 0.05
+		}
 	}
 
 	#Unite the People
@@ -724,6 +1095,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_strenghten_our_position  } prerequisite = { focus = KEK_calm_the_strikes  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_war_support = 0.15
+			add_political_power = 100
+		}
 	}
 
 	#The New Constitution
@@ -738,6 +1113,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_democratic_socialism  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_stability = -0.05
+			add_war_support = 0.05
+		}
 	}
 
 	#Election of a leader
@@ -752,6 +1131,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_the_new_constitution  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    retire_ideology_leader = communism
+			country_event = { id = kek.8 }
+		}	
 	}
 
 	#Reorganize the party
@@ -766,6 +1149,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_election_of_a_leader  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_stability = 0.05
+		}	
 	}
 
 	#The Fight Agaisn't Capitalism
@@ -781,6 +1167,14 @@ focus_tree = {
 		prerequisite = { focus = KEK_reorganize_the_party  }
 		mutually_exclusive = { focus = KEK_the_greater_threat  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_popularity = {
+			    ideology = democratic
+				popularity = -1
+			}
+			add_stability = -0.03
+			add_war_support = -0.03	
+		}	
 	}
 
 	#Arm the People
@@ -795,6 +1189,13 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_thefightagaisntcapitalism  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+			    type = infantry_equipment
+				amount = 5000
+				producer = KEK
+			}	
+		}	
 	}
 
 	#Train the People
@@ -809,6 +1210,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_arm_the_people  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_to_variable = { var = KEK_train_time_thing value = -0.1 }
+			custom_effect_tooltip = KEK_train_the_people_tt
+		}
 	}
 
 	#The Anti-Capitalist Army
@@ -823,6 +1228,35 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_train_the_people  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			division_template = {
+				name = "anti capitalists"
+				division_names_group = USA_INF_01
+				priority  = 1
+				regiments = {
+					infantry = {x = 0 y = 0}
+					infantry = {x = 0 y = 1}
+					infantry = {x = 0 y = 2}
+					infantry = {x = 1 y = 0}
+					infantry = {x = 1 y = 1}
+					infantry = {x = 1 y = 2}
+					infantry = {x = 2 y = 0}
+					infantry = {x = 2 y = 1}
+					infantry = {x = 2 y = 2}
+					infantry = {x = 3 y = 0}
+					infantry = {x = 3 y = 1}
+					infantry = {x = 3 y = 2}										
+				}
+			}
+			
+			random_owned_state = {
+				create_unit = {
+					division = "name = \"Anti-Capitalist Units\" division_template = \"anti capitalists\" start_experience_factor = 0.5"
+					owner = KEK
+					count = 2
+				}
+			}
+		}
 	}
 
 	#Fight Capitalism
@@ -837,6 +1271,20 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_the_anticapitalist_army  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			every_country = {
+				limit = {
+					has_government = democratic
+				}
+				KEK = {
+					create_wargoal = {
+						target = PREV
+						type = topple_government
+						expire = 0
+					}
+				}
+			}
+		}
 	}
 
 	#International Volunteers
@@ -851,6 +1299,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_reorganize_the_party  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_manpower = 30000
+		}
 	}
 
 	#The greater Threat
@@ -866,6 +1317,18 @@ focus_tree = {
 		prerequisite = { focus = KEK_reorganize_the_party  }
 		mutually_exclusive = { focus = KEK_thefightagaisntcapitalism  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -1
+			}
+			add_stability = -0.03
+			add_war_support = -0.03
+		}
 	}
 
 	#Imprison the Fascists
@@ -880,6 +1343,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_the_greater_threat  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
 	}
 
 	#Convert the fascist to socialist
@@ -894,6 +1361,14 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_imprison_the_fascists  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_manpower = 30000
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 5000
+                producer = KEK
+            }		
+		}
 	}
 
 	#Imprison the Authoritarian
@@ -908,6 +1383,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_imprison_the_fascists  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
 	}
 
 	#Convert the authoritarian to socialist
@@ -922,6 +1401,14 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_imprison_the_authoritarian  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_manpower = 30000
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 5000
+                producer = KEK
+            }
+		}
 	}
 
 	#The Fight for Socialism
@@ -934,8 +1421,12 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
 		}
-		prerequisite = { focus = KEK_the_anticapitalist_army  } prerequisite = { focus = KEK_imprison_the_authoritarian  }
+		prerequisite = { focus = KEK_the_anticapitalist_army focus = KEK_imprison_the_authoritarian  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_to_variable = {var = KEK_the_army_surrender_limit value = 0.15 }
+			custom_effect_tooltip = KEK_fight_for_socialism_tt
+		}
 	}
 
 	#Regain the Trust of the Army
@@ -950,6 +1441,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_democratic_socialism  }
 		ai_will_do = { factor = 1000 }
+		completion_reward  ={
+			army_experience = 50
+		}
 	}
 
 	#The Red Kekistani Army
@@ -964,6 +1458,17 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_regain_the_trust_of_the_army  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			army_experience = 25
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					instant_build = yes
+					level = 2
+				}
+			}
+		}
 	}
 
 	#Erase opposition
@@ -978,6 +1483,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_the_red_kekistani_army  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    add_stability = 0.05
+		}
 	}
 
 	#Supress the resistance
@@ -986,12 +1494,18 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		x = 23
 		y = 7
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_STABILITY
 		}
 		prerequisite = { focus = KEK_democratic_socialism  focus = KEK_the_kekistani_republic  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KEK_freedom_legion_resistance
+				add_idea = KEK_freedom_legion_resistance2
+			}
+		}
 	}
 
 	#Raid the Resistance's Outpost
@@ -1000,12 +1514,18 @@ focus_tree = {
 		icon = GFX_focus_jap_strike_south
 		x = 23
 		y = 8
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_STABILITY
 		}
 		prerequisite = { focus = KEK_supress_the_resistance  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KEK_freedom_legion_resistance2
+				add_idea = KEK_freedom_legion_resistance3
+			}			
+		}
 	}
 
 	#New Guerrila Tactics
@@ -1014,12 +1534,20 @@ focus_tree = {
 		icon = GFX_focus_por_portuguese_legion
 		x = 23
 		y = 9
-		cost = 10
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_WAR_SUPPORT
 		}
 		prerequisite = { focus = KEK_raidtheresistancesoutpost  }
 		ai_will_do = { factor = 1000 }
+		completion_reward  ={
+			remove_ideas = KEK_freedom_legion_resistance3
+			add_doctrine_cost_reduction = {
+                cost_reduction = 0.5
+                uses = 2
+                category = land_doctrine
+            }			
+		}
 	}
 
 	#The Kekistani Republic
@@ -1035,6 +1563,13 @@ focus_tree = {
 		prerequisite = { focus = KEK_the_fate_of_the_dictator  }
 		mutually_exclusive = { focus = KEK_democratic_socialism  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.2
+			}
+			add_stability = 0.05
+		}
 	}
 
 	#The Blue Legion
@@ -1049,6 +1584,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_the_kekistani_republic  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_manpower = 30000
+		}
 	}
 
 	#At the Service of Democracy
@@ -1063,6 +1601,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_the_blue_legion  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_war_support = 0.1
+		}
 	}
 
 	#Army Inspection
@@ -1077,6 +1618,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_at_the_service_of_democracy  }
 		ai_will_do = { factor = 1000 }
+		completion_reward  ={
+			add_political_power = -50
+			army_experience = 75
+		}
 	}
 
 	#Revise the Constitution
@@ -1091,6 +1636,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_the_kekistani_republic  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
 	}
 
 	#Election of the Prime Minister
@@ -1105,6 +1654,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_revise_the_constitution  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			country_event = {id = kek.8}
+		}
 	}
 
 	#Maintain Stability
@@ -1119,6 +1671,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_election_of_the_prime_minister  }
 		ai_will_do = { factor = 1000 }
+		completion_reward  ={
+			add_stability = 0.1
+		}
 	}
 
 	#The fight Agaisn't communism
@@ -1133,6 +1688,19 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_maintain_stability  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			every_country = {
+				limit = {
+					has_government = communism
+				}
+				KEK = {
+					create_wargoal = {
+						type = topple_government
+						target = PREV
+					}
+				}
+			}
+		}		
 	}
 
 	#Anti-communist Legions
@@ -1147,6 +1715,15 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_thefightagaisntcommunism  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_to_variable = { var = KEK_train_time_thing value = -0.1 }
+			custom_effect_tooltip = KEK_train_the_people_tt
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = KEK
+			}
+		}
 	}
 
 	#Deploy the Legions
@@ -1161,6 +1738,35 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_anticommunist_legions  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			division_template = {
+				name = "anti communists"
+				division_names_group = USA_INF_01
+				priority  = 1
+				regiments = {
+					infantry = {x = 0 y = 0}
+					infantry = {x = 0 y = 1}
+					infantry = {x = 0 y = 2}
+					infantry = {x = 1 y = 0}
+					infantry = {x = 1 y = 1}
+					infantry = {x = 1 y = 2}
+					infantry = {x = 2 y = 0}
+					infantry = {x = 2 y = 1}
+					infantry = {x = 2 y = 2}
+					infantry = {x = 3 y = 0}
+					infantry = {x = 3 y = 1}
+					infantry = {x = 3 y = 2}										
+				}
+			}
+			
+			random_owned_state = {
+				create_unit = {
+					division = "name = \"Anti-Communists Units\" division_template = \"anti communists\" start_experience_factor = 0.5"
+					owner = KEK
+					count = 2
+				}
+			}
+		}		
 	}
 
 	#Anti-Communsim-Fascism Unity
@@ -1175,6 +1781,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_thefightagaisntcommunism  focus = KEK_fund_antifascist_legions  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 
 	#Prepare for War
@@ -1189,6 +1798,11 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_anticommunsimfascism_unity  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_to_variable = { var = KEK_the_army_defense_factor value = 0.05 }
+			add_to_variable = { var = KEK_the_army_org_factor value = 0.05 }
+			custom_effect_tooltip = KEK_fortify_capital_tt
+		}
 	}
 
 	#Crush Fascist Resistance
@@ -1203,6 +1817,14 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_anticommunsimfascism_unity  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_popularity  ={
+				ideology = fascism
+				popularity = -1
+			}
+			add_stability = 0.1
+			add_war_support = 0.05
+		}
 	}
 
 	#Fund Anti-fascist Legions
@@ -1217,6 +1839,14 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_maintain_stability  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_manpower = 20000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+				producer = KEK
+			}
+		}
 	}
 
 	#Integrate the Legions
@@ -1231,6 +1861,29 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_fund_antifascist_legions  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			division_template = {
+				name = "anti fascists"
+				division_names_group = USA_INF_01
+				priority  = 1
+				regiments = {
+					infantry = {x = 0 y = 0}
+					infantry = {x = 0 y = 1}
+					infantry = {x = 0 y = 2}
+					infantry = {x = 1 y = 0}
+					infantry = {x = 1 y = 1}
+					infantry = {x = 1 y = 2}										
+				}
+			}
+			
+			random_owned_state = {
+				create_unit = {
+					division = "name = \"Anti-fascists Units\" division_template = \"anti fascists\" start_experience_factor = 0.5"
+					owner = KEK
+					count = 4
+				}
+			}			
+		}
 	}
 
 	#Take Down the facsists
@@ -1245,21 +1898,55 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_integrate_the_legions  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			every_country = {
+				limit = {
+					has_government = fascism
+				}
+				KEK = {
+					create_wargoal = {
+						type = topple_government
+						target = PREV
+					}
+				}
+			}
+		}		
 	}
-
-	#Send Aids Abroad
+	
+	#The Berlin New-York Axis
 	focus = {
-		id = KEK_send_aids_abroad
-		icon = GFX_focus_BUL_found_the_brannik
-		x = 29
-		y = 7
+		id = KEK_berlin_new_york_axis
+		icon = GFX_focus_chi_mission_to_the_us
+		x = 47
+		y = 3
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_STABILITY
 		}
-		prerequisite = { focus = KEK_the_kekistani_republic  }
+		prerequisite = { focus = KEK_the_chadism_of_andrew_tate }
 		ai_will_do = { factor = 1000 }
+		
+		completion_reward = {
+		    USE = { country_event = { id = kek.1 } }
+		}
 	}
+
+	focus = {
+		id = KEK_Tech_share_use
+		icon = GFX_focus_chi_mission_to_the_us
+		x = 47
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = KEK_berlin_new_york_axis }
+		ai_will_do = { factor = 1000 }
+		
+		completion_reward = {
+		    USE = { country_event = { id = kek.4 } }
+		}
+	}	
 
 	#Convene The Berlin Council
 	focus = {
@@ -1273,6 +1960,10 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = KEK_a_call_for_democracy  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_ideas = KEK_democratic_resistance
+            add_ideas = KEK_communist_resistance
+		}
 	}
 
 	#Secure Power
@@ -1288,6 +1979,10 @@ focus_tree = {
 		prerequisite = { focus = KEK_convene_the_berlin_council  }
 		mutually_exclusive = { focus = KEK_prepare_the_fascist_takeover  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+		}
 	}
 
 	#Form the Freedom Legion
@@ -1302,6 +1997,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_secure_power  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_manpower = 20000
+			add_war_support = 0.05
+		}
 	}
 
 	#Purge in the Kekstag Palace
@@ -1316,6 +2015,17 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_form_the_freedom_legion  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -1
+			}
+			add_stability = -0.1
+		}
 	}
 
 	#State-Owned Industry
@@ -1330,6 +2040,24 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_purge_in_the_kekstag_palace  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
 	}
 
 	#The Comming of Jesus Christ Himself
@@ -1345,6 +2073,19 @@ focus_tree = {
 		prerequisite = { focus = KEK_stateowned_industry  }
 		mutually_exclusive = { focus = KEK_praise_kek1  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+		    retire_ideology_leader = neutrality
+			
+			KEK_jesus = {
+			    add_country_leader_role = {
+			        country_leader = {
+				        expire = "1965.1.1"
+				        ideology = despotism
+			        }
+			        promote_leader = yes
+			    }
+		    }
+		}
 	}
 
 	#Proclaim the Holy Kekistan Empire
@@ -1359,6 +2100,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_the_comming_of_jesus_christ_himself  focus = KEK_secure_the_danish_channel  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			set_cosmetic_tag = HOLY_KEK_EMPIRE
+		}
 	}
 
 	#Claim Germany
@@ -1373,6 +2117,30 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_proclaim_the_holy_kekistan_empire  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_state_core =  56
+			add_state_core = 57
+			add_state_core = 51
+			add_state_core = 42
+			add_state_core = 55
+			add_state_core = 50
+			add_state_core = 52
+			add_state_core = 53
+			add_state_core = 54
+			add_state_core = 60
+			add_state_core = 65
+			add_state_core = 66
+			add_state_core = 67
+			add_state_core = 762
+			add_state_core = 68
+			add_state_core = 63
+			add_state_core = 86
+			add_state_core = 807
+			add_state_core = 85
+			add_state_core = 5
+			add_state_core = 763
+			add_state_core = 188
+		}
 	}
 
 	#Reclaim the Benelux
@@ -1387,6 +2155,14 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_proclaim_the_holy_kekistan_empire  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_state_core = 36
+			add_state_core = 35
+			add_state_core = 7
+			add_state_core = 6
+			add_state_core = 34
+			add_state_core = 8
+		}
 	}
 
 	#Reclaim the Lost Empire
@@ -1401,20 +2177,20 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_claim_germany  } prerequisite = { focus = KEK_reclaim_the_benelux  }
 		ai_will_do = { factor = 1000 }
-	}
-
-	#National Pride
-	focus = {
-		id = KEK_national_pride
-		icon = GFX_focus_mex_caudillo_private_armies
-		x = 32
-		y = 10
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
+		completion_reward = {
+			add_state_core = 848
+			add_state_core = 153
+			add_state_core = 152
+			add_state_core = 4
+			add_state_core = 28
+			add_state_core = 29
+			add_state_claim = 39
+			add_state_claim = 850
+			add_state_claim = 69
+			add_state_claim = 74
+			add_state_claim = 75
+			add_state_claim = 9
 		}
-		prerequisite = { focus = KEK_reclaim_the_lost_empire  }
-		ai_will_do = { factor = 1000 }
 	}
 
 	#Seize funds
@@ -1429,6 +2205,17 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_purge_in_the_kekstag_palace  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_political_power = 120
+		}
 	}
 
 	#Praise Kek
@@ -1444,6 +2231,18 @@ focus_tree = {
 		prerequisite = { focus = KEK_seize_funds  }
 		mutually_exclusive = { focus = KEK_the_comming_of_jesus_christ_himself  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			retire_ideology_leader = neutrality
+			KEK_kek_god = {
+			    add_country_leader_role = {
+			        country_leader = {
+				        expire = "1965.1.1"
+				        ideology = despotism
+			        }
+			        promote_leader = yes
+			    }
+			}
+		}
 	}
 
 	#Secure the Danish Channel
@@ -1456,8 +2255,21 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
-		prerequisite = { focus = KEK_the_comming_of_jesus_christ_himself  focus = KEK_praise_kek  }
+		prerequisite = { focus = KEK_the_comming_of_jesus_christ_himself  focus = KEK_praise_kek1  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			every_country = {
+				limit = {
+					owns_state = 37
+				}
+				KEK = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+		}
 	}
 
 	#Northern Expansion
@@ -1471,7 +2283,20 @@ focus_tree = {
 			FOCUS_FILTER_ANNEXATION
 		}
 		prerequisite = { focus = KEK_secure_the_danish_channel  }
-		ai_will_do = { factor = 1000 }
+		ai_will_do = { factor = 1000 }		completion_reward = {
+			every_country = {
+				limit = {
+					owns_state = 139
+				}
+				KEK = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+		}
+
 	}
 
 	#Crush Democratic Resistance
@@ -1486,6 +2311,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_streghten_the_party  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			remove_ideas = KEK_democratic_resistance
+		}
 	}
 
 	#Crush Communist Resistance
@@ -1500,6 +2328,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_crush_democratic_resistance  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			remove_ideas = KEK_communist_resistance
+		}
 	}
 
 	#Use Fascist Militias
@@ -1515,6 +2346,14 @@ focus_tree = {
 		prerequisite = { focus = KEK_crush_communist_resistance  }
 		mutually_exclusive = { focus = KEK_fight_the_fascists  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_manpower = 30000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = KEK
+			}
+		}
 	}
 
 	#affirm superiority
@@ -1529,6 +2368,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_use_fascist_militias  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
 	}
 
 	#Defense of the Nation
@@ -1543,6 +2386,11 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_affirm_superiority  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_to_variable = { var = KEK_the_army_defense_factor value = 0.05 }
+			add_to_variable = { var = KEK_the_army_org_factor value = 0.05 }
+			custom_effect_tooltip = KEK_fortify_capital_tt 			
+		}
 	}
 
 	#Fanatic Resistance
@@ -1557,27 +2405,18 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_defense_of_the_nation  focus = KEK_international_fascist_aid  focus = KEK_a_greater_purpose  }
 		ai_will_do = { factor = 1000 }
-	}
-
-	#Fanatic Defense
-	focus = {
-		id = KEK_fanatic_defense
-		icon = GFX_focus_generic_home_defense
-		x = 37
-		y = 9
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_WAR_SUPPORT
+		completion_reward = {
+			add_to_variable = { var = KEK_the_army_defense_factor value = 0.05 }
+			add_to_variable = { var = KEK_the_army_org_factor value = 0.05 }
+			custom_effect_tooltip = KEK_fortify_capital_tt 			
 		}
-		prerequisite = { focus = KEK_fanatic_resistance  }
-		ai_will_do = { factor = 1000 }
 	}
 
 	#Recruit Fanatics
 	focus = {
 		id = KEK_recruit_fanatics
 		icon = GFX_focus_usa_recruit_the_free_corps
-		x = 39
+		x = 38
 		y = 9
 		cost = 10
 		search_filters = {
@@ -1585,13 +2424,16 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_fanatic_resistance  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_manpower = 20000
+		}
 	}
 
 	#Expand the conscription
 	focus = {
 		id = KEK_expand_the_conscription
 		icon = GFX_focus_usa_honor_the_confederacy
-		x = 41
+		x = 40
 		y = 9
 		cost = 10
 		search_filters = {
@@ -1599,6 +2441,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_fanatic_resistance  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_to_variable = { var = KEK_the_army_conscription_thing value = 0.005 }
+			custom_effect_tooltip = KEK_expand_the_conscription_tt
+		}
 	}
 
 	#Prepare the Fascist Takeover
@@ -1614,6 +2460,13 @@ focus_tree = {
 		prerequisite = { focus = KEK_convene_the_berlin_council  }
 		mutually_exclusive = { focus = KEK_secure_power }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_stability = -0.1
+		}
 	}
 
 	#The Savagery of Sundowner
@@ -1629,6 +2482,20 @@ focus_tree = {
 		prerequisite = { focus = KEK_prepare_the_fascist_takeover  }
 		mutually_exclusive = { focus = KEK_the_chadism_of_andrew_tate  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			hidden_effect = {
+				retire_ideology_leader = fascism
+			}
+			KEK_sundowner = {
+				add_country_leader_role = {
+					country_leader = {
+						ideology = fascism_ideology
+						expire = "1950.1.1.1"
+					}
+					promote_leader = yes
+				}
+			}
+		}
 	}
 
 	#Purge in the Party
@@ -1643,6 +2510,14 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_the_savagery_of_sundowner  }
 		ai_will_do = { factor = 1000 }
+		available = {
+			has_government = fascism
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_stability = -0.05
+			add_war_support = 0.1
+		}		
 	}
 
 	#Fund for the Party
@@ -1657,6 +2532,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_purge_in_the_party  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_political_power = 120
+		}
 	}
 
 	#Supremacy of Desperado
@@ -1671,6 +2549,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_fund_for_the_party  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_stability = 0.15
+		}
 	}
 
 	#Unrestricted Warfare
@@ -1685,6 +2566,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_supremacy_of_desperado  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_to_variable = { var = KEK_the_army_attack_factor value = 0.05 }
+			custom_effect_tooltip = KEK_smoke_n_fire_tt
+		}
 	}
 
 	#Start the cloning Program
@@ -1699,6 +2584,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_supremacy_of_desperado  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_to_variable = { var  =KEK_weekly_manpower_thing value = 400 }
+			custom_effect_tooltip = KEK_start_the_cloning_program_tt
+		}
 	}
 
 	#A Warmongering Nation
@@ -1713,6 +2602,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_unrestricted_warfare  } prerequisite = { focus = KEK_start_the_cloning_program  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_to_variable = { var = KEK_justify_time value = -0.5 }
+			custom_effect_tooltip = KEK_a_warmongering_nation_tt
+		}
 	}
 
 	#Recruit Fascist Militias
@@ -1727,6 +2620,33 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_the_savagery_of_sundowner  focus = KEK_the_chadism_of_andrew_tate  }
 		ai_will_do = { factor = 1000 }
+		available = {
+			has_government = fascism
+		}
+		completion_reward = {
+			division_template = {
+				name = "fascist millitia"
+				division_names_group = USA_INF_01
+				priority  = 1
+				regiments = {
+					infantry = {x = 0 y = 0}
+					infantry = {x = 0 y = 1}
+					infantry = {x = 0 y = 2}
+					infantry = {x = 1 y = 0}
+					infantry = {x = 1 y = 1}
+					infantry = {x = 1 y = 2}
+										
+				}
+			}
+			
+			random_owned_state = {
+				create_unit = {
+					division = "name = \fascist millitias\" division_template = \"fascist millitia\" start_experience_factor = 0.5"
+					owner = KEK
+					count = 4
+				}
+			}			
+		}
 	}
 
 	#Seize military factories
@@ -1741,6 +2661,16 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_recruit_fascist_militias  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	#The Chadism of Andrew Tate
@@ -1770,6 +2700,13 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_acquire_the_means_to_fight  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_Stability = -0.3
+		}
 	}
 
 	#Secure our Position
@@ -1784,6 +2721,14 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_the_takeover_begins  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
+		}
 	}
 
 	#Crush the Democratic opposition
@@ -1798,6 +2743,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_secure_our_position  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			remove_ideas = KEK_democratic_resistance
+		}
 	}
 
 	#International Fascist aid
@@ -1813,6 +2761,22 @@ focus_tree = {
 		prerequisite = { focus = KEK_crush_the_democratic_opposition  }
 		mutually_exclusive = { focus = KEK_a_greater_purpose  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			every_country = {
+				limit = {
+					has_government = fascism
+					NOT = { tag = KEK }
+				}
+				PREV = {
+					add_political_power = 120
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 7000
+						producer = PREV
+					}
+				}
+			}
+		}
 	}
 
 	#Welcome the Refugees
@@ -1827,6 +2791,11 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_international_fascist_aid  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			random_owned_state = {
+				add_manpower = 230000
+			}
+		}
 	}
 
 	#German Kekistan
@@ -1841,6 +2810,30 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_international_fascist_aid  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_state_core =  56
+			add_state_core = 57
+			add_state_core = 51
+			add_state_core = 42
+			add_state_core = 55
+			add_state_core = 50
+			add_state_core = 52
+			add_state_core = 53
+			add_state_core = 54
+			add_state_core = 60
+			add_state_core = 65
+			add_state_core = 66
+			add_state_core = 67
+			add_state_core = 762
+			add_state_core = 68
+			add_state_core = 63
+			add_state_core = 86
+			add_state_core = 807
+			add_state_core = 85
+			add_state_core = 5
+			add_state_core = 763
+			add_state_core = 188
+		}		
 	}
 
 	#A Greater Purpose
@@ -1856,6 +2849,36 @@ focus_tree = {
 		prerequisite = { focus = KEK_crush_the_democratic_opposition  }
 		mutually_exclusive = { focus = KEK_international_fascist_aid  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_political_power = 120
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 4000
+				producer = KEK
+			}
+			add_state_core =  56
+			add_state_core = 57
+			add_state_core = 51
+			add_state_core = 42
+			add_state_core = 55
+			add_state_core = 50
+			add_state_core = 52
+			add_state_core = 53
+			add_state_core = 54
+			add_state_core = 60
+			add_state_core = 65
+			add_state_core = 66
+			add_state_core = 67
+			add_state_core = 762
+			add_state_core = 68
+			add_state_core = 63
+			add_state_core = 86
+			add_state_core = 807
+			add_state_core = 85
+			add_state_core = 5
+			add_state_core = 763
+			add_state_core = 188			
+		}
 	}
 
 	#Toward Greatness
@@ -1870,6 +2893,14 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_a_greater_purpose  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_state_core = 36
+			add_state_core = 35
+			add_state_core = 7
+			add_state_core = 6
+			add_state_core = 34
+			add_state_core = 8
+		}
 	}
 
 	#Crush the Communist Opposition
@@ -1884,6 +2915,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_secure_our_position  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			remove_ideas = KEK_communist_resistance
+		}
 	}
 
 	#Praise Kek
@@ -1898,6 +2932,16 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_rise_of_the_old_gods  } prerequisite = { focus = KEK_rebuildthelostkekschurches  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+                    instant_build = yes
+				}
+			}
+		}
 	}
 
 	#Rise of the Old Gods
@@ -1912,6 +2956,11 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_the_takeover_begins  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
 	}
 
 	#Rebuild the Lost Kek's Churches
@@ -1926,6 +2975,16 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_rise_of_the_old_gods  }
 		ai_will_do = { factor = 1000 }
+		completion_reward  ={
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	#The Wrath of Kek
@@ -1940,6 +2999,34 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_praise_kek  }
 		ai_will_do = { factor = 1000 }
+		completion_reward = {
+			random_country = {
+				KEK = {
+					create_wargoal = {
+						type = topple_government
+						target = PREV
+					}
+				}
+			}
+
+			random_country = {
+				KEK = {
+					create_wargoal = {
+						type = topple_government
+						target = PREV
+					}
+				}
+			}
+
+			random_country = {
+				KEK = {
+					create_wargoal = {
+						type = topple_government
+						target = PREV
+					}
+				}
+			}
+		}
 	}
 
 	#The Holy Kekistan Empire
@@ -1954,6 +3041,21 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEK_toward_greatness  } prerequisite = { focus = KEK_praise_kek  }
 		ai_will_do = { factor = 1000 }
+        completion_reward = {
+			add_state_core = 848
+			add_state_core = 153
+			add_state_core = 152
+			add_state_core = 4
+			add_state_core = 28
+			add_state_core = 29
+			add_state_claim = 39
+			add_state_claim = 850
+			add_state_claim = 69
+			add_state_claim = 74
+			add_state_claim = 75
+			add_state_claim = 9
+			set_cosmetic_tag = HOLY_KEK_EMPIRE
+		}
 	}
 
 }

@@ -45,7 +45,7 @@ scripted_gui = {
                 value = SCF_focus_var
                 index = SCF_index
                 
-                entry_container = SCF_focus
+                entry_container = SCF_focus_entry
             }
         }
         
@@ -85,11 +85,17 @@ scripted_gui = {
             always = no
         }
     }
-#    SCF_focus = {
-#        window_name = SCF_focus
-#        context_type = player_context
-#        
-#        properties = {
-#        }
-#    }
+    SCF_focus_view = {
+        window_name = SCF_focus_view
+        context_type = player_context
+        parent_window_name = nationalfocusview
+        visible = {
+            tag = BSQ
+            has_variable = SCF_selected_focus
+        }
+        
+        ai_enabled = {
+            always = no
+        }
+    }
 }

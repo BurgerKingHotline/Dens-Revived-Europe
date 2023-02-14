@@ -1,0 +1,25 @@
+focus_tree = {
+	id = scotlund
+	continuous_focus_position = { x = -40 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = REL
+		}
+	}
+
+	focus = {
+		id = REL_1936_election
+		icon = GFX_REL_1936_election
+		x = 0
+		y = 0
+		cost = 10
+		  
+		completion_reward = {
+		add_political_power = 10
+		
+        }
+		
+		ai_will_do = { factor = 100 }
+	}

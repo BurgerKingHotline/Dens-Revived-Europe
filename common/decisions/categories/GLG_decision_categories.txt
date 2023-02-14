@@ -1,0 +1,22 @@
+GLG_stabilizing_union = {
+	allowed = {
+		tag = GLG
+	}
+
+	visible = {
+		has_idea = GLG_unstable_union
+		NOT = {
+			has_country_flag = GLG_collapse_flag
+		}
+	}
+}
+
+GLG_integrating_upper_romanians = {
+	allowed = {
+		tag = GLG
+	}
+
+	visible = {
+		has_completed_focus = GLG_securing_greater_romania
+	}
+}

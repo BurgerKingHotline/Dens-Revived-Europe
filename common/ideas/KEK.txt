@@ -1,26 +1,6 @@
 ideas = {
 
 	country = {
-		KEK_economic_crisis = {
-		
-		    picture = FRA_matignon_agreements
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				consumer_goods_factor = 0.1
-				production_speed_industrial_complex_factor = -0.05
-                industrial_capacity_factory = -0.2				
-			}
-		}
 		
 		KEK_foreign_controlled_industry = {
 		
@@ -39,15 +19,113 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.1			
 			}
-		}		
+		}
+
+	    KEK_freedom_legion_resistance = {
+	
+            picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {	
+                stability_weekly = -0.01
+				war_support_weekly = -0.01
+				political_power_gain = -0.2
+			}		
+	    }
+	    KEK_freedom_legion_resistance2 = {
+	
+            picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {	
+                stability_weekly = -0.01
+				political_power_gain = -0.2
+			}		
+	    }
+	    KEK_freedom_legion_resistance3 = {
+	
+            picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {	
+				political_power_gain = -0.2
+			}		
+	    }
+
+	    KEK_democratic_resistance = {
+	
+            picture = generic_democratic_drift_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {	
+				political_power_gain = -0.1
+				stability_weekly = -0.005
+			}		
+	    }
+
+	    KEK_communist_resistance = {
+	
+            picture = generic_communism_drift_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {	
+				political_power_gain = -0.1
+				stability_weekly = -0.005
+			}		
+	    }														
 		
-		KEK_the_army = {
+		KEK_foreign_investment = {
+		
+		    picture = SOV_second_five_year_plan
 			
 			allowed = {
-				original_tag = KEK
+				always = no
 			}
-			
-			picture = SPR_political_violence
 
 			allowed_civil_war = {
 				always = yes
@@ -56,16 +134,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-                surrender_limit = 0.2
-				army_attack_factor = -0.2
-				army_defence_factor = -0.2
-				army_speed_factor = -0.05
-				army_org_factor = -0.1
+				consumer_goods_factor = -0.05			
 			}
-			rule = {
-			    can_create_factions = yes
-			}
-		}
+		}		
 	}
 
 	# TECHNOLOGY
@@ -89,6 +160,33 @@ ideas = {
 	materiel_manufacturer = {
 		
 		designer = yes
+		KEK_foreign_manufacturer = {
+			name = KEK_foreign_manufacturer_n
+
+			picture = tula_arms_plant
+
+			allowed = {
+				original_tag = KEK
+				has_completed_focus = KEK_foreign_designer
+			}
+
+			visible = {
+			}
+
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+
+			traits = { infantry_equipment_manufacturer }
+
+			modifier = {
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+			}			
+		}		
 	}
 	
 	hidden_ideas = {

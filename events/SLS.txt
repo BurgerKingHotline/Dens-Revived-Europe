@@ -1,4 +1,5 @@
 add_namespace = SLS_elections
+add_namespace = SLS_negot
 
 country_event = { #Results
     id = SLS_elections.1
@@ -16,6 +17,7 @@ country_event = { #Results
 				ruling_party = democratic
 				elections_allowed = no
 			}
+			load_focus_tree = SLS_focus_democratic
 		}
 	}
 	option = { #Decisive Communist Win
@@ -26,6 +28,7 @@ country_event = { #Results
 				ruling_party = communism
 				elections_allowed = no
 			}
+			load_focus_tree = SLS_focus_communism
 		}
 	}
 	option = { #Decisive Fascist Win
@@ -36,6 +39,7 @@ country_event = { #Results
 				ruling_party = fascism
 				elections_allowed = no
 			}
+			load_focus_tree = SLS_focus_german
 		}
 	}
 	option = { #No One Won Decisively, Democrats
@@ -50,6 +54,7 @@ country_event = { #Results
 				ruling_party = democratic
 				elections_allowed = no
 			}
+			load_focus_tree = SLS_focus_democratic
 		}
 	}
 	option = { #No One Won Decisively, Commies
@@ -64,6 +69,7 @@ country_event = { #Results
 				ruling_party = communism
 				elections_allowed = no
 			}
+			load_focus_tree = SLS_focus_communism
 		}
 	}
 	option = { #No One Won Decisively, Nazis
@@ -78,6 +84,73 @@ country_event = { #Results
 				ruling_party = fascism
 				elections_allowed = no
 			}
+			load_focus_tree = SLS_focus_german
+		}
+	}
+}
+country_event = { #Results
+    id = SLS_negot.1
+    title = SLS_negot.1.t
+    desc = SLS_negot.1.desc
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    option = { #Decisive Democratic Win
+		name = SLS_negot.1.a
+		hidden_effect = {
+			QRT = { country_event = SLS_negot.2}
+		}
+	}
+}
+country_event = { #Results
+    id = SLS_negot.2
+    title = SLS_negot.2.t
+    desc = SLS_negot.2.desc
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    option = { #Decisive Democratic Win
+		name = SLS_negot.2.a
+		hidden_effect = {
+			SLS = { country_event = SLS_negot.3}
+		}
+	}
+	 option = { #Decisive Democratic Win
+		name = SLS_negot.2.b
+		hidden_effect = {
+			SLS = { country_event = SLS_negot.4}
+		}
+	}
+}
+country_event = { #Results
+    id = SLS_negot.3
+    title = SLS_negot.3.t
+    desc = SLS_negot.3.desc
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    option = { #Decisive Democratic Win
+		name = SLS_negot.3.a
+		hidden_effect = {
+			complete_national_focus = SLS_negotiations_succeed
+		}
+	}
+}
+country_event = { #Results
+    id = SLS_negot.4
+    title = SLS_negot.4.t
+    desc = SLS_negot.4.desc
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    option = { #Decisive Democratic Win
+		name = SLS_negot.4.a
+		hidden_effect = {
+			complete_national_focus = SLS_negotiations_fail
 		}
 	}
 }

@@ -5,8 +5,8 @@
  KEK_fascism_DEF:0 "the Kekistan Empire"
  KEK_democratic:0 "Kekistani Republic"
  KEK_democratic_DEF:0 "the Kekistani Republic"
- KEK_neutrality:1 "Kingdom of Kekistan"
- KEK_neutrality_DEF:1 "the Kingdom of Kekistan"
+ KEK_neutrality:0 "Kingdom of Kekistan"
+ KEK_neutrality_DEF:0 "the Kingdom of Kekistan"
  KEK_communism:0 "Socialist Union of Kekelonia"
  KEK_communism_DEF:0 "the Socialist Union of Kekelonia"
  KEK_fascism_ADJ:0 "Kekistani"
@@ -20,6 +20,11 @@
  KEK:0 "Kekistan"
  KEK_DEF:0 "Kekistan"
  KEK_ADJ:0 "Kekistani"
+
+ HOLY_KEK_EMPIRE_neutrality:0 "Holy Kekistani Empire"
+ HOLY_KEK_EMPIRE_neutrality_DEF:0 "the Holy Kekistani Empire"
+ HOLY_KEK_EMPIRE_fascism:0 "Holy Kekistani Empire"
+ HOLY_KEK_EMPIRE_fascism_DEF:0 "the Holy Kekistani Empire"
  
  #this comment is an easter egg
  
@@ -28,6 +33,73 @@
  KEK_economic_crisis:0 "Economic Crisis"
  KEK_the_army:0 "The Kekistani Army"
  KEK_foreign_controlled_industry:0 "foreign-controlled industry"
+ KEK_foreign_investment:0 "Foreign Investments"
+ KEK_foreign_manufacturer_n:0 "Foreign Equipment Manufacturer"
+ KEK_freedom_legion_resistance:0 "Freedom Legion Resistance"
+ KEK_freedom_legion_resistance2:0 "Freedom Legion Resistance"
+ KEK_freedom_legion_resistance3:0 "Freedom Legion Resistance"
+ KEK_communist_resistance:0 "Communist Resistance"
+ KEK_democratic_resistance:0 "Democratic Resistance"
+ 
+ #events
+ 
+ kek.1.t:0 "Kekistan propose an alliance"
+ kek.1.d:0 "We received a letter today from the newly formed fascist government of Kekistan proposing us with an alliance."
+ kek.1.a:0 "We should accept."
+ kek.1.b:0 "No thanks."
+
+ kek.2.t:0 "The Americans accept our alliance!"
+ kek.2.d:0 "We received news from our proposition of an alliance with the Americans. They accepted!"
+ kek.2.a:0 "Great news."
+
+ kek.3.t:0 "The americans refuses our alliance"
+ kek.3.d:0 "We received a letter from the Americans telling they do not seek to make any alliances in the region."
+ kek.3.a:0 "At least we tried."
+
+ kek.4.t:0 "A technology sharing agreement?"
+ kek.4.d:0 "We received a letter from the Kekistan Government proposing a technology sharing agreement. while it would be veneficial for both of us, we risk our technology being leaked."
+ kek.4.a:0 "it is surely worth the risk."
+ kek.4.b:0 "Sorry but we have to disagree." 
+
+ kek.5.t:0 "The americans accept the technology sharing agreement"
+ kek.5.d:0 "We received a letter from the Americans telling they do not seek to make any alliances in the region."
+ kek.5.a:0 "At least we tried."
+
+ kek.6.t:0 "The americans refuse the technology sharing agreement"
+ kek.6.d:0 "We received a letter from the Americans telling they do not wish to share their technology, in fear of it being leaked in some way."
+ kek.6.a:0 "At least we tried."
+
+ kek.7.t:0 "The fate of Big Man Tyronne"
+ kek.7.d:0 "Now that we captured Big Man Tyronne, What should we do with him? Our supporters want us to kill him, but there is also a group of people agains't that. Also if we just put him in prison, it is likely that we will lose support."
+ kek.7.a:0 "Put him in prison."
+ kek.7.b:0 "Kill him."
+
+ kek.8.t:0 "The choice of a leader"
+ kek.8.d:0 "The council has done its jobs as a transitional government. Now is time to choose who will lead the country"
+ kek.8.a:0 "Osama bin Laden"
+ kek.8.b:0 "Jackie Chan"
+ kek.8.c:0 "Michael Rosen"
+ kek.8.d:0 "Elon Musk"  
+ 
+ #tooltip
+ 
+ KEK_oust_private_business_tt:0 "Modify §YEconomic Crisis§! by\nConsumer Goods Factories: §Y-10.0%§! \n\n"
+ KEK_attract_kek_worker_tt:0 "Modify §YEconomic Crisis§! by\nFactory output: §G+10.0%§! \n\n"
+ KEK_industry_modernize_tt:0 "Modify §YEconomic Crisis§! by\n§YCivilian Factory§! construction speed: §G+5.0%§! \n\n"
+ KEK_reorg_the_army_tt:0 "Modify §YThe Army§! by\nDivision Organization: §G+10.0%§! \nDivision Attack: §G+10.0%§! \nDivision Defense: §G+10.0%§! \n\n"
+ KEK_offensive_army_tt:0 "Modify §YThe Army§! by\nDivision Speed: §G+5.0%§! \nDivision Attack: §G+10.0%§! \nDivision Defense: §G+5.0%§! \n\n"
+ KEK_quick_war_tt:0 "Modify §YThe Army§! by\nDivision Speed: §G+5.0%§! \nDivision Organization: §G+5.0%§! \n\n"
+ KEK_a_fast_army_tt:0 "Modify §YThe Army§! by\nDivision Speed: §G+5.0%§! \n\n"
+ KEK_smoke_n_fire_tt:0 "Modify §YThe Army§! by\nDivision Attack: §G+5.0%§! \n\n"
+ KEK_defend_fatherland_tt:0 "Modify §YThe Army§! by\nDivision Attack: §G+5.0%§!\nDivision Defense: §G+10.0%§!\nDivision Organization: §G+5.0%§! \n\n"
+ KEK_fortify_capital_tt:0 "Modify §YThe Army§! by\nDivision Defense: §G+5.0%§!\nDivision Organization: §G+5.0%§! \n\n"
+ KEK_fort_build_tt:0 "Modify §YThe Army§! by\n§YLand Fort§! construction speed: §G+15.0%§!\n\n"
+ KEK_cons_law_tt:0 "Modify §YThe Army§! by\nRecruitable Population: §Y+1.50%§!\nDivision Defense: §G+5.0%§!\n\n"
+ KEK_train_the_people_tt:0 "Modify §YThe Army§! by\nTraining time: §G-10.00%§!\n\n"
+ KEK_fight_for_socialism_tt:0 "Modify §YThe Army§! by\nSurrender Limit: §G+15.00%§!\n\n"
+ KEK_expand_the_conscription_tt:0 "Modify §YThe Army§! by\nRecruitable Population: §Y+0.50%§!\n\n"
+ KEK_start_the_cloning_program_tt:0 "Modify §YThe Army§! by\nWeekly Manpower: §G+400§!\n\n"
+ KEK_a_warmongering_nation_tt:0 "Modify §YThe Army§! by\nWar Justification Time: §Y-50.00%§!\n\n"
  
  #long-ass focus tree
  
@@ -209,6 +281,8 @@
  KEK_take_down_the_facsists_desc:0 "All over the world, there are people imprisoned within a fascist nation. We must liberate this world from this evil ideology."
  KEK_send_aids_abroad:0 "Send Aids Abroad"
  KEK_send_aids_abroad_desc:0 "All over the world, strugling nation hardlly maintain their democratic principles. We must let them know that they are not alone and send them aids."
+ KEK_berlin_new_york_axis:0 "The Berlin-New York Axis"
+ KEK_berlin_new_york_axis_desc:0 "The United States sent an expeditionary army in Europe. Perhaps we could propose them an alliance and clean this continent from communism?"
  KEK_convene_the_berlin_council:0 "Convene The Berlin Council"
  KEK_convene_the_berlin_council_desc:0 "The future of the country is not clear. many factions oppose the current regime. We must Convene the Berlin Council to talk about the issue before we fall into a civil war."
  KEK_secure_power:0 "Secure Power"
@@ -307,3 +381,5 @@
  KEK_the_wrath_of_kek_desc:0 "Kek has been angered. He has been angered by all the foreigners that don't believe in his words. We must avenge him and spread his words all over the world. We must declare a crusade of our own!"
  KEK_the_holy_kekistan_empire:0 "The Holy Kekistan Empire"
  KEK_the_holy_kekistan_empire_desc:0 "Kek has spoken. We must form the Holy Kekistan Empire, a place where Kek believers all over the world will live."
+ KEK_Tech_share_use:0 "Tech Sharing agreement"
+ KEK_Tech_share_use_desc:0 "Now that we have a new ally in this mess of a world, we may want to suggest a tech sharin agreement to our new ally. This can streghten both of us" 

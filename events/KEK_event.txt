@@ -1,0 +1,234 @@
+add_namespace = kek
+
+#kek propose usa axis
+country_event = {
+    id = kek.1
+	title = kek.1.t
+	desc = kek.1.d
+	
+	is_triggered_only = yes
+	
+	#yes
+	option = {
+	    name = kek.1.a
+		
+		add_ai_strategy = {
+            type = alliance
+            id = USE
+            value = 200
+        }
+		
+		KEK = {
+		    create_faction = "The Berlin-New York Axis"
+			add_to_faction = USE
+			country_event = { id = kek.2 }
+		}
+	}
+	
+	#no
+	option = {
+	    name = kek.1.b		
+		KEK = {
+			country_event = { id = kek.3 }
+		}
+	}	
+
+}
+
+#accept alliance
+country_event = {
+    id = kek.2
+	title = kek.2.t
+	desc = kek.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = kek.2.a
+
+	}
+
+}
+
+#refuse alliance
+country_event = {
+    id = kek.3
+	title = kek.3.t
+	desc = kek.3.d
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = kek.3.a
+
+	}
+
+}
+
+#use tech sharing
+country_event = {
+    id = kek.4
+	title = kek.4.t
+	desc = kek.4.d
+	
+	is_triggered_only = yes
+	
+	#yes
+	option = {
+	    name = kek.4.a
+		
+		add_tech_bonus = {
+            bonus = 0.5
+            uses = 2
+            category = artillery
+        }
+		
+		KEK = {
+			country_event = { id = kek.5 }
+    		add_tech_bonus = {
+                bonus = 0.5
+                uses = 2
+                category = artillery
+            }			
+		}
+	}
+	
+	#no
+	option = {
+	    name = kek.4.b		
+		KEK = {
+			country_event = { id = kek.6 }
+		}
+	}	
+
+}
+
+country_event = {
+    id = kek.5
+	title = kek.5.t
+	desc = kek.5.d
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = kek.5.a
+
+	}
+
+}
+
+country_event = {
+    id = kek.6
+	title = kek.6.t
+	desc = kek.6.d
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = kek.6.a
+
+	}
+
+}
+
+#fate of tyronne
+country_event = {
+    id = kek.7
+	title = kek.7.t
+	desc = kek.7.d
+	
+	is_triggered_only = yes
+	
+	#prison
+	option = {
+	    name = kek.7.a
+        retire_ideology_leader = neutrality
+		add_war_support = -0.1
+	}
+	
+	#pew pew he ded now
+	option = {
+	    name = kek.7.b
+		kill_ideology_leader = neutrality
+		add_popularity = {
+            ideology = neutrality
+            popularity = 0.1
+        }
+		add_war_support = 0.1
+	}	
+	
+
+}
+
+country_event = {
+    id = kek.8
+	title = kek.8.t
+	desc = kek.8.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = kek.8.a
+		trigger = {
+			has_government = communism
+		}
+		KEK_osama = {
+			add_country_leader_role = {
+			    country_leader = {
+				    expire = "1965.1.1"
+				    ideology = stalinism
+			    }
+			promote_leader = yes
+			}
+		}
+	}
+
+	option = {
+		name = kek.8.b
+		trigger = {
+			has_government = communism
+		}		
+		KEK_jackie = {
+			add_country_leader_role = {
+			    country_leader = {
+				    expire = "1965.1.1"
+				    ideology = stalinism
+			    }
+			promote_leader = yes
+			}
+		}
+	}
+
+	option = {
+		name = kek.8.c
+		trigger = {
+			has_government = democratic
+		}		
+		KEK_michael_rosen = {
+			add_country_leader_role = {
+			    country_leader = {
+				    expire = "1965.1.1"
+				    ideology = liberalism
+			    }
+			promote_leader = yes
+			}
+		}
+	}
+
+	option = {
+		name = kek.8.d
+		trigger = {
+			has_government = democratic
+		}		
+		KEK_elon_musk = {
+			add_country_leader_role = {
+			    country_leader = {
+				    expire = "1965.1.1"
+				    ideology = conservatism
+			    }
+			promote_leader = yes
+			}
+		}
+	}		
+
+}	

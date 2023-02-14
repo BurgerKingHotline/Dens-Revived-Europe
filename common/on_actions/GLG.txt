@@ -1,0 +1,16 @@
+on_actions = {
+	on_monthly_GLG = {
+		effect = {
+			if = {
+				limit = {
+					has_idea = GLG_unstable_union
+					has_stability > 0.1
+					NOT = {
+	  				has_country_flag = GLG_collapse_flag
+	  			}
+				}
+				country_event = { id = glugistan.1 days = 2 random = 240 }
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+##these fucking dynamic modifiers make me want to kill myself
+KEK_economic_crisis = {
+	
+    icon = GFX_idea_FRA_matignon_agreements
+	
+	enable = {
+		always = yes
+	}
+	
+	consumer_goods_factor = KEK_economic_crisis_consumer_goods
+	production_speed_industrial_complex_factor = KEK_economic_crisis_civ_build_speed
+	industrial_capacity_factory = KEK_economic_crisis_factory_output				
+}
+KEK_the_army = {	
+	enable = {
+		always = yes
+	}
+
+	icon = GFX_idea_SPR_political_violence
+	
+
+    surrender_limit = KEK_the_army_surrender_limit
+	army_attack_factor = KEK_the_army_attack_factor
+	army_defence_factor = KEK_the_army_defense_factor
+	army_speed_factor = KEK_the_army_div_speed
+	army_org_factor = KEK_the_army_org_factor
+	production_speed_bunker_factor = KEK_the_army_bunker_build_speed
+	conscription = KEK_the_army_conscription_thing
+	training_time_factor = KEK_train_time_thing
+	weekly_manpower = KEK_weekly_manpower_thing
+	justify_war_goal_time = KEK_justify_time
+}

@@ -12,7 +12,10 @@ ideas = {
             }
 
             cancel = {
-                has_civil_war = yes
+                OR = {
+                    has_civil_war = yes
+                    has_country_flag = GLG_collapse_flag
+                }
             }
 
             modifier = {
@@ -41,12 +44,30 @@ ideas = {
                 if = {
                     limit = {
                         has_civil_war = no
+                        NOT = {
+                            OR = {
+                                has_war_with = BUL
+                                has_war_with = ROM
+                            }
+                        }
+                        NOT = {
+                            OR = {
+                                has_subject = ZUP
+                                owns_state = 79
+                                owns_state = 76
+                            }
+                            OR = {
+                                has_subject = ZSR
+                                owns_state = 212
+                            }
+                        }
                     }
-                    #some checks to make sure you at least got SOMETHING and aren't a useless pos, otherwise you cause a civil war :thumbsup:
+                    country_event = { id = glugistan.2 hours = 12 random = 36 }
                 }
             }
 
             modifier = {
+                stability_weekly = 0.002
                 war_support_factor = 0.1
                 conscription_factor = 0.1
             }
@@ -99,6 +120,40 @@ ideas = {
             modifier = {
                 production_speed_buildings_factor = 0.1
                 global_building_slots_factor = 0.1
+            }
+
+        }
+
+        GLG_legionary_buildup = {
+
+            picture = tfv_can_conscription_crisis
+
+            removal_cost = -1
+            
+            allowed = {
+                always = no
+            }
+
+            modifier = {
+                conscription_factor = 0.1
+                fascism_drift = 0.03
+            }
+
+        }
+
+        GLG_serresian_resistance = {
+
+            picture = SPR_political_violence
+
+            removal_cost = -1
+            
+            allowed = {
+                always = no
+            }
+
+            modifier = {
+                production_speed_buildings_factor = -0.1
+                industrial_capacity_factory = -0.1
             }
 
         }
