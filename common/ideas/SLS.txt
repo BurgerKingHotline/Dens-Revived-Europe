@@ -6,6 +6,53 @@ ideas = {
 			}
 		
 		}
+		SLS_ss = {
+			modifier = {
+				democratic_drift = -1.25
+				communism_drift = -1.25
+			}
+		
+		}
+		SLS_gestapo = {
+			modifier = {
+				war_support_factor = 0.15
+			}
+		
+		}
+		SLS_ss_two_electric_boogaloo = {
+			modifier = {
+				democratic_drift = -1.25
+				communism_drift = -1.25
+				war_support_factor = 0.15
+				stability_factor = 0.065
+			}
+		
+		}
+		SLS_generalplan = {
+			modifier = {
+				monthly_population = 0.15
+			}
+		
+		}
+		SLS_generalplan_occupied = {
+			modifier = {
+				monthly_population = -0.15
+			}
+		
+		}
+		SLS_uber_alles_idea = {
+			modifier = {	
+				justify_war_goal_time = -0.5
+				war_support_weekly = 0.001
+			}
+		
+		}
+		SLS_twr_twr_twr = {
+			modifier = {	
+				war_support_weekly = 0.005
+			}
+		
+		}
 	
 	
 	

@@ -9,7 +9,7 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SLS_the_last_days_of_durs"
+		add_political_power = -10
 	}
 }
 
@@ -23,7 +23,7 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SLS_preparing_for_elections"
+		add_political_power = 100
 	}
 	relative_position_id = SLS_the_last_days_of_durs
 	prerequisite = { focus = SLS_the_last_days_of_durs }
@@ -39,7 +39,7 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SLS_the_sun_setting_on_durs"
+		add_political_power = 15
 	}
 	relative_position_id = SLS_the_last_days_of_durs
 	prerequisite = { focus = SLS_the_last_days_of_durs }
@@ -55,7 +55,7 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SLS_farewell"
+		add_stability = 0.05
 	}
 	relative_position_id = SLS_preparing_for_elections
 	prerequisite = { focus = SLS_preparing_for_elections }
@@ -72,29 +72,44 @@ focus_tree = {
     }
 	continuous_focus_position = { x = 50 y = 2000 }
 	shared_focus = SLS_the_last_days_of_durs
-	shared_focus = SLS_two_industries
-	shared_focus = SLS_democracy_the_best_system
 }
 
 shared_focus = {
 	id = SLS_two_industries
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 25
 	y = 0
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SLS_two_industries"
+		762 = { 
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						} 
+			}
 	}
 }
 
 shared_focus = {
 	id = SLS_civilian
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = -2
 	y = 2
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SLS_civilian"
+		762 = { 
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						} 
+			}
 	}
 	relative_position_id = SLS_two_industries
 	prerequisite = { focus = SLS_two_industries }
@@ -103,11 +118,17 @@ shared_focus = {
 shared_focus = {
 	id = SLS_military
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 2
 	y = 2
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SLS_military"
+		762 = { 
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						} 
+			}
 	}
 	relative_position_id = SLS_two_industries
 	prerequisite = { focus = SLS_two_industries }
@@ -116,11 +137,22 @@ shared_focus = {
 shared_focus = {
 	id = SLS_under_our_feet
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 0
 	y = 2
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SLS_under_our_feet"
+		762 = {
+			add_resource = {
+				type = steel
+				amount = 10
+			}
+		}
+		66 = {
+			add_resource = {
+				type = steel
+				amount = 10
+			}
+		}
 	}
 	relative_position_id = SLS_civilian
 	prerequisite = { focus = SLS_civilian }
@@ -129,11 +161,16 @@ shared_focus = {
 shared_focus = {
 	id = SLS_above_our_heads
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = -2
 	y = 2
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SLS_above_our_heads"
+		762 = {
+			add_extra_state_shared_building_slots = 2
+		}
+		66 = {
+			add_extra_state_shared_building_slots = 2
+		}
 	}
 	relative_position_id = SLS_civilian
 	prerequisite = { focus = SLS_civilian }
@@ -142,7 +179,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_beyond_our_borders
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 0
 	y = 2
 	completion_reward = {
@@ -155,11 +192,16 @@ shared_focus = {
 shared_focus = {
 	id = SLS_silesias_pride
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 0
 	y = 2
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SLS_silesias_pride"
+		762 = {
+			add_resource = {
+				type = oil
+				amount = 25
+			}
+		}
 	}
 	relative_position_id = SLS_under_our_feet
 	prerequisite = { focus = SLS_under_our_feet }
@@ -168,7 +210,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_deals_with_the_republics
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 0
 	y = 2
 	completion_reward = {
@@ -181,7 +223,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_opening_the_katowice_metro
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 0
 	y = 2
 	completion_reward = {
@@ -194,7 +236,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_developing_the_nation
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 1
 	y = 2
 	completion_reward = {
@@ -208,7 +250,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_new_arms_industries
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 0
 	y = 2
 	completion_reward = {
@@ -221,7 +263,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_deals_with_the_americans
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 0
 	y = 2
 	completion_reward = {
@@ -234,11 +276,10 @@ shared_focus = {
 shared_focus = {
 	id = SLS_schlesien_garrisons
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 0
 	y = 2
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SLS_schlesien_garrisons"
 	}
 	relative_position_id = SLS_deals_with_the_americans
 	prerequisite = { focus = SLS_deals_with_the_americans }
@@ -247,7 +288,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_buying_our_own_arms
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 2
 	y = 2
 	completion_reward = {
@@ -260,7 +301,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_deals_with_edward
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 0
 	y = 2
 	completion_reward = {
@@ -273,11 +314,10 @@ shared_focus = {
 shared_focus = {
 	id = SLS_polish_guard
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 0
 	y = 2
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SLS_polish_guard"
 	}
 	relative_position_id = SLS_deals_with_edward
 	prerequisite = { focus = SLS_deals_with_edward }
@@ -286,7 +326,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_the_prepared_nation
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 1
 	y = 2
 	completion_reward = {
@@ -300,7 +340,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_democracy_the_best_system
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 15
 	y = 0
 	completion_reward = {
@@ -311,7 +351,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_new_morning_in_old_katowice
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = -2
 	y = 2
 	completion_reward = {
@@ -324,7 +364,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_a_report_from_wroclaw
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 2
 	y = 2
 	completion_reward = {
@@ -337,7 +377,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_imprison_dv_leaders
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 2
 	y = 2
 	completion_reward = {
@@ -351,7 +391,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_a_meeting_with_jaruzelski
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = -2
 	y = 2
 	completion_reward = {
@@ -364,7 +404,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_repurpose_dv_headquarters
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 2
 	y = 2
 	completion_reward = {
@@ -377,7 +417,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_the_true_program
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 0
 	y = 2
 	completion_reward = {
@@ -392,7 +432,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_the_zapadoslavian_region
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 0
 	y = 2
 	completion_reward = {
@@ -405,7 +445,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_the_poznan_region
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = -2
 	y = 2
 	completion_reward = {
@@ -418,7 +458,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_the_warsaw_region
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 2
 	y = 2
 	completion_reward = {
@@ -431,7 +471,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_negotiations_with_hedgehogs
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 2
 	y = 2
 	completion_reward = {
@@ -445,7 +485,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_negotiations_succeed
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = -2
 	y = 2
 	completion_reward = {
@@ -459,11 +499,11 @@ shared_focus = {
 shared_focus = {
 	id = SLS_negotiations_fail
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 2
 	y = 2
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SLS_negotiations_fail"
+		declare_war_on = { type = annex_everything    target = QRT }
 	}
 	mutually_exclusive = { focus = SLS_negotiations_succeed }
 	relative_position_id = SLS_negotiations_with_hedgehogs 
@@ -473,7 +513,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_follow_through_with_our_promises
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 0
 	y = 2
 	completion_reward = {
@@ -486,7 +526,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_central_european_alliance
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = -3
 	y = 2
 	completion_reward = {
@@ -499,7 +539,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_develop_new_voivodeships
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 0
 	y = 2
 	completion_reward = {
@@ -512,7 +552,7 @@ shared_focus = {
 shared_focus = {
 	id = SLS_autonomous_hedgehog_voivodeship
 	icon = GFX_generic_suspend_constitution
-	cost = 2
+	cost = 5
 	x = 3
 	y = 2
 	completion_reward = {
@@ -521,5 +561,850 @@ shared_focus = {
 	relative_position_id = SLS_negotiations_fail 
 	prerequisite = { focus = SLS_negotiations_fail }
 }
+
+shared_focus = {
+	id = SLS_a_red_february
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 3
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_a_red_february"
+	}
+}
+
+shared_focus = {
+	id = SLS_bomb_the_dv_headquarters
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_bomb_the_dv_headquarters"
+	}
+	relative_position_id = SLS_a_red_february
+	prerequisite = { focus = SLS_a_red_february }
+}
+
+shared_focus = {
+	id = SLS_first_things_first
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_first_things_first"
+	}
+	relative_position_id = SLS_a_red_february
+	prerequisite = { focus = SLS_a_red_february }
+}
+
+shared_focus = {
+	id = SLS_the_new_beginning
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_the_new_beginning"
+	}
+	relative_position_id = SLS_bomb_the_dv_headquarters
+	prerequisite = { focus = SLS_bomb_the_dv_headquarters }
+	prerequisite = { focus = SLS_first_things_first }
+}
+
+shared_focus = {
+	id = SLS_zapadoslavian_commune
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_zapadoslavian_commune"
+	}
+	relative_position_id = SLS_the_new_beginning
+	prerequisite = { focus = SLS_the_new_beginning }
+}
+
+shared_focus = {
+	id = SLS_warsaw_commune
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_warsaw_commune"
+	}
+	relative_position_id = SLS_the_new_beginning
+	prerequisite = { focus = SLS_the_new_beginning }
+}
+
+shared_focus = {
+	id = SLS_pomeranian_commune
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = -3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_pomeranian_commune"
+	}
+	relative_position_id = SLS_the_new_beginning
+	prerequisite = { focus = SLS_the_new_beginning }
+}
+
+shared_focus = {
+	id = SLS_declare_the_polish_peoples_republic
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_declare_the_polish_peoples_republic"
+	}
+	relative_position_id = SLS_zapadoslavian_commune
+	prerequisite = { focus = SLS_zapadoslavian_commune }
+	prerequisite = { focus = SLS_warsaw_commune }
+	prerequisite = { focus = SLS_pomeranian_commune }
+}
+
+shared_focus = {
+	id = SLS_the_lviv_commune
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_the_lviv_commune"
+	}
+	relative_position_id = SLS_declare_the_polish_peoples_republic
+	prerequisite = { focus = SLS_declare_the_polish_peoples_republic }
+}
+
+shared_focus = {
+	id = SLS_the_hedgehog_commune
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = -3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_the_hedgehog_commune"
+	}
+	relative_position_id = SLS_declare_the_polish_peoples_republic
+	prerequisite = { focus = SLS_declare_the_polish_peoples_republic }
+}
+
+shared_focus = {
+	id = SLS_wilno_commune
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_wilno_commune"
+	}
+	relative_position_id = SLS_declare_the_polish_peoples_republic
+	prerequisite = { focus = SLS_declare_the_polish_peoples_republic }
+}
+
+shared_focus = {
+	id = SLS_the_union_of_european_socialist_republics
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_the_union_of_european_socialist_republics"
+	}
+	relative_position_id = SLS_the_lviv_commune
+	prerequisite = { focus = SLS_the_lviv_commune }
+	prerequisite = { focus = SLS_the_hedgehog_commune }
+	prerequisite = { focus = SLS_wilno_commune }
+}
+
+shared_focus = {
+	id = SLS_the_reich_awaits
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 2
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+
+shared_focus = {
+	id = SLS_and_the_fuhrer_answers
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 50
+	}
+	relative_position_id = SLS_the_reich_awaits
+	prerequisite = { focus = SLS_the_reich_awaits }
+}
+
+shared_focus = {
+	id = SLS_recreate_schutzstaffel
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = SLS_ss
+	}
+	relative_position_id = SLS_the_reich_awaits
+	prerequisite = { focus = SLS_the_reich_awaits }
+}
+
+shared_focus = {
+	id = SLS_breslau_the_new_capital
+	icon = GFX_SLS_breslau_the_new_capital
+	cost = 5
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		set_capital = {
+		  state = 66
+		  remember_old_capital = no
+		}
+	}
+	relative_position_id = SLS_and_the_fuhrer_answers
+	prerequisite = { focus = SLS_and_the_fuhrer_answers }
+	prerequisite = { focus = SLS_recreate_schutzstaffel }
+}
+
+shared_focus = {
+	id = SLS_move_people_to_breslau
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 5
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		66 = {
+			add_manpower = 200000
+		}
+		762 = {
+			add_manpower = -200000
+		}
+	}
+	relative_position_id = SLS_and_the_fuhrer_answers
+	prerequisite = { focus = SLS_and_the_fuhrer_answers }
+	prerequisite = { focus = SLS_recreate_schutzstaffel }
+}
+
+shared_focus = {
+	id = SLS_terrorize_the_people
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 9
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		762 = {
+			add_manpower = -31284
+		}
+	}
+	relative_position_id = SLS_and_the_fuhrer_answers
+	prerequisite = { focus = SLS_and_the_fuhrer_answers }
+	prerequisite = { focus = SLS_recreate_schutzstaffel }
+}
+
+shared_focus = {
+	id = SLS_open_gestapo
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = SLS_gestapo
+	}
+	relative_position_id = SLS_terrorize_the_people
+	prerequisite = { focus = SLS_terrorize_the_people }
+}
+
+shared_focus = {
+	id = SLS_direct_funding_to_schutzstaffel
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = -100
+		add_ideas = SLS_ss_two_electric_boogaloo
+	}
+	relative_position_id = SLS_terrorize_the_people
+	prerequisite = { focus = SLS_terrorize_the_people }
+}
+
+shared_focus = {
+	id = SLS_a_subjugated_nation
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = -0.045
+		add_war_support = 0.125
+	}
+	relative_position_id = SLS_open_gestapo
+	prerequisite = { focus = SLS_open_gestapo }
+	prerequisite = { focus = SLS_direct_funding_to_schutzstaffel }
+}
+
+shared_focus = {
+	id = SLS_burn_kattowitz
+	icon = GFX_SLS_burn_kattowitz
+	cost = 5
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		762 = {
+			set_state_category = rural
+		}
+	}
+	relative_position_id = SLS_breslau_the_new_capital
+	prerequisite = { focus = SLS_breslau_the_new_capital }
+	prerequisite = { focus = SLS_move_people_to_breslau }
+}
+
+shared_focus = {
+	id = SLS_capital_of_cruelty
+	icon = GFX_SLS_breslau_the_new_capital
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		66 = {
+			add_victory_points = {
+				province = 9570
+				value = 5
+			}
+		}
+	}
+	relative_position_id = SLS_burn_kattowitz
+	prerequisite = { focus = SLS_burn_kattowitz }
+}
+
+shared_focus = {
+	id = SLS_announce_the_german_reclamation
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = -3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_war_support = 0.075
+	}
+	relative_position_id = SLS_a_subjugated_nation
+	prerequisite = { focus = SLS_a_subjugated_nation }
+	prerequisite = { focus = SLS_capital_of_cruelty }
+}
+
+shared_focus = {
+	id = SLS_plan_black
+	icon = GFX_SLS_plan_black
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		declare_war_on = { type = annex_everything    target = ZPN }
+	}
+	relative_position_id = SLS_announce_the_german_reclamation
+	prerequisite = { focus = SLS_announce_the_german_reclamation }
+}
+
+shared_focus = {
+	id = SLS_plan_white
+	icon = GFX_SLS_plan_white
+	cost = 5
+	x = -3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		declare_war_on = { type = annex_everything    target = ZZP }
+	}
+	relative_position_id = SLS_announce_the_german_reclamation
+	prerequisite = { focus = SLS_announce_the_german_reclamation }
+}
+
+shared_focus = {
+	id = SLS_plan_brown
+	icon = GFX_SLS_plan_brown
+	cost = 5
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		declare_war_on = { type = annex_everything    target = ZWZ }
+	}
+	relative_position_id = SLS_announce_the_german_reclamation
+	prerequisite = { focus = SLS_announce_the_german_reclamation }
+}
+
+shared_focus = {
+	id = SLS_announce_eastern_reich
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = no
+	}
+	completion_reward = {
+		set_cosmetic_tag = SLS_austria
+		87 = {
+			add_core_of = SLS
+		}
+		86 = {
+			add_core_of = SLS
+		}
+		63 = {
+			add_core_of = SLS
+		}
+		68 = {
+			add_core_of = SLS
+		}
+	}
+	relative_position_id = SLS_plan_white
+	prerequisite = { focus = SLS_plan_white }
+	prerequisite = { focus = SLS_plan_black }
+	prerequisite = { focus = SLS_plan_brown }
+}
+
+shared_focus = {
+	id = SLS_blue_plan
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		declare_war_on = { type = annex_everything    target = ZBS }
+		declare_war_on = { type = annex_everything    target = BAV }
+	}
+	relative_position_id = SLS_announce_eastern_reich
+	prerequisite = { focus = SLS_announce_eastern_reich }
+}
+
+shared_focus = {
+	id = SLS_plan_rot
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		declare_war_on = { type = annex_everything    target = ZWG }
+		declare_war_on = { type = annex_everything    target = ZSH }
+	}
+	relative_position_id = SLS_announce_eastern_reich
+	prerequisite = { focus = SLS_announce_eastern_reich }
+}
+
+shared_focus = {
+	id = SLS_plan_grune
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = -3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		declare_war_on = { type = annex_everything    target = KEK }
+	}
+	relative_position_id = SLS_announce_eastern_reich
+	prerequisite = { focus = SLS_announce_eastern_reich }
+}
+
+shared_focus = {
+	id = SLS_new_empire
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = no
+	}
+	completion_reward = {
+		set_cosmetic_tag = SLS_tusk_future
+		59 = {
+			add_core_of = SLS
+		}
+		61 = {
+			add_core_of = SLS
+		}
+		62 = {
+			add_core_of = SLS
+		}
+		64 = {
+			add_core_of = SLS
+		}
+		58 = {
+			add_core_of = SLS
+		}
+		56 = {
+			add_core_of = SLS
+		}
+		57 = {
+			add_core_of = SLS
+		}
+		51 = {
+			add_core_of = SLS
+		}
+		55 = {
+			add_core_of = SLS
+		}
+		50 = {
+			add_core_of = SLS
+		}
+		52 = {
+			add_core_of = SLS
+		}
+		53 = {
+			add_core_of = SLS
+		}
+		54 = {
+			add_core_of = SLS
+		}
+		60 = {
+			add_core_of = SLS
+		}
+		65 = {
+			add_core_of = SLS
+		}
+	}
+	relative_position_id = SLS_blue_plan
+	prerequisite = { focus = SLS_blue_plan }
+	prerequisite = { focus = SLS_plan_rot }
+	prerequisite = { focus = SLS_plan_grune }
+}
+
+shared_focus = {
+	id = SLS_back_to_reich_commisariats
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = -3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SLS_back_to_reich_commisariats"
+	}
+	relative_position_id = SLS_new_empire
+	prerequisite = { focus = SLS_new_empire }
+}
+
+shared_focus = {
+	id = SLS_poland
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		declare_war_on = { type = annex_everything    target = QRT }
+	}
+	relative_position_id = SLS_back_to_reich_commisariats
+	prerequisite = { focus = SLS_back_to_reich_commisariats }
+}
+
+shared_focus = {
+	id = SLS_ostland
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = -3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		declare_war_on = { type = annex_everything    target = ZCU }
+		declare_war_on = { type = annex_everything    target = ZEV }
+		declare_war_on = { type = annex_everything    target = ZWN }
+	}
+	relative_position_id = SLS_back_to_reich_commisariats
+	prerequisite = { focus = SLS_back_to_reich_commisariats }
+}
+
+shared_focus = {
+	id = SLS_ukraine
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		declare_war_on = { type = annex_everything    target = ZDN }
+		declare_war_on = { type = annex_everything    target = ZLW }
+	}
+	relative_position_id = SLS_poland
+	prerequisite = { focus = SLS_poland }
+	prerequisite = { focus = SLS_ostland }
+}
+
+shared_focus = {
+	id = SLS_general_plan_east
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = SLS_generalplan
+	}
+	relative_position_id = SLS_ukraine
+	prerequisite = { focus = SLS_ukraine }
+}
+
+shared_focus = {
+	id = SLS_military_power
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		762 = { 
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						} 
+			}
+	}
+	relative_position_id = SLS_new_empire
+	prerequisite = { focus = SLS_new_empire }
+}
+
+shared_focus = {
+	id = SLS_new_german_complexes
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		66 = { 
+						add_building_construction = {
+							type = arms_factory
+							level = 3
+							instant_build = yes
+						} 
+			}
+	}
+	relative_position_id = SLS_military_power
+	prerequisite = { focus = SLS_military_power }
+}
+
+shared_focus = {
+	id = SLS_nuclear_weapons
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		set_technology = {
+			atomic_research = 1
+			nuclear_reactor = 1
+			nukes = 1
+		}
+	}
+	relative_position_id = SLS_military_power
+	prerequisite = { focus = SLS_military_power }
+}
+
+shared_focus = {
+	id = SLS_thousand_year_reich
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 4
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = SLS_twr_twr_twr
+	}
+	relative_position_id = SLS_general_plan_east
+	prerequisite = { focus = SLS_general_plan_east }
+	prerequisite = { focus = SLS_in_the_world }
+}
+
+shared_focus = {
+	id = SLS_in_the_world
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_war_support = 0.45
+	}
+	relative_position_id = SLS_uber_everything
+	prerequisite = { focus = SLS_uber_everything }
+}
+
+shared_focus = {
+	id = SLS_uber_everything
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = SLS_uber_alles_idea
+	}
+	relative_position_id = SLS_new_german_complexes
+	prerequisite = { focus = SLS_new_german_complexes }
+	prerequisite = { focus = SLS_nuclear_weapons }
+}
+focus_tree = {
+    id = SLS_focus_communism
+    country = {
+        base = 0
+        modifier = {
+            add = 1
+            original_tag = SLS
+        }
+    }
+	continuous_focus_position = { x = 50 y = 2000 }
+	shared_focus = SLS_two_industries
+	shared_focus = SLS_a_red_february
+}
+focus_tree = {
+    id = SLS_focus_democratic
+    country = {
+        base = 0
+        modifier = {
+            add = 1
+            original_tag = SLS
+        }
+    }
+	continuous_focus_position = { x = 50 y = 2000 }
+	shared_focus = SLS_two_industries
+	shared_focus = SLS_democracy_the_best_system
+}
+focus_tree = {
+    id = SLS_focus_german
+    country = {
+        base = 0
+        modifier = {
+            add = 1
+            original_tag = SLS
+        }
+    }
+	continuous_focus_position = { x = 50 y = 5000 }
+	shared_focus = SLS_the_reich_awaits
+}
+
+
 
 
