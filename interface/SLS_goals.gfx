@@ -169,4 +169,72 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	SpriteType = { 
+		name = "GFX_SLS_direct_funding_to_schutzstaffel"
+		texturefile = "gfx/interface/goals/SLS_direct_funding_to_schutzstaffel.dds"
+	}
+	SpriteType = { 
+		name = "GFX_SLS_direct_funding_to_schutzstaffel_shine"
+		texturefile = "gfx/interface/goals/SLS_direct_funding_to_schutzstaffel.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLS_direct_funding_to_schutzstaffel.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLS_direct_funding_to_schutzstaffel.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SLS_recreate_schutzstaffel"
+		texturefile = "gfx/interface/goals/SLS_recreate_schutzstaffel.dds"
+	}
+	SpriteType = { 
+		name = "GFX_SLS_recreate_schutzstaffel_shine"
+		texturefile = "gfx/interface/goals/SLS_recreate_schutzstaffel.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLS_recreate_schutzstaffel.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLS_recreate_schutzstaffel.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
 }

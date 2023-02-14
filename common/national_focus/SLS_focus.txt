@@ -789,7 +789,7 @@ shared_focus = {
 
 shared_focus = {
 	id = SLS_recreate_schutzstaffel
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_SLS_recreate_schutzstaffel
 	cost = 5
 	x = 2
 	y = 2
@@ -882,7 +882,7 @@ shared_focus = {
 
 shared_focus = {
 	id = SLS_direct_funding_to_schutzstaffel
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_SLS_direct_funding_to_schutzstaffel
 	cost = 5
 	x = 3
 	y = 2

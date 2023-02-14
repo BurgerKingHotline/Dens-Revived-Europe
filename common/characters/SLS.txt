@@ -34,6 +34,9 @@ characters = {
 			civilian = {
 				large = GFX_portrait_SLS_jaruzelski
 			}
+			army = {
+				large = GFX_portrait_SLS_jaruzelski
+			}
 		}
 		country_leader = {
 			ideology = stalinism
@@ -41,6 +44,13 @@ characters = {
 			traits = {dictator}
 			expire = "2014.1.1.1"
 			id = 1
+		}
+		field_marshal = {
+			skill = 8
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 6
 		}
 	}
 	SLS_budka = {
