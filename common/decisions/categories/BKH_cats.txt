@@ -1,0 +1,9 @@
+BKH_electors_cat = {
+	icon = GFX
+	visible_when_empty = yes
+	priority = 25
+	scripted_gui = BKH_electors_gui
+	visible = {
+		original_tag = BKH
+	}
+}

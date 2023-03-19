@@ -1,0 +1,11 @@
+defined_text = {
+    name = abruzzo_per
+    text = {
+        for_loop_effect = {
+            end = 3
+            value = g
+            BKH_temploc = abruzzo_array^g
+        }
+        localization_key = BKH_temploc
+    }
+}

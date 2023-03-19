@@ -1,0 +1,78 @@
+guiTypes = {
+    containerWIndowType = {
+        name = "bkh_electors_gui_window"
+        position = { x = 0 y = 0 }
+        size = { width = 100% height = 280 }
+
+		instantTextBoxType = {
+			name = BKH_electors_label
+			position = { x = 105 y = -15 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 4 y = 4}
+			text = "Electors of the Republic"
+			maxWidth = 500
+			maxHeight = 50
+		}
+
+		instantTextBoxType = {
+			name = BKH_voting_results
+			position = { x = 17 y = 70 }
+			textureFile = ""
+			font = "hoi_20bs"
+			borderSize = {x = 4 y = 4}
+			text = BKH_gui_elect_results
+			maxWidth = 300
+			maxHeight = 50
+		}
+
+
+        iconType = {
+            name = "bkh_abruzzo"
+            spriteType = "GFX_BKH_state_abruzzo"
+            position = { x = 375 y = 153 }
+            scale = 1.5
+            pdx_tooltip = abruzzo_per
+        }
+
+        iconType = {
+            name = "bkh_corsica"
+            spriteType = "GFX_BKH_state_corsica"
+            position = { x = 245 y = 190 }
+            scale = 1.5
+            pdx_tooltip = corsica_per
+        }
+
+        iconType = {
+            name = "bkh_emilia_romagna"
+            spriteType = "GFX_BKH_state_emilia_romagna"
+            position = { x = 271 y = 100 }
+            scale = 1.5
+            pdx_tooltip = emilia_romagna_per
+        }
+
+        iconType = {
+            name = "bkh_piedmont"
+            spriteType = "GFX_BKH_state_piedmont"
+            position = { x = 180 y = 41 }
+            scale = 1.5
+            pdx_tooltip = piedmont_per
+        }
+
+        iconType = {
+            name = "bkh_roma"
+            spriteType = "GFX_BKH_state_roma"
+            position = { x = 358 y = 200 }
+            scale = 1.5
+            pdx_tooltip = roma_per
+        }
+
+        iconType = {
+            name = "bkh_tuscany"
+            spriteType = "GFX_BKH_state_tuscany"
+            position = { x = 290 y = 130 }
+            scale = 1.5
+            pdx_tooltip = tuscany_per
+        }
+    }
+}

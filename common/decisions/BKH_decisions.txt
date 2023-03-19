@@ -1,0 +1,5 @@
+BKH_electors_cat = {
+    edit_for_reload = {
+        cost = 11111
+    }
+}

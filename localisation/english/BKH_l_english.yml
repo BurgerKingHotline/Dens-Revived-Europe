@@ -1,0 +1,17 @@
+﻿l_english:
+ BKH_gui_elect_results: "£texticon_ronald£  Ronald McDonald: §t[?BKH_donaldvotes]§!\n\n£texticon_bkh£  BKH Creature: §7[?BKH_creaturevotes]§!\n\n£texticon_burger_king  Burger King: §Y[?BKH_bkvotes]§!\n\n£texticon_grimice Grimice: §0[?BKH_grimicevotes]§!\n\n£texticon_jack_box  Jack in the Box: §g[?BKH_jackvotes]§!"
+ BKH_electors_cat: ""
+ abruzzo_per: "" # ADD PERCENTS AND SCRIPTED EFFECT TO UPDATE VARIBALES TODAY :))) HAIII !!!
+
+ corsica_per: ""
+ emilia_romagna_per: ""
+ piedmont_per: ""
+ roma_per: ""
+ tuscany_per: ""
+ BKH_temploc: ""
+
+ # I never did this sorry
+
+ BKH: "The Republic of Burgers"
+ BKH_DEF: "the Republic of Burgers"
+ BKH_ADJ: "Burger"

@@ -1,0 +1,31 @@
+scripted_gui = {
+	BKH_electors_gui = {
+		context_type = decision_category
+		window_name = "bkh_electors_gui_window"
+
+		visible = {
+			has_global_flag = BKH_electors
+		}
+
+		properties = {
+			bkh_abruzzo = {
+				frame = abruzzoelect
+			}
+			bkh_corsica = {
+				frame = corsicaelect
+			}
+			bkh_emilia_romagna = {
+				frame = emiliaromagnaelect
+			}
+			bkh_piedmont = {
+				frame = piedmontelect
+			}
+			bkh_roma = {
+				frame = romaelect
+			}
+			bkh_tuscany = {
+				frame = tuscanyelect
+			}
+		}
+	}	
+}

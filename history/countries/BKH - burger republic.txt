@@ -1,5 +1,12 @@
 capital = 2
 
+set_variable = { abruzzoelect = 3 }
+set_variable = { corsicaelect = 3 }
+set_variable = { emiliaromagnaelect = 3 }
+set_variable = { piedmontelect = 3 }
+set_variable = { romaelect = 3 }
+set_variable = { tuscanyelect = 3 }
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1931.11.8"

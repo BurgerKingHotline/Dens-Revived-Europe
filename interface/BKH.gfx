@@ -1,0 +1,59 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_texticon_bkh"
+        texturefile = "gfx/texticons/creature.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_texticon_burger_king"
+        texturefile = "gfx/texticons/bk.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_texticon_grimice"
+        texturefile = "gfx/texticons/grimice.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_texticon_jack_box"
+        texturefile = "gfx/texticons/jackbox.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_texticon_ronald"
+        texturefile = "gfx/texticons/mcdonald.dds"
+        legacy_lazy_load = no
+    }
+
+
+    spriteType = {
+        name = "GFX_BKH_state_abruzzo"
+        texturefile = "gfx/BKH/states/abruzzo.dds"
+        noOfFrames = 5
+    }
+    spriteType = {
+        name = "GFX_BKH_state_corsica"
+        texturefile = "gfx/BKH/states/corsica.dds"
+        noOfFrames = 5
+    }
+    spriteType = {
+        name = "GFX_BKH_state_emilia_romagna"
+        texturefile = "gfx/BKH/states/emilia_romagna.dds"
+        noOfFrames = 5
+    }
+    spriteType = {
+        name = "GFX_BKH_state_piedmont"
+        texturefile = "gfx/BKH/states/piedmont.dds"
+        noOfFrames = 5
+    }
+    spriteType = {
+        name = "GFX_BKH_state_roma"
+        texturefile = "gfx/BKH/states/rome.dds"
+        noOfFrames = 5
+    }
+    spriteType = {
+        name = "GFX_BKH_state_tuscany"
+        texturefile = "gfx/BKH/states/tuscany.dds"
+        noOfFrames = 5
+    }
+}
